@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Identity\Digital;
+namespace Casa\Models\Identity\Digital;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Telephone extends Model
 {

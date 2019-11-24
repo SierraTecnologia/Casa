@@ -1,4 +1,4 @@
-<?php namespace SiFinder\Facades;
+<?php namespace Casa\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

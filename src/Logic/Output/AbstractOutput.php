@@ -1,8 +1,8 @@
 <?php
-namespace SiFinder\Logic\Output;
+namespace Casa\Logic\Output;
 
 use League\CLImate\CLImate;
-use SiFinder\Logic\AnalysisResult;
+use Casa\Logic\AnalysisResult;
 
 abstract class AbstractOutput
 {

@@ -2,9 +2,9 @@
 
 namespace App\Http\Actions;
 
-use SiFinder\Http\Requests\PaginatedRequest;
-use SiFinder\Http\Resources\PaginatedResource;
-use SiFinder\Http\Resources\TagPlainResource;
+use Casa\Http\Requests\PaginatedRequest;
+use Casa\Http\Resources\PaginatedResource;
+use Casa\Http\Resources\TagPlainResource;
 use App\Models\Contracts\TagManager;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\JsonResponse;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Siravel\Models\Actions;
+namespace Casa\Models\Actions;
 
 use SiObjects\Manipule\Builders\QuestionReponseBuilder;
-use Siravel\Contants\Tables;
-use Siravel\Features\Photos\Entities\QuestionReponseEntity;
+use Casa\Contants\Tables;
+use Casa\Features\Photos\Entities\QuestionReponseEntity;
 use Illuminate\Database\Eloquent\Collection;
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 /**
  * Class QuestionReponse.

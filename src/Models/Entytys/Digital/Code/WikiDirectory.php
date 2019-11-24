@@ -10,7 +10,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Siravel\Models\Entytys\Digital\Code;
+namespace Casa\Models\Entytys\Digital\Code;
 
 class WikiDirectory extends Model
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Entytys\Fisicos;
+namespace Casa\Models\Entytys\Fisicos;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Item extends Model
 {
@@ -49,7 +49,7 @@ class Item extends Model
      */
     public function girls()
     {
-        return $this->morphedByMany('Siravel\Models\Identity\Girl', 'itemable');
+        return $this->morphedByMany('Casa\Models\Identity\Girl', 'itemable');
     }
 
     /**

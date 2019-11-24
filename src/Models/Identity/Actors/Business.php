@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Identity\Actors;
+namespace Casa\Models\Identity\Actors;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Business extends Model
 {
@@ -72,7 +72,7 @@ class Business extends Model
      */
     public function features()
     {
-        return $this->morphToMany('Siravel\Models\Features\Marketing\Feature', 'featureable');
+        return $this->morphToMany('Casa\Models\Features\Marketing\Feature', 'featureable');
     }
 
     // /**
@@ -96,7 +96,7 @@ class Business extends Model
      */
     public function settings()
     {
-        return $this->hasMany('Siravel\Models\System\Setting');
+        return $this->hasMany('Casa\Models\System\Setting');
     }
 
     // /**
@@ -112,7 +112,7 @@ class Business extends Model
      */
     public function addresses()
     {
-        return $this->morphToMany('Siravel\Models\Identity\Address', 'addresseable');
+        return $this->morphToMany('Casa\Models\Identity\Address', 'addresseable');
     }
 
     /**
@@ -120,7 +120,7 @@ class Business extends Model
      */
     public function phones()
     {
-        return $this->morphToMany('Siravel\Models\Identity\Phone', 'phoneable');
+        return $this->morphToMany('Casa\Models\Identity\Phone', 'phoneable');
     }
 
     /**
@@ -128,7 +128,7 @@ class Business extends Model
      */
     public function accounts()
     {
-        return $this->morphMany('Siravel\Models\Identity\Digital\Account', 'accountable');
+        return $this->morphMany('Casa\Models\Identity\Digital\Account', 'accountable');
     }
 
     /**
@@ -138,7 +138,7 @@ class Business extends Model
      */
     public function isDefault()
     {
-        return \Siravel\Services\System\BusinessService::getSingleton()->isDefault($this);
+        return \Casa\Services\System\BusinessService::getSingleton()->isDefault($this);
     }
 
 
@@ -151,30 +151,30 @@ class Business extends Model
 
     public function sitios()
     {
-        return $this->morphToMany('Siravel\Models\Identity\Digital\Sitio', 'sitioable');
+        return $this->morphToMany('Casa\Models\Identity\Digital\Sitio', 'sitioable');
     }
     /**
      * Get all of the skills for the post.
      */
     public function skills()
     {
-        return $this->morphToMany('Siravel\Models\Entytys\Fisicos\Skill', 'skillable');
+        return $this->morphToMany('Casa\Models\Entytys\Fisicos\Skill', 'skillable');
     }
     public function infos()
     {
-        return $this->morphMany('Siravel\Models\Market\Abouts\Info', 'infoable');
+        return $this->morphMany('Casa\Models\Market\Abouts\Info', 'infoable');
     }
     public function gostos()
     {
-        return $this->morphToMany('Siravel\Models\Entytys\Fisicos\Gosto', 'gostoable');
+        return $this->morphToMany('Casa\Models\Entytys\Fisicos\Gosto', 'gostoable');
     }
     public function pircings()
     {
-        return $this->morphToMany('Siravel\Models\Identity\Fisicos\Pircing', 'pircingable');
+        return $this->morphToMany('Casa\Models\Identity\Fisicos\Pircing', 'pircingable');
     }
     public function tatuages()
     {
-        return $this->morphToMany('Siravel\Models\Identity\Fisicos\Tatuagem', 'tatuageable');
+        return $this->morphToMany('Casa\Models\Identity\Fisicos\Tatuagem', 'tatuageable');
     }
 
 }

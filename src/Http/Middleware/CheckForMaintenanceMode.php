@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Middleware;
+namespace Casa\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode as Middleware;
 

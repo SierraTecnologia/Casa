@@ -1,14 +1,14 @@
 <?php
 
-namespace Siravel\Models\Entytys\Digital\Infra\Ci\Build;
+namespace Casa\Models\Entytys\Digital\Infra\Ci\Build;
 
 use GuzzleHttp\Client;
 use SiUtils\Tools\Builder;
 use SiUtils\Helper\Diff;
 use SiUtils\Helper\Github;
 use SiUtils\Tools\Config;
-use Siravel\Models\Entytys\Digital\Infra\Ci\Build;
-use Siravel\Models\Entytys\Digital\Infra\Ci\BuildError;
+use Casa\Models\Entytys\Digital\Infra\Ci\Build;
+use Casa\Models\Entytys\Digital\Infra\Ci\BuildError;
 
 /**
  * Github Build Model

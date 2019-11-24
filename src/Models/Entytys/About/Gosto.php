@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Entytys\About;
+namespace Casa\Models\Entytys\About;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Gosto extends Model
 {
@@ -49,7 +49,7 @@ class Gosto extends Model
      */
     public function girls()
     {
-        return $this->morphedByMany('Siravel\Models\Identity\Girl', 'gostoable');
+        return $this->morphedByMany('Casa\Models\Identity\Girl', 'gostoable');
     }
 
     /**

@@ -1,11 +1,11 @@
 <?php
 
-namespace Siravel\Models\Components\Productions;
+namespace Casa\Models\Components\Productions;
 
 /**
  * Tipos de Produções
  */
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class ProductionType extends Model
 {

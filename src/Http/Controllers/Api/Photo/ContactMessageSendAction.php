@@ -2,7 +2,7 @@
 
 namespace App\Http\Actions;
 
-use SiFinder\Http\Requests\ContactMessageRequest;
+use Casa\Http\Requests\ContactMessageRequest;
 use App\Mail\ContactMessage;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\JsonResponse;

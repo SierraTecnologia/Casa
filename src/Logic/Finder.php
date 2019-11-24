@@ -1,12 +1,12 @@
 <?php
 
-namespace SiFinder\Logic;
+namespace Casa\Logic;
 
 use Symfony\Component\Finder\Finder;
 
-use SiFinder\Logic\Output\AbstractOutput;
-use SiFinder\Logic\Output\Filter\OutputFilterInterface;
-use SiFinder\Logic\Output\TriggerableInterface;
+use Casa\Logic\Output\AbstractOutput;
+use Casa\Logic\Output\Filter\OutputFilterInterface;
+use Casa\Logic\Output\TriggerableInterface;
 
 /**
  * Run all script analysers and outputs their result.
@@ -68,7 +68,7 @@ class Analyser
         $this->ignoredPaths = $ignoredPaths;
 
         if (!$project) {
-            $this->languageClass = 'SiFinder\\Actions\\Worker\\Analyser\\Language\\'.$this->defaultLanguage;
+            $this->languageClass = 'Casa\\Actions\\Worker\\Analyser\\Language\\'.$this->defaultLanguage;
         }
     }
 
@@ -163,7 +163,7 @@ class Analyser
 
     /**
      * Set of PHP analys integration objects.
-     * @return SiFinder\Logic\Tools\AbstractIntegrationTool[] set of objects.
+     * @return Casa\Logic\Tools\AbstractIntegrationTool[] set of objects.
      */
     protected function getAnalysisTools()
     {

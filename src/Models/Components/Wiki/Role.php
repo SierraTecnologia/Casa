@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel;
+namespace Casa;
 
 use Illuminate\Database\Eloquent\Model;
 

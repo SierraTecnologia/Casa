@@ -1,9 +1,9 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Admin;
+namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use SiFinder\Models\Entytys\Digital\Code\Language;
+use Casa\Models\Entytys\Digital\Code\Language;
 
 class LanguageController extends Controller
 {

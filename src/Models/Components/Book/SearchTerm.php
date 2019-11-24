@@ -1,6 +1,6 @@
-<?php namespace Siravel\Models\Components\Book;
+<?php namespace Casa\Models\Components\Book;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class SearchTerm extends Model
 {

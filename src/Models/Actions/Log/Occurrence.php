@@ -3,9 +3,9 @@
  * Registro de Ocorrencias de Logs
  */
 
-namespace Siravel\Models\Actions\Log;
+namespace Casa\Models\Actions\Log;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Occurrence extends Model
 {

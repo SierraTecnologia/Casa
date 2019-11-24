@@ -10,13 +10,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Siravel\Models\Entytys\Digital\Code;
+namespace Casa\Models\Entytys\Digital\Code;
 
 use Gitonomy\Bundle\CoreBundle\EventDispatcher\Event\PushReferenceEvent;
 
-use Siravel\Models\Entytys\Digital\Code\Message\CloseMessage;
-use Siravel\Models\Entytys\Digital\Code\Message\CommitMessage;
-use Siravel\Models\Entytys\Digital\Code\Message\ForceMessage;
+use Casa\Models\Entytys\Digital\Code\Message\CloseMessage;
+use Casa\Models\Entytys\Digital\Code\Message\CommitMessage;
+use Casa\Models\Entytys\Digital\Code\Message\ForceMessage;
 
 /**
  * @author Julien DIDIER <genzo.wm@gmail.com>

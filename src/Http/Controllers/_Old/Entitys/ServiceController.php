@@ -1,9 +1,9 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Admin;
+namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use SiFinder\Models\Components\Integrations\Service;
+use Casa\Models\Components\Integrations\Service;
 
 class ServiceController extends Controller
 {

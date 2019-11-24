@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Travels;
+namespace Casa\Http\Controllers\Travels;
 
 use InfyOm\Generator\Utils\ResponseUtil;
 use Response;

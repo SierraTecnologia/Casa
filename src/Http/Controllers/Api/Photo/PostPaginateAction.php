@@ -2,9 +2,9 @@
 
 namespace App\Http\Actions;
 
-use SiFinder\Http\Requests\PaginatedRequest;
-use SiFinder\Http\Resources\PaginatedResource;
-use SiFinder\Http\Resources\PostResource;
+use Casa\Http\Requests\PaginatedRequest;
+use Casa\Http\Resources\PaginatedResource;
+use Casa\Http\Resources\PostResource;
 use App\Models\Contracts\PostManager;
 use Illuminate\Contracts\Cache\Factory as CacheManager;
 use Illuminate\Contracts\Routing\ResponseFactory;

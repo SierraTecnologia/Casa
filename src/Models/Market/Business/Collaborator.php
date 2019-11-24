@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Market\Business;
+namespace Casa\Models\Market\Business;
 
-use Siravel\Models\Identity\Actors\Person;
+use Casa\Models\Identity\Actors\Person;
 
 class Collaborator extends Person
 {

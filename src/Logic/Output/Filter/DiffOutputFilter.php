@@ -1,5 +1,5 @@
 <?php
-namespace SiFinder\Logic\Output\Filter;
+namespace Casa\Logic\Output\Filter;
 
 use SebastianBergmann\Diff\Line;
 

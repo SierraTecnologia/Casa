@@ -1,8 +1,8 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Components\Actors;
+namespace Casa\Http\Controllers\Components\Actors;
 
-use SiFinder\Http\Controllers\Controller;
+use Casa\Http\Controllers\Controller;
 use Auth;
 
 class NotificationsController extends Controller

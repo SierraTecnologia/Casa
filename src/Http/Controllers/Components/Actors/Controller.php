@@ -1,8 +1,8 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Components\Actors;
+namespace Casa\Http\Controllers\Components\Actors;
 
-use SiFinder\Http\Controllers\Components\Controller as BaseController;
+use Casa\Http\Controllers\Components\Controller as BaseController;
 
 class Controller extends BaseController
 {

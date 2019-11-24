@@ -1,11 +1,11 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Admin;
+namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use SiFinder\Models\Role;
-use SiFinder\Models\Customer;
+use Casa\Models\Role;
+use Casa\Models\Customer;
 use Auth;
 
 class UserController extends Controller

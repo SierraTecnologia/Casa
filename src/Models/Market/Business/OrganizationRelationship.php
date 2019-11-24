@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Market\Business;
+namespace Casa\Models\Market\Business;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class BusinesstionRelationship extends Model
 {

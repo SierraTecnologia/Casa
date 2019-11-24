@@ -1,13 +1,13 @@
 <?php
 
-namespace SiFinder\Http\Resources\Entitys;
+namespace Casa\Http\Resources\Entitys;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
 /**
  * Class PaginatedResource.
  *
- * @package SiFinder\Http\Resources\Entitys
+ * @package Casa\Http\Resources\Entitys
  */
 class PaginatedResource extends ResourceCollection
 {

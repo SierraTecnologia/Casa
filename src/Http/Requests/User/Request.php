@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Requests\User;
+namespace Casa\Http\Requests\User;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;

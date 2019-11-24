@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Identity\Actors;
+namespace Casa\Models\Identity\Actors;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 use SiObjects\Support\Traits\Models\AsHuman;
 
 class Person extends Model

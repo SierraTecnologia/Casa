@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Entytys\Category;
+namespace Casa\Models\Entytys\Category;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class VehicleType extends Model
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace SiFinder\Http\Controllers\System\Metrics;
+namespace Casa\Http\Controllers\System\Metrics;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use SiFinder\Providers\Metrics\LogParser;
-use SiFinder\Models\Metrics\LarametricsLog;
-use SiFinder\Models\Metrics\LarametricsModel;
-use SiFinder\Models\Metrics\LarametricsRequest;
+use Casa\Providers\Metrics\LogParser;
+use Casa\Models\Metrics\LarametricsLog;
+use Casa\Models\Metrics\LarametricsModel;
+use Casa\Models\Metrics\LarametricsRequest;
 
 class MetricsController extends Controller
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Components\Actors;
+namespace Casa\Http\Controllers\Components\Actors;
 
-use SiFinder\Http\Requests;
-use SiFinder\Http\Controllers\Controller;
+use Casa\Http\Requests;
+use Casa\Http\Controllers\Controller;
 use App\Models\Activity;
 use App\Models\Banner;
 use App\Models\Link;

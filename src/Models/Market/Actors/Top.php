@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Market\Actors;
+namespace Casa\Models\Market\Actors;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Top extends Model
 {
@@ -52,7 +52,7 @@ class Top extends Model
      */
     public function skills()
     {
-        return $this->morphToMany('Siravel\Models\Entytys\Fisicos\Skill', 'skillable');
+        return $this->morphToMany('Casa\Models\Entytys\Fisicos\Skill', 'skillable');
     }
 
 }

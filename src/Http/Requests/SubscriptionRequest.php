@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Requests;
+namespace Casa\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 /**
  * Class SubscriptionRequest.
  *
- * @package SiFinder\Http\Requests
+ * @package Casa\Http\Requests
  */
 class SubscriptionRequest extends FormRequest
 {

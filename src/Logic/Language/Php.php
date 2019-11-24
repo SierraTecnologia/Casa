@@ -1,9 +1,9 @@
 <?php
-namespace SiFinder\Logic\Language;
+namespace Casa\Logic\Language;
 
-use SiFinder\Logic\Output\AbstractOutput;
-use SiFinder\Logic\Output\Filter\OutputFilterInterface;
-use SiFinder\Logic\Output\TriggerableInterface;
+use Casa\Logic\Output\AbstractOutput;
+use Casa\Logic\Output\Filter\OutputFilterInterface;
+use Casa\Logic\Output\TriggerableInterface;
 
 /**
  * Run all script analysers and outputs their result.
@@ -17,9 +17,9 @@ class Php
     public static function getAnalysisToolsClasses()
     {
         return [
-            'SiFinder\Logic\Tools\CodeSniffer',
-            'SiFinder\Logic\Tools\CopyPasteDetector',
-            'SiFinder\Logic\Tools\MessDetector',
+            'Casa\Logic\Tools\CodeSniffer',
+            'Casa\Logic\Tools\CopyPasteDetector',
+            'Casa\Logic\Tools\MessDetector',
         ];
     }
 }

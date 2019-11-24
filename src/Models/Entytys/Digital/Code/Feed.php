@@ -10,11 +10,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Siravel\Models\Entytys\Digital\Code;
+namespace Casa\Models\Entytys\Digital\Code;
 
 use Doctrine\Common\Collections\ArrayCollection;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 /**
  * @author Julien DIDIER <genzo.wm@gmail.com>

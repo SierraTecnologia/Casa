@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Entytys\Relations;
+namespace Casa\Models\Entytys\Relations;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class RelationType extends Model
 {
@@ -36,7 +36,7 @@ class RelationType extends Model
      */
     public function relations()
     {
-        return $this->belongsToMany('Siravel\Models\Identity\Relation');
+        return $this->belongsToMany('Casa\Models\Identity\Relation');
     }
     
     /**
@@ -44,7 +44,7 @@ class RelationType extends Model
      */
     public function slaves()
     {
-        return $this->morphedByMany('Siravel\Models\Identity\Slave', 'skillable');
+        return $this->morphedByMany('Casa\Models\Identity\Slave', 'skillable');
     }
 
     /**

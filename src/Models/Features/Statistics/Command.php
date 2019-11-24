@@ -3,9 +3,9 @@
  * Sistemas de Analise de Crédito e Fraudes
  */
 
-namespace Siravel\Models\Features\Statistics;
+namespace Casa\Models\Features\Statistics;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Command extends Model
 {

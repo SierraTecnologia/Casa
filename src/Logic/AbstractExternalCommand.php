@@ -1,9 +1,9 @@
 <?php
-namespace SiFinder\Console\Abstracts;
+namespace Casa\Console\Abstracts;
 
 use League\CLImate\CLImate;
-use SiFinder\Logic\Output\AbstractOutput;
-use SiFinder\Logic\Output\Filter\DiffOutputFilter;
+use Casa\Logic\Output\AbstractOutput;
+use Casa\Logic\Output\Filter\DiffOutputFilter;
 use ReflectionMethod;
 use SebastianBergmann\Diff\Parser;
 use SebastianBergmann\Git\Git;
@@ -282,11 +282,11 @@ class AbstractExternalCommand
     protected function getOutputFormatClasses()
     {
         return [
-            'text' => 'SiFinder\Logic\Output\TextOutput',
-            'json' => 'SiFinder\Logic\Output\JsonOutput',
-            'xml' => 'SiFinder\Logic\Output\XmlOutput',
-            'csv' => 'SiFinder\Logic\Output\CsvOutput',
-            'html' => 'SiFinder\Logic\Output\HtmlOutput',
+            'text' => 'Casa\Logic\Output\TextOutput',
+            'json' => 'Casa\Logic\Output\JsonOutput',
+            'xml' => 'Casa\Logic\Output\XmlOutput',
+            'csv' => 'Casa\Logic\Output\CsvOutput',
+            'html' => 'Casa\Logic\Output\HtmlOutput',
         ];
     }
 

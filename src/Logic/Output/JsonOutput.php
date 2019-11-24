@@ -1,7 +1,7 @@
 <?php
-namespace SiFinder\Logic\Output;
+namespace Casa\Logic\Output;
 
-use SiFinder\Logic\AnalysisResult;
+use Casa\Logic\AnalysisResult;
 
 class JsonOutput extends AbstractOutput
 {

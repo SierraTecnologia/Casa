@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Resources\Entitys;
+namespace Casa\Http\Resources\Entitys;
 
 use SiObjects\Manipule\Entities\PhotoEntity;
 use Illuminate\Http\Resources\Json\Resource;
@@ -11,7 +11,7 @@ use function SiUtils\Helper\to_string;
 /**
  * Class PhotoPlainResource.
  *
- * @package SiFinder\Http\Resources\Entitys
+ * @package Casa\Http\Resources\Entitys
  */
 class PhotoPlainResource extends Resource
 {

@@ -1,7 +1,7 @@
 <?php
-namespace SiFinder\Logic\Tools;
+namespace Casa\Logic\Tools;
 
-use SiFinder\Logic\AnalysisResult;
+use Casa\Logic\AnalysisResult;
 use Sabre\Xml\Reader;
 
 /**

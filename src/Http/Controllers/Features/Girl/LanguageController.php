@@ -5,9 +5,9 @@ namespace App\Http\Controllers\Features\Girl;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Input;
 use App\Models\System\Language;
-use SiFinder\Http\Requests\Admin\LanguageRequest;
-use SiFinder\Http\Requests\Admin\DeleteRequest;
-use SiFinder\Http\Requests\Admin\ReorderRequest;
+use Casa\Http\Requests\Admin\LanguageRequest;
+use Casa\Http\Requests\Admin\DeleteRequest;
+use Casa\Http\Requests\Admin\ReorderRequest;
 use Illuminate\Support\Facades\Auth;
 use Datatables;
 

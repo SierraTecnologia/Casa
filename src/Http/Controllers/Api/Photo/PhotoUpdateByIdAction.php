@@ -2,7 +2,7 @@
 
 namespace App\Http\Actions;
 
-use SiFinder\Http\Resources\PhotoResource;
+use Casa\Http\Resources\PhotoResource;
 use App\Models\Contracts\PhotoManager;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\JsonResponse;

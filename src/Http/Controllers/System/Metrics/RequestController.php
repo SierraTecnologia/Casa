@@ -1,10 +1,10 @@
 <?php
 
-namespace SiFinder\Http\Controllers\System\Metrics;
+namespace Casa\Http\Controllers\System\Metrics;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use SiFinder\Models\Metrics\LarametricsRequest;
+use Casa\Models\Metrics\LarametricsRequest;
 
 class RequestController extends Controller
 {

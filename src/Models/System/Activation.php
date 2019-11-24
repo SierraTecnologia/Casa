@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\System;
+namespace Casa\Models\System;
 
-use Siravel\Modela\Model;
+use Casa\Modela\Model;
 
 class Activation extends Model
 {

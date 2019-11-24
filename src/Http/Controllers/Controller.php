@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Controllers;
+namespace Casa\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

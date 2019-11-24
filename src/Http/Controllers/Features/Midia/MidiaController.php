@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Features\Midia;
 
-use SiFinder\Models\Digital\Midia\Photo;
-use SiFinder\Models\Digital\Midia\PhotoAlbum;
-use SiFinder\Services\Midia\MidiaService;
+use Casa\Models\Digital\Midia\Photo;
+use Casa\Models\Digital\Midia\PhotoAlbum;
+use Casa\Services\Midia\MidiaService;
 use App\Http\Controllers\Controller;
 
 class MidiaController extends Controller {

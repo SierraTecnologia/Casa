@@ -1,17 +1,17 @@
-<?php namespace SiFinder\Models\Access;
+<?php namespace Casa\Models\Access;
 
-use SiFinder\Models\Access;
-use SiFinder\Models\Role;
+use Casa\Models\Access;
+use Casa\Models\Role;
 use App\Models\User;
-use SiFinder\Models\UserRepo;
-use SiFinder\Exceptions\LdapException;
+use Casa\Models\UserRepo;
+use Casa\Exceptions\LdapException;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class LdapService
  * Handles any app-specific LDAP tasks.
- * @package SiFinder\Services
+ * @package Casa\Services
  */
 class LdapService
 {

@@ -1,7 +1,7 @@
 <?php
-namespace SiFinder\Logic\Output;
+namespace Casa\Logic\Output;
 
-use SiFinder\Logic\Analyser;
+use Casa\Logic\Analyser;
 
 /**
  * Outputs events information to the console.

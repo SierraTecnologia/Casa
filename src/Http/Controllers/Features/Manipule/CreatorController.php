@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Features\Manipule;
+namespace Casa\Http\Controllers\Features\Manipule;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\ResponseFactory;

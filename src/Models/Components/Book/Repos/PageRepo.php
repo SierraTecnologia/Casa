@@ -1,10 +1,10 @@
-<?php namespace Siravel\Models\Components\Book\Repos;
+<?php namespace Casa\Models\Components\Book\Repos;
 
-use Siravel\Models\Components\Book\Book;
-use Siravel\Models\Components\Book\Chapter;
-use Siravel\Models\Components\Book\Entity;
-use Siravel\Models\Components\Book\Page;
-use Siravel\Models\Components\Book\PageRevision;
+use Casa\Models\Components\Book\Book;
+use Casa\Models\Components\Book\Chapter;
+use Casa\Models\Components\Book\Entity;
+use Casa\Models\Components\Book\Page;
+use Casa\Models\Components\Book\PageRevision;
 use Carbon\Carbon;
 use DOMDocument;
 use DOMXPath;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Market\Actors;
+namespace Casa\Models\Market\Actors;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
 
 class Bank extends Model
@@ -54,7 +54,7 @@ class Bank extends Model
      */
     public function slaves()
     {
-        return $this->morphedByMany('Siravel\Models\Identity\Slave', 'bankable');
+        return $this->morphedByMany('Casa\Models\Identity\Slave', 'bankable');
     }
 
     /**

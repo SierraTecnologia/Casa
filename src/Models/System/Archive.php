@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Models\System;
+namespace Casa\Models\System;
 
 use SiObjects\Support\Traits\Models\ArchiveTrait;
 

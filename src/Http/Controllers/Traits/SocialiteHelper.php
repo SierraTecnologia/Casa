@@ -1,6 +1,6 @@
 <?php 
 
-namespace SiFinder\Http\Controllers\Traits;
+namespace Casa\Http\Controllers\Traits;
 
 use Auth;
 use Socialite;

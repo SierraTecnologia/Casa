@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Entytys\Digital\Infra;
+namespace Casa\Models\Entytys\Digital\Infra;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 use SiUtils\Tools\Ssh;
 
 class Logger extends Model
@@ -45,6 +45,6 @@ class Logger extends Model
 
     public function computer()
     {
-        return $this->belongsTo('Siravel\Models\Entytys\Digital\Infra\Computer', 'computer_id', 'id');
+        return $this->belongsTo('Casa\Models\Entytys\Digital\Infra\Computer', 'computer_id', 'id');
     }
 }

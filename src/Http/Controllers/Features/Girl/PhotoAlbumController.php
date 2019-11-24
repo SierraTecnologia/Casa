@@ -1,10 +1,10 @@
 <?php namespace App\Http\Controllers\Features\Girl;
 
-use SiFinder\Models\Digital\Midia\PhotoAlbum;
-use SiFinder\Models\Digital\Midia\Photo;
+use Casa\Models\Digital\Midia\PhotoAlbum;
+use Casa\Models\Digital\Midia\Photo;
 use App\Models\System\Language;
 use App\Http\Controllers\GirlController;
-use SiFinder\Http\Requests\Admin\PhotoAlbumRequest;
+use Casa\Http\Requests\Admin\PhotoAlbumRequest;
 use Illuminate\Support\Facades\Auth;
 use Datatables;
 

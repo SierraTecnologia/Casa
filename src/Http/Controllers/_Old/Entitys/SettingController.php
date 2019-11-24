@@ -1,9 +1,9 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Admin;
+namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use SiFinder\Models\System\Setting;
+use Casa\Models\System\Setting;
 
 class SettingController extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Entytys\Digital\Infra\Ci;
+namespace Casa\Models\Entytys\Digital\Infra\Ci;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Stage extends Model
 {

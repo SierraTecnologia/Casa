@@ -10,11 +10,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Siravel\Models\Actions\Calendar;
+namespace Casa\Models\Actions\Calendar;
 
 use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
-use Siravel\Models\Model;
-use SiFinder\Actions\Action;
+use Casa\Models\Model;
+use Casa\Actions\Action;
 use Illuminate\Support\Facades\Log;
 class Event extends Model
 {

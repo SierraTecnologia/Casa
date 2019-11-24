@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Entytys\Digital\Code;
+namespace Casa\Models\Entytys\Digital\Code;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Stage extends Model
 {

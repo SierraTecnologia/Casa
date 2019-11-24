@@ -10,10 +10,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Siravel\Models\Entytys\Digital\Internet;
+namespace Casa\Models\Entytys\Digital\Internet;
 
 use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Url extends Model
 {
@@ -34,16 +34,16 @@ class Url extends Model
 
     public function linksFrom()
     {
-        return $this->hasMany('Siravel\Models\Entytys\Digital\Internet\UrlLink', 'from_bot_internet_url_id', 'id');
+        return $this->hasMany('Casa\Models\Entytys\Digital\Internet\UrlLink', 'from_bot_internet_url_id', 'id');
     }
 
     public function linksTo()
     {
-        return $this->hasMany('Siravel\Models\Entytys\Digital\Internet\UrlLink', 'to_bot_internet_url_id', 'id');
+        return $this->hasMany('Casa\Models\Entytys\Digital\Internet\UrlLink', 'to_bot_internet_url_id', 'id');
     }
 
     public function domain()
     {
-        return $this->belongsTo('Siravel\Models\Entytys\Digital\Infra\Domain', 'infra_domain_id', 'id');
+        return $this->belongsTo('Casa\Models\Entytys\Digital\Infra\Domain', 'infra_domain_id', 'id');
     }
 }

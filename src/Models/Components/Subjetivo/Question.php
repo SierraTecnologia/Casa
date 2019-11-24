@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Models\Components\Subjetivo;
+namespace Casa\Models\Components\Subjetivo;
 
 use Request;
 use Illuminate\Database\Eloquent\Model;

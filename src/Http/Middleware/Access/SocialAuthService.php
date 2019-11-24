@@ -1,10 +1,10 @@
-<?php namespace SiFinder\Models\Access;
+<?php namespace Casa\Models\Access;
 
-use SiFinder\Models\SocialAccount;
-use SiFinder\Models\UserRepo;
-use SiFinder\Exceptions\SocialDriverNotConfigured;
-use SiFinder\Exceptions\SocialSignInAccountNotUsed;
-use SiFinder\Exceptions\UserRegistrationException;
+use Casa\Models\SocialAccount;
+use Casa\Models\UserRepo;
+use Casa\Exceptions\SocialDriverNotConfigured;
+use Casa\Exceptions\SocialSignInAccountNotUsed;
+use Casa\Exceptions\UserRegistrationException;
 use Laravel\Socialite\Contracts\Factory as Socialite;
 use Laravel\Socialite\Contracts\User as SocialUser;
 

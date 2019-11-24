@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Market\Relations;
+namespace Casa\Models\Market\Relations;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Relation extends Model
 {

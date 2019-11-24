@@ -1,9 +1,9 @@
 <?php
 
-namespace SiFinder\Http\Requests\Commerce;
+namespace Casa\Http\Requests\Commerce;
 
 use Illuminate\Support\Facades\Gate;
-use SiFinder\Http\Requests\Request;
+use Casa\Http\Requests\Request;
 use App\Models\Feature;
 
 abstract class CommerceRequest extends Request

@@ -1,7 +1,7 @@
-<?php namespace Siravel\Models\Components\Book;
+<?php namespace Casa\Models\Components\Book;
 
 use App\Models\User;
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class PageRevision extends Model
 {

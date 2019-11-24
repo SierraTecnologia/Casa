@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel;
+namespace Casa;
 
 use Baum\Node as Model;
 

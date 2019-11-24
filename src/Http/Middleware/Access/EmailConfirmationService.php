@@ -1,10 +1,10 @@
-<?php namespace SiFinder\Models\Access;
+<?php namespace Casa\Models\Access;
 
 use App\Models\User;
-use SiFinder\Models\UserRepo;
-use SiFinder\Exceptions\ConfirmationEmailException;
-use SiFinder\Exceptions\UserRegistrationException;
-use SiFinder\Notifications\ConfirmEmail;
+use Casa\Models\UserRepo;
+use Casa\Exceptions\ConfirmationEmailException;
+use Casa\Exceptions\UserRegistrationException;
+use Casa\Notifications\ConfirmEmail;
 use Carbon\Carbon;
 use Illuminate\Database\Connection as Database;
 

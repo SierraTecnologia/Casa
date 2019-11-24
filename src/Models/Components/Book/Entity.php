@@ -1,12 +1,12 @@
-<?php namespace Siravel\Models\Components\Book;
+<?php namespace Casa\Models\Components\Book;
 
-use SiFinder\Actions\Book\Activity;
-use SiFinder\Actions\Book\Comment;
-use SiFinder\Actions\Book\Tag;
-use SiFinder\Actions\Book\View;
-use Siravel\Models\Permissions\EntityPermission;
-use Siravel\Models\Permissions\JointPermission;
-use Siravel\Models\Ownable;
+use Casa\Actions\Book\Activity;
+use Casa\Actions\Book\Comment;
+use Casa\Actions\Book\Tag;
+use Casa\Actions\Book\View;
+use Casa\Models\Permissions\EntityPermission;
+use Casa\Models\Permissions\JointPermission;
+use Casa\Models\Ownable;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 

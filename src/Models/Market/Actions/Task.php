@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Models\Market\Actions;
+namespace Casa\Models\Market\Actions;
 
 use App\Models\Model;
 
@@ -62,7 +62,7 @@ class Task extends Model
      */
     public function girls()
     {
-        return $this->morphedByMany('Siravel\Models\Identity\Girl', 'skillable');
+        return $this->morphedByMany('Casa\Models\Identity\Girl', 'skillable');
     }
 
     /**

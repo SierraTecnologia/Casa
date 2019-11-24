@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Features\Midia;
 
 use App\Models\Blog\Article;
-use SiFinder\Models\Digital\Midia\PhotoAlbum;
+use Casa\Models\Digital\Midia\PhotoAlbum;
 use DB;
 
 class HomeController extends Controller {

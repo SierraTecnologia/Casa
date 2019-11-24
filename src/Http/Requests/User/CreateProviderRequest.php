@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Requests\User;
+namespace Casa\Http\Requests\User;
 
 class CreateProviderRequest extends Request
 {

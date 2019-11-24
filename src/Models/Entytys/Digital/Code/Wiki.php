@@ -10,9 +10,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Siravel\Models\Entytys\Digital\Code;
+namespace Casa\Models\Entytys\Digital\Code;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Wiki extends Model
 {

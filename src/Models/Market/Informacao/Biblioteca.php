@@ -1,10 +1,10 @@
 <?php
 
-namespace Siravel\Models\Market\Informacao;
+namespace Casa\Models\Market\Informacao;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
-use Siravel\Models\Entytys\Category\BibliotecaType;
+use Casa\Models\Entytys\Category\BibliotecaType;
 
 class Biblioteca extends Model
 {

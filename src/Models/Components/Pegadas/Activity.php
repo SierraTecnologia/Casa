@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Components\Pegadas;
+namespace Casa\Models\Components\Pegadas;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Activity extends Model
 {

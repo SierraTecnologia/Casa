@@ -1,9 +1,9 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Admin;
+namespace Casa\Http\Controllers\Admin;
 
 use Response;
-use SiFinder\Http\Controllers\Controller as BaseController;
+use Casa\Http\Controllers\Controller as BaseController;
 use Illuminate\Support\Facades\Log;
 
 class Controller extends BaseController

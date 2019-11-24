@@ -1,9 +1,9 @@
 <?php
 
-namespace Siravel\Models\Entytys\Digital\Infra\Ci\Build;
+namespace Casa\Models\Entytys\Digital\Infra\Ci\Build;
 
 use SiUtils\Tools\Builder;
-use Siravel\Models\Entytys\Digital\Infra\Ci\Build;
+use Casa\Models\Entytys\Digital\Infra\Ci\Build;
 
 class BitbucketServerBuild extends GitBuild
 {

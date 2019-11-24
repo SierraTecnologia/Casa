@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Features;
+namespace Casa\Http\Controllers\Features;
 
 use App\Http\Controllers\Controller as BaseController;
 

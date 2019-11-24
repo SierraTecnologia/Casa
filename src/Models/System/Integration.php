@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Models\System;
+namespace Casa\Models\System;
 
 /**
  * Class Responsável por separar acessos e regras de negócios.
@@ -13,7 +13,7 @@ namespace Siravel\Models\System;
  * -> Customer (Consumidor Final, pagando e adquirindo os produtos do cliente)
  */
 
-use Siravel\Models\Model; 
+use Casa\Models\Model; 
 
 class Integration extends Model
 {

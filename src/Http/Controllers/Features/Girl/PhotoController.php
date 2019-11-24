@@ -1,12 +1,12 @@
 <?php namespace App\Http\Controllers\Features\Girl;
 
 use App\Http\Controllers\AdminController;
-use SiFinder\Models\Digital\Midia\Photo;
-use SiFinder\Models\Digital\Midia\PhotoAlbum;
+use Casa\Models\Digital\Midia\Photo;
+use Casa\Models\Digital\Midia\PhotoAlbum;
 use App\Models\System\Language;
-use SiFinder\Http\Requests\Admin\PhotoRequest;
-use SiFinder\Http\Requests\Admin\DeleteRequest;
-use SiFinder\Http\Requests\Admin\ReorderRequest;
+use Casa\Http\Requests\Admin\PhotoRequest;
+use Casa\Http\Requests\Admin\DeleteRequest;
+use Casa\Http\Requests\Admin\ReorderRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use App\Helpers\Thumbnail;

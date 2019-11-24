@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Requests\Admin;
+namespace Casa\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 

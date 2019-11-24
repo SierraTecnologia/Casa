@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Requests\User;
+namespace Casa\Http\Requests\User;
 
 use Laravel\Socialite\Contracts\User as SocialUser;
 use Validator;

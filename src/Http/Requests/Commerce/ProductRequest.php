@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Requests\Commerce;
+namespace Casa\Http\Requests\Commerce;
 
 use App\Models\Commerce\Product;
 

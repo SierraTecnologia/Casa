@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Models\Entytys\Digital\Midia;
+namespace Casa\Models\Entytys\Digital\Midia;
 
 use SiObjects\Support\Traits\Models\ArchiveTrait;
 

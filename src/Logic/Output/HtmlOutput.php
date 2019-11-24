@@ -1,11 +1,11 @@
 <?php
-namespace SiFinder\Logic\Output;
+namespace Casa\Logic\Output;
 
 use League\Plates\Engine;
-use SiFinder\Logic\Analyser;
-use SiFinder\Logic\AnalysisResult;
-use SiFinder\Logic\Output\Html\FileHighlighter;
-use SiFinder\Logic\Output\Html\History;
+use Casa\Logic\Analyser;
+use Casa\Logic\AnalysisResult;
+use Casa\Logic\Output\Html\FileHighlighter;
+use Casa\Logic\Output\Html\History;
 use DateTime;
 use SplFileObject;
 
@@ -25,7 +25,7 @@ class HtmlOutput extends AbstractOutput implements TriggerableInterface
     public function result(AnalysisResult $result)
     {
         $this->cli->br();
-        $this->cli->inline('Writing HTML report in "./SiFinder\Logic/"... ');
+        $this->cli->inline('Writing HTML report in "./Casa\Logic/"... ');
         $history = new History($this->getOutputDirectory());
         $history->append($result);
         foreach ($result->toArray() as $filePath => $lines) {
@@ -136,7 +136,7 @@ class HtmlOutput extends AbstractOutput implements TriggerableInterface
      */
     protected function getOutputDirectory()
     {
-        $directory = $this->outputDirectory . '/SiFinder\Logic';
+        $directory = $this->outputDirectory . '/Casa\Logic';
 
         if (!file_exists($directory)) {
             mkdir($directory);

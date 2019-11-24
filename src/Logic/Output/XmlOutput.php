@@ -1,7 +1,7 @@
 <?php
-namespace SiFinder\Logic\Output;
+namespace Casa\Logic\Output;
 
-use SiFinder\Logic\AnalysisResult;
+use Casa\Logic\AnalysisResult;
 use Sabre\Xml\Writer;
 
 class XmlOutput extends AbstractOutput
@@ -35,7 +35,7 @@ class XmlOutput extends AbstractOutput
     protected function getSabreXmlArrayFor(AnalysisResult $result)
     {
         $sabreXmlArray = [
-            'SiFinder\Logic' => [],
+            'Casa\Logic' => [],
         ];
 
         foreach ($result->toArray() as $fileName => $lines) {
@@ -62,7 +62,7 @@ class XmlOutput extends AbstractOutput
                 ];
             }
 
-            $sabreXmlArray['SiFinder\Logic'][] = [
+            $sabreXmlArray['Casa\Logic'][] = [
                 'name' => 'file',
                 'value' => $linesForXml,
                 'attributes' => ['name' => $fileName],

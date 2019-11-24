@@ -1,10 +1,10 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Features\Manipule;
+namespace Casa\Http\Controllers\Features\Manipule;
 
 use Illuminate\Http\Request;
-use SiFinder\Actions\Action;
-use SiFinder\Models\Entytys\Digital\Bot\Runner;
+use Casa\Actions\Action;
+use Casa\Models\Entytys\Digital\Bot\Runner;
 
 class ActionController extends Controller
 {

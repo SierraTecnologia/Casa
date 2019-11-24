@@ -1,12 +1,12 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Components\Actors;
+namespace Casa\Http\Controllers\Components\Actors;
 
 use App\Models\User;
 use Carbon\Carbon;
-use SiFinder\Models\Features\Messenger\Message;
-use SiFinder\Models\Features\Messenger\Participant;
-use SiFinder\Models\Features\Messenger\Thread;
+use Casa\Models\Features\Messenger\Message;
+use Casa\Models\Features\Messenger\Participant;
+use Casa\Models\Features\Messenger\Thread;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use App\Phphub\Markdown\Markdown;
 use App\Jobs\SendNotifyMail;
-use SiFinder\Http\Requests\MessageRequest;
+use Casa\Http\Requests\MessageRequest;
 
 class MessagesController extends Controller
 {

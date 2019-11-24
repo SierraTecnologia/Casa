@@ -6,9 +6,9 @@
  * 2 -> User Log
  */
 
-namespace Siravel\Models\Actions\Log;
+namespace Casa\Models\Actions\Log;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Type extends Model
 {

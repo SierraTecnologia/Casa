@@ -1,10 +1,10 @@
 <?php
 
-namespace SiFinder\Http\Requests;
+namespace Casa\Http\Requests;
 
 use Auth;
 use Gate;
-use SiFinder\Models\Digital\Midia\Image;
+use Casa\Models\Digital\Midia\Image;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ImagesRequest extends FormRequest

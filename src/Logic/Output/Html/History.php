@@ -1,7 +1,7 @@
 <?php
-namespace SiFinder\Logic\Output\Html;
+namespace Casa\Logic\Output\Html;
 
-use SiFinder\Logic\AnalysisResult;
+use Casa\Logic\AnalysisResult;
 use SplFileObject;
 
 /**

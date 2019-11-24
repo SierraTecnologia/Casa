@@ -1,4 +1,4 @@
-<?php namespace SiFinder\Http\Middleware;
+<?php namespace Casa\Http\Middleware;
 
 use Carbon\Carbon;
 use Closure;

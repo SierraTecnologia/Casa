@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Entytys\Digital\Code;
+namespace Casa\Models\Entytys\Digital\Code;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Issue extends Model
 {
@@ -32,7 +32,7 @@ class Issue extends Model
 
     public function project()
     {
-        return $this->belongsTo('Siravel\Models\Entytys\Digital\Code\Project', 'code_project_id', 'id');
+        return $this->belongsTo('Casa\Models\Entytys\Digital\Code\Project', 'code_project_id', 'id');
     }
 
     

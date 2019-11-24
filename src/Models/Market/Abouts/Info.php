@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Market\Abouts;
+namespace Casa\Models\Market\Abouts;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Info extends Model
 {

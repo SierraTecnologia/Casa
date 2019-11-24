@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Requests;
+namespace Casa\Http\Requests;
 
 use App\Http\Rules\ReCaptchaRule;
 use Illuminate\Foundation\Http\FormRequest;
@@ -8,7 +8,7 @@ use Illuminate\Foundation\Http\FormRequest;
 /**
  * Class CreateAuthRequest.
  *
- * @package SiFinder\Http\Requests
+ * @package Casa\Http\Requests
  */
 class CreateAuthRequest extends FormRequest
 {

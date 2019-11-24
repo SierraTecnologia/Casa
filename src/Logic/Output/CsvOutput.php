@@ -1,8 +1,8 @@
 <?php
-namespace SiFinder\Logic\Output;
+namespace Casa\Logic\Output;
 
 use League\Csv\Writer;
-use SiFinder\Logic\AnalysisResult;
+use Casa\Logic\AnalysisResult;
 
 class CsvOutput extends AbstractOutput
 {

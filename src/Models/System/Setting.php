@@ -1,12 +1,12 @@
 <?php
 
-namespace Siravel\Models\System;
+namespace Casa\Models\System;
 
 use App\Models\User;
 
-use Siravel\Models\Model;
-use Siravel\Models\Identity\Actors\Business;
-use Siravel\Models\System\Language;
+use Casa\Models\Model;
+use Casa\Models\Identity\Actors\Business;
+use Casa\Models\System\Language;
 use SiObjects\Support\Traits\Models\EloquentGetTableNameTrait;
 
 class Setting extends Model

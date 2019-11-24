@@ -1,9 +1,9 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Admin;
+namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use SiFinder\Models\Market\Business\Collaborator;
+use Casa\Models\Market\Business\Collaborator;
 
 class CollaboratorController extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Features\Qa;
+namespace Casa\Models\Features\Qa;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Analyser extends Model
 {

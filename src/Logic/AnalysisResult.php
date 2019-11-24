@@ -1,7 +1,7 @@
 <?php
-namespace SiFinder\Logic;
+namespace Casa\Logic;
 
-use SiFinder\Logic\Output\Filter\OutputFilterInterface;
+use Casa\Logic\Output\Filter\OutputFilterInterface;
 
 /**
  * Code analysis result.

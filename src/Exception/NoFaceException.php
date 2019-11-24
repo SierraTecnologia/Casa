@@ -4,7 +4,7 @@
  * Throws exception if face was not detected in `faceDetect` call.
  */
 
-namespace SiFinder\Exception;
+namespace Casa\Exception;
 
 use Exception;
 

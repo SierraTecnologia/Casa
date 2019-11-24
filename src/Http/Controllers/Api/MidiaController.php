@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Api;
+namespace Casa\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Plugins\Integrations\SitecPayment\SitecPayment;

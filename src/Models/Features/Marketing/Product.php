@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Models\Features\Marketing;
+namespace Casa\Models\Features\Marketing;
 
 use App\Models\Model;
 use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
@@ -11,8 +11,8 @@ class Product extends Model
     use ComplexRelationamentTrait;
     
     protected static $COMPLEX_RELATIONAMENT_MODELS = [
-        \Siravel\Models\Entytys\Digital\Midia\Photo::class,
-        \Siravel\Models\Entytys\Digital\Midia\Video::class
+        \Casa\Models\Entytys\Digital\Midia\Photo::class,
+        \Casa\Models\Entytys\Digital\Midia\Video::class
     ];
 
     /**
@@ -62,7 +62,7 @@ class Product extends Model
      */
     public function girls()
     {
-        return $this->morphedByMany('Siravel\Models\Identity\Girl', 'skillable');
+        return $this->morphedByMany('Casa\Models\Identity\Girl', 'skillable');
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace SiFinder\Http\Controllers;
+namespace Casa\Http\Controllers;
 
 use Illuminate\Http\Request;
 

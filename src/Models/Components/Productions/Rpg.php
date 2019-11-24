@@ -1,8 +1,8 @@
 <?php
 
-namespace Siravel\Models\Components\Productions;
+namespace Casa\Models\Components\Productions;
 
-use Siravel\Models\Model;
+use Casa\Models\Model;
 
 class Rpg extends Production
 {

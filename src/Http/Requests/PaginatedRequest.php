@@ -1,13 +1,13 @@
 <?php
 
-namespace SiFinder\Http\Requests;
+namespace Casa\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * Class PaginatedRequest.
  *
- * @package SiFinder\Http\Requests
+ * @package Casa\Http\Requests
  */
 class PaginatedRequest extends FormRequest
 {

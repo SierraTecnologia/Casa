@@ -1,9 +1,9 @@
 <?php
 
-namespace SiFinder\Http\Controllers\Admin;
+namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use SiFinder\Models\Entytys\Digital\Infra\Ambiente;
+use Casa\Models\Entytys\Digital\Infra\Ambiente;
 
 class AmbienteController extends Controller
 {

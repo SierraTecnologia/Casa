@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Models\Features\Marketing;
+namespace Casa\Models\Features\Marketing;
 
 use App\Models\Model;
 use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
@@ -59,7 +59,7 @@ class Feature extends Model
      */
     public function girls()
     {
-        return $this->morphedByMany('Siravel\Models\Identity\Girl', 'skillable');
+        return $this->morphedByMany('Casa\Models\Identity\Girl', 'skillable');
     }
 
     /**

@@ -2,8 +2,8 @@
 
 namespace App\Http\Actions;
 
-use SiFinder\Http\Requests\ReCaptchaRequest;
-use SiFinder\Http\Resources\SubscriptionPlainResource;
+use Casa\Http\Requests\ReCaptchaRequest;
+use Casa\Http\Resources\SubscriptionPlainResource;
 use App\Models\Contracts\SubscriptionManager;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\JsonResponse;
