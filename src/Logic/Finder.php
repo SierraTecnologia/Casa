@@ -2,7 +2,7 @@
 
 namespace Casa\Logic;
 
-use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\Finder as FinderBase;
 
 use Casa\Logic\Output\AbstractOutput;
 use Casa\Logic\Output\Filter\OutputFilterInterface;
@@ -12,7 +12,7 @@ use Casa\Logic\Output\TriggerableInterface;
  * Run all script analysers and outputs their result.
  * @package qa
  */
-class Analyser
+class Finder
 {
     const EVENT_STARTING_ANALYSIS = 0;
     const EVENT_STARTING_TOOL = 1;
