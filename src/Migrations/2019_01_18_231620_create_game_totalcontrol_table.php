@@ -20,34 +20,19 @@ class CreateGameTotalControlTable extends Migration
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
 			$table->string('name', 255)->nullable();
-			$table->string('description', 255)->nullable();
-			$table->string('date_estimated', 255)->nullable();
-			$table->integer('done')->default(0);
-			$table->string('taskable_id')->nullable();
+			$table->integer('taskable_id')->nullable();
 			$table->string('taskable_type', 255)->nullable();
 			$table->timestamps();
             $table->softDeletes();
 		});
 
 
-		/**
-		 * Veiculo Type
-		 */
-		Schema::create('vehicle_type', function (Blueprint $table) {
-			$table->engine = 'InnoDB';
-			$table->increments('id')->unsigned();
-			$table->string('name', 255)->nullable();
-			$table->string('description', 255)->nullable();
-			$table->timestamps();
-            $table->softDeletes();
-		});
-
 
 		Schema::create('displacements', function (Blueprint $table) {
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
-			$table->string('name', 255)->nullable();
-			$table->string('description', 255)->nullable();
+			$table->string('username', 255)->nullable();
+			$table->string('email')->nullable();
 			$table->integer('status')->nullable();
 			$table->integer('integration_id')->nullable();
 			$table->timestamps();
@@ -58,7 +43,7 @@ class CreateGameTotalControlTable extends Migration
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
 			$table->boolean('is_sincronizado')->default(false);
-			$table->string('displacementable_id');
+			$table->integer('displacementable_id');
 			$table->string('displacementable_type', 255);
 
             $table->integer('displacement_id')->nullable();
@@ -76,8 +61,7 @@ class CreateGameTotalControlTable extends Migration
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
 			$table->string('name', 255)->nullable();
-			$table->string('description', 255)->nullable();
-			$table->string('routinable_id')->nullable();
+			$table->unsignedInteger('routinable_id')->nullable();
 			$table->string('routinable_type', 255)->nullable();
 			$table->timestamps();
             $table->softDeletes();
@@ -94,42 +78,13 @@ class CreateGameTotalControlTable extends Migration
             $table->softDeletes();
 		});
 
-		/**
-		 * Financeiro
-		 */
-		Schema::create('banks', function (Blueprint $table) {
-			$table->engine = 'InnoDB';
-			$table->increments('id')->unsigned();
-			$table->string('bank', 255);
-			$table->string('name', 255)->nullable();
-			$table->string('description', 255)->nullable();
-			$table->string('number', 255)->nullable();
-			$table->timestamps();
-            $table->softDeletes();
-		});
-        
-		Schema::create('bankables', function (Blueprint $table) {
-			$table->engine = 'InnoDB';
-			$table->increments('id')->unsigned();
-			$table->string('agencia', 255)->nullable();
-			$table->string('conta', 255)->nullable();
-			$table->decimal('saldo', 8, 2)->nullable();
-			$table->string('bankable_id');
-			$table->string('bankable_type', 255);
-
-            $table->unsignedInteger('bank_id')->nullable();
-            // $table->foreign('bank_id')->references('id')->on('banks');
-			$table->timestamps();
-            $table->softDeletes();
-		});
-
 
 		Schema::create('transfers', function (Blueprint $table) {
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
 			$table->string('money_code')->default('BRL');
 			$table->decimal('amount', 8, 2);
-			$table->string('transferable_id');
+			$table->unsignedInteger('transferable_id');
 			$table->string('transferable_type', 255);
 			$table->timestamps();
             $table->softDeletes();
@@ -137,9 +92,9 @@ class CreateGameTotalControlTable extends Migration
 		Schema::create('rendas', function (Blueprint $table) {
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
-			$table->string('description', 255)->nullable();
+			$table->string('descriptions', 255)->nullable();
 			$table->decimal('value');
-			$table->string('rendable_id')->nullable();
+			$table->unsignedInteger('rendable_id')->nullable();
 			$table->string('rendable_type', 255)->nullable();
 			$table->timestamps();
             $table->softDeletes();
@@ -147,9 +102,9 @@ class CreateGameTotalControlTable extends Migration
 		Schema::create('gastos', function (Blueprint $table) {
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
-			$table->string('description', 255)->nullable();
+			$table->string('descriptions', 255)->nullable();
 			$table->decimal('value');
-			$table->string('gastoable_id')->nullable();
+			$table->unsignedInteger('gastoable_id')->nullable();
 			$table->string('gastoable_type', 255)->nullable();
 			$table->timestamps();
             $table->softDeletes();
