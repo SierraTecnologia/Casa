@@ -12,7 +12,7 @@
 
 namespace Casa\Models\Actions\Calendar;
 
-use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
+use Informate\Traits\ComplexRelationamentTrait;
 use Casa\Models\Model;
 
 use Illuminate\Support\Facades\Log;

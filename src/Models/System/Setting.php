@@ -7,7 +7,7 @@ use App\Models\User;
 use Casa\Models\Model;
 use Casa\Models\Identity\Actors\Business;
 use Casa\Models\System\Language;
-use SiObjects\Support\Traits\Models\EloquentGetTableNameTrait;
+use Informate\Traits\EloquentGetTableNameTrait;
 
 class Setting extends Model
 {

@@ -3,7 +3,7 @@
 namespace Casa\Models\Market\Actors;
 
 use Casa\Models\Model;
-use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
+use Informate\Traits\ComplexRelationamentTrait;
 
 class Bank extends Model
 {
