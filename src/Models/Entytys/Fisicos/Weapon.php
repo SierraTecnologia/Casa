@@ -3,7 +3,7 @@
 namespace Casa\Models\Entytys\Fisicos;
 
 use Casa\Models\Model;
-use SiObjects\Support\Traits\Models\AsFofocavel;
+use Informate\Traits\AsFofocavel;
 
 class Weapon extends Model
 {

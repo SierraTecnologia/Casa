@@ -3,7 +3,7 @@
 namespace Casa\Models\Market\Informacao;
 
 use Casa\Models\Model;
-use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
+use Informate\Traits\ComplexRelationamentTrait;
 use Casa\Models\Entytys\Category\BibliotecaType;
 
 class Biblioteca extends Model

@@ -3,8 +3,8 @@
 namespace Casa\Models\Features\Qa;
 
 use Casa\Models\Model;
-use SiObjects\Support\Traits\Models\EloquentGetTableNameTrait;
-use SiObjects\Support\Traits\Models\ComplexRelationamentInTrait;
+use Informate\Traits\EloquentGetTableNameTrait;
+use Informate\Traits\ComplexRelationamentInTrait;
 
 class AnalyzerResult extends Model
 {

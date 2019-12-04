@@ -5,9 +5,9 @@ namespace Casa\Models\Identity\Location;
 use SiObjects\Manipule\Builders\LocationBuilder;
 use Casa\Contants\Tables;
 use Casa\Features\Photos\Entities\LocationEntity;
-use SiObjects\ValueObjects\Coordinates;
-use SiObjects\ValueObjects\Latitude;
-use SiObjects\ValueObjects\Longitude;
+use Informate\ValueObjects\Coordinates;
+use Informate\ValueObjects\Latitude;
+use Informate\ValueObjects\Longitude;
 use Casa\Models\Model;
 use Illuminate\Support\Str;
 

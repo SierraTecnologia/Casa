@@ -12,7 +12,7 @@
 
 namespace Casa\Models\Entytys\Digital\Bot;
 
-use SiObjects\Support\Traits\Models\ComplexRelationamentTrait;
+use Informate\Traits\ComplexRelationamentTrait;
 use Casa\Models\Model;
 use Casa\Actions\Action;
 use Illuminate\Support\Facades\Log;
