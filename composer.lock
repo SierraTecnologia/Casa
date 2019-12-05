@@ -6081,7 +6081,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "c209858db2820615a4299ea375fc0a6876af0af1"
+                "reference": "f8d520c30b26a861c6eb35f6fea7f7aea4c7ff2e"
             },
             "require": {
                 "cache/filesystem-adapter": "^1.0",
