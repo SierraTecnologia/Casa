@@ -2,7 +2,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCasaFinancesTablesTable extends Migration
+class CreateCasaFinancesTables extends Migration
 {
 
 	/**

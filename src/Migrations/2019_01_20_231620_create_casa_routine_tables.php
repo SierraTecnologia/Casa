@@ -2,7 +2,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCasaRoutineTablesTable extends Migration
+class CreateCasaRoutineTables extends Migration
 {
 
 	/**
