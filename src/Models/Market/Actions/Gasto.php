@@ -16,6 +16,8 @@ class Gasto extends Model
     protected $fillable = [
         'description',
         'value',
+        'init',
+        'end',
     ];
 
     protected $mappingProperties = array(
