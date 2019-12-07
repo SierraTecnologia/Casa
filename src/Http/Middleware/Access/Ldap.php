@@ -1,4 +1,6 @@
-<?php namespace Casa\Models\Access;
+<?php
+
+namespace Casa\Models\Access;
 
 /**
  * Class Ldap

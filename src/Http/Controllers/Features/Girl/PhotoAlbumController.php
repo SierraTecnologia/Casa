@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers\Features\Girl;
+<?php
+
+namespace App\Http\Controllers\Features\Girl;
 
 use Casa\Models\Digital\Midia\PhotoAlbum;
 use Casa\Models\Digital\Midia\Photo;

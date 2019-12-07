@@ -1,4 +1,6 @@
-<?php namespace Casa\Http\Requests\Admin;
+<?php
+
+namespace Casa\Http\Requests\Admin;
 
 use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;

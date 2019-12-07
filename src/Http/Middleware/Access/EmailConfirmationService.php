@@ -1,4 +1,6 @@
-<?php namespace Casa\Models\Access;
+<?php
+
+namespace Casa\Models\Access;
 
 use App\Models\User;
 use Casa\Models\UserRepo;

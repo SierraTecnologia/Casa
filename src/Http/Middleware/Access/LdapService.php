@@ -1,4 +1,6 @@
-<?php namespace Casa\Models\Access;
+<?php
+
+namespace Casa\Models\Access;
 
 use Casa\Models\Access;
 use Casa\Models\Role;
