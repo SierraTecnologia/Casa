@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Features\Girl;
 
-use Casa\Models\Digital\Midia\PhotoAlbum;
-use Casa\Models\Digital\Midia\Photo;
+use Informate\Models\Entytys\Digital\Midia\PhotoAlbum;
+use Informate\Models\Entytys\Digital\Midia\Photo;
 use App\Models\System\Language;
 use App\Http\Controllers\GirlController;
 use Casa\Http\Requests\Admin\PhotoAlbumRequest;

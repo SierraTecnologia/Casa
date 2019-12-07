@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Entytys\Digital\Code\Commit;
+use Informate\Models\Entytys\Digital\Code\Commit;
 
 class CommitController extends Controller
 {

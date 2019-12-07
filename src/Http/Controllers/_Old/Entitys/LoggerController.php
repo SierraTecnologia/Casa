@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Entytys\Digital\Infra\Logger;
+use Informate\Models\Entytys\Digital\Infra\Logger;
 
 class LoggerController extends Controller
 {

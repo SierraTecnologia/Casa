@@ -4,7 +4,7 @@ namespace Casa\Http\Controllers\Features\Manipule;
 
 use Illuminate\Http\Request;
 use Casa\Actions\Action;
-use Casa\Models\Entytys\Digital\Bot\Runner;
+use Informate\Models\Entytys\Digital\Bot\Runner;
 
 class ActionController extends Controller
 {

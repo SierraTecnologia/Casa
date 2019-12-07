@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Entytys\Digital\Infra\Computer;
+use Informate\Models\Entytys\Digital\Infra\Computer;
 
 class ComputerController extends Controller
 {

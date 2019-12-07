@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Entytys\Digital\Bot\Runner;
+use Informate\Models\Entytys\Digital\Bot\Runner;
 
 class RunnerController extends Controller
 {

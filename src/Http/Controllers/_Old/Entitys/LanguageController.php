@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Entytys\Digital\Code\Language;
+use Informate\Models\Entytys\Digital\Code\Language;
 
 class LanguageController extends Controller
 {

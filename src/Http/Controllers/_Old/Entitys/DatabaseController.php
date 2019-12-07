@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Entytys\Digital\Infra\Database;
+use Informate\Models\Entytys\Digital\Infra\Database;
 
 class DatabaseController extends Controller
 {

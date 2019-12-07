@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Entytys\Digital\Code\Project;
+use Informate\Models\Entytys\Digital\Code\Project;
 
 class ProjectController extends Controller
 {
