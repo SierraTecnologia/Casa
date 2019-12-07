@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Market\Business\Sector;
+use Population\Models\Market\Business\Sector;
 
 class SectorController extends Controller
 {
