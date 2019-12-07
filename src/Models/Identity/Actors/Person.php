@@ -3,7 +3,7 @@
 namespace Casa\Models\Identity\Actors;
 
 use Casa\Models\Model;
-use Informate\Traits\AsHuman;
+use Population\Traits\AsHuman;
 
 class Person extends Model
 {
