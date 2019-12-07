@@ -20,6 +20,9 @@ class CreateCasaTaskTables extends Migration
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
 			$table->string('name', 255)->nullable();
+			$table->string('description', 255)->nullable();
+			$table->string('date_estimated', 255)->nullable();
+			$table->string('done', 255)->nullable();
 			$table->string('taskable_id')->nullable();
 			$table->string('taskable_type', 255)->nullable();
 			$table->timestamps();
