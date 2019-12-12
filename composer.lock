@@ -4561,6 +4561,54 @@
             "time": "2019-09-04T19:28:20+00:00"
         },
         {
+            "name": "madewithlove/illuminate-psr-cache-bridge",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madewithlove/illuminate-psr-cache-bridge.git",
+                "reference": "489c6cd856b133edf986387712922c0dc2223d26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madewithlove/illuminate-psr-cache-bridge/zipball/489c6cd856b133edf986387712922c0dc2223d26",
+                "reference": "489c6cd856b133edf986387712922c0dc2223d26",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^5.0",
+                "php": ">=5.6.0",
+                "psr/cache": "^1.0"
+            },
+            "provide": {
+                "psr/cache-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "cache/integration-tests": "^0.16.0",
+                "illuminate/cache": "^5.0",
+                "nesbot/carbon": "^1.3.0",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Madewithlove\\IlluminatePsrCacheBridge\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "Bridge",
+                "adapter",
+                "cache",
+                "implementation",
+                "laravel",
+                "psr-6"
+            ],
+            "time": "2019-07-01T06:39:22+00:00"
+        },
+        {
             "name": "maennchen/zipstream-php",
             "version": "1.2.0",
             "source": {
@@ -9696,7 +9744,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "489ea7776829fa6b3133bb5e6226c90f68ba34d3"
+                "reference": "532a82352fdc9236203694ba4dbb2ce9d6ce0d81"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -9805,7 +9853,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "825be821a6523a9c22dc664d11c9d41ededb4a26"
+                "reference": "123f649aa5f05826c6380b0a8d2bf7d0d564e5af"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -9994,7 +10042,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "629bde5c7b9f46db06cb28fdc70f204b3edd0c8f"
+                "reference": "c0c034616c8d09c53e426340294435ed065a7375"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
@@ -10005,6 +10053,7 @@
                 "phpmetrics/phpmetrics": "*",
                 "rokde/laravel-slow-query-logger": "*",
                 "sierratecnologia/audit": "dev-master",
+                "spatie/laravel-analytics": "^3.7",
                 "wnx/laravel-stats": "*"
             },
             "type": "library",
@@ -10334,6 +10383,73 @@
                 "user"
             ],
             "time": "2019-10-15T07:39:07+00:00"
+        },
+        {
+            "name": "spatie/laravel-analytics",
+            "version": "3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-analytics.git",
+                "reference": "4ac45abeaf68c3bb928154737ac257b004615a82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-analytics/zipball/4ac45abeaf68c3bb928154737ac257b004615a82",
+                "reference": "4ac45abeaf68c3bb928154737ac257b004615a82",
+                "shasum": ""
+            },
+            "require": {
+                "google/apiclient": "^2.0",
+                "laravel/framework": "~5.8.0",
+                "madewithlove/illuminate-psr-cache-bridge": "^1.0",
+                "nesbot/carbon": "^1.21 | ^2.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "league/flysystem": ">=1.0.8",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~3.8.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Analytics\\AnalyticsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Analytics": "Spatie\\Analytics\\AnalyticsFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Analytics\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://murze.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel 5 package to retrieve Google Analytics data.",
+            "homepage": "https://github.com/spatie/laravel-analytics",
+            "keywords": [
+                "analytics",
+                "google",
+                "laravel",
+                "reports",
+                "retrieve",
+                "spatie"
+            ],
+            "time": "2019-02-27T16:25:09+00:00"
         },
         {
             "name": "spatie/laravel-medialibrary",
