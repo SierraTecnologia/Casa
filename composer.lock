@@ -4165,16 +4165,16 @@
         },
         {
             "name": "lesstif/php-jira-rest-client",
-            "version": "1.41.0",
+            "version": "1.42.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lesstif/php-jira-rest-client.git",
-                "reference": "12e0e7c4723eb2d5952e8360c35c955fa64d1cf5"
+                "reference": "c319cfd46623147776feb974cfbde6bddee316ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lesstif/php-jira-rest-client/zipball/12e0e7c4723eb2d5952e8360c35c955fa64d1cf5",
-                "reference": "12e0e7c4723eb2d5952e8360c35c955fa64d1cf5",
+                "url": "https://api.github.com/repos/lesstif/php-jira-rest-client/zipball/c319cfd46623147776feb974cfbde6bddee316ee",
+                "reference": "c319cfd46623147776feb974cfbde6bddee316ee",
                 "shasum": ""
             },
             "require": {
@@ -4182,7 +4182,7 @@
                 "ext-json": "*",
                 "monolog/monolog": "~1.12",
                 "netresearch/jsonmapper": "~0.11|^1.0",
-                "php": ">=5.5.9",
+                "php": ">=5.6.9",
                 "vlucas/phpdotenv": "~1.0|~2.0|^3.0"
             },
             "require-dev": {
@@ -4211,7 +4211,7 @@
                 {
                     "name": "KwangSeob Jeong",
                     "email": "lesstif@gmail.com",
-                    "homepage": "http://lesstif.com/"
+                    "homepage": "https://lesstif.com/"
                 }
             ],
             "description": "JIRA REST API Client for PHP Users.",
@@ -4221,7 +4221,7 @@
                 "jira-rest",
                 "rest"
             ],
-            "time": "2019-07-30T12:31:28+00:00"
+            "time": "2019-12-12T04:16:15+00:00"
         },
         {
             "name": "longman/telegram-bot",
@@ -9696,7 +9696,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "273a38934325e9fbf7055e7f592ffd78de404f05"
+                "reference": "489ea7776829fa6b3133bb5e6226c90f68ba34d3"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -9805,7 +9805,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "9892ddefa0db51b81ceb436b68b2a98f302f2bfe"
+                "reference": "825be821a6523a9c22dc664d11c9d41ededb4a26"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -9994,7 +9994,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "d7fb5df0777a9d618172f39f3ad6e5f13fa0e98d"
+                "reference": "629bde5c7b9f46db06cb28fdc70f204b3edd0c8f"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
