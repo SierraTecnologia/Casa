@@ -4,7 +4,7 @@ namespace Casa\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
-use SiObject\Http\Middleware\Analytics;
+use SiObjects\Http\Middleware\Analytics;
 use Casa\Http\Middleware\isAjax;
 
 class CasaRouteProvider extends ServiceProvider
