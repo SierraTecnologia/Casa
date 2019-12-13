@@ -4,8 +4,8 @@ namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use Casa\Models\Role;
-use Casa\Models\Customer;
+use App\Models\Role;
+use App\Models\Customer;
 use Auth;
 
 class UserController extends Controller

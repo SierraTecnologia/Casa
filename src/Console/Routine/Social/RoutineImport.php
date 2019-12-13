@@ -3,10 +3,10 @@
 namespace Casa\Console\Routine\Social;
 
 use Illuminate\Console\Command;
-use Casa\Models\MediaSend;
-use Casa\Models\MediaEmail;
-use Casa\Models\MediaPush;
-use Casa\Models\Company;
+use App\Models\MediaSend;
+use App\Models\MediaEmail;
+use App\Models\MediaPush;
+use App\Models\Company;
 use App\Models\User;
 use SendGrid;
 use Casa\Http\Controllers\Api\Controller;

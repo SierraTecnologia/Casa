@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\System\Setting;
+use App\Models\System\Setting;
 
 class SettingController extends Controller
 {

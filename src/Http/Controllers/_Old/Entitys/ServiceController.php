@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Casa\Models\Components\Integrations\Service;
+use Population\Models\Components\Integrations\Service;
 
 class ServiceController extends Controller
 {

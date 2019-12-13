@@ -2,11 +2,11 @@
 
 namespace Casa\Models\Access;
 
-use Casa\Models\Access;
-use Casa\Models\Role;
+use App\Models\Access;
+use App\Models\Role;
 use App\Models\User;
-use Casa\Models\UserRepo;
-use Casa\Exceptions\LdapException;
+use Population\Models\Components\Book\Auth\UserRepo;
+use SiUtils\Exceptions\LdapException;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -27,7 +27,7 @@ class LdapService
     /**
      * LdapService constructor.
      * @param Ldap $ldap
-     * @param \App\Models\UserRepo $userRepo
+     * @param \Population\Models\Components\Book\Auth\UserRepo $userRepo
      */
     public function __construct(Access\Ldap $ldap, UserRepo $userRepo)
     {
