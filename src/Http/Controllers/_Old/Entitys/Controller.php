@@ -4,7 +4,7 @@ namespace Casa\Http\Controllers\Admin;
 
 use Response;
 use Casa\Http\Controllers\Controller as BaseController;
-use Illuminate\Support\Facades\Log;
+use Log;
 
 class Controller extends BaseController
 {
