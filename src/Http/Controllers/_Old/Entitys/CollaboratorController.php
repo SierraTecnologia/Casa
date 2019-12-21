@@ -3,7 +3,7 @@
 namespace Casa\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Population\Models\Market\Business\Collaborator;
+use Population\Models\Identity\Actors\Business\Collaborator;
 
 class CollaboratorController extends Controller
 {
