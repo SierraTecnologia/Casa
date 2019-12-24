@@ -2,13 +2,30 @@
 
 namespace Casa;
 
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\View;
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
+use Casa\Services\CasaService;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\View;
+
+use Log;
+use App;
+use Config;
+
+use Support\ClassesHelpers\Traits\Models\ConsoleTools;
+
+use Casa\Facades\Casa as CasaFacade;
+use Illuminate\Contracts\Events\Dispatcher;
+use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 class CasaProvider extends ServiceProvider
 {
+    use ConsoleTools;
+
+    public static $aliasProviders = [
+        'Casa' => \Casa\Facades\Casa::class,
+    ];
+
     public static $providers = [
         // \Casa\Providers\CasaEventServiceProvider::class,
         // \Casa\Providers\CasaServiceProvider::class,
@@ -22,20 +39,19 @@ class CasaProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->publishes([
-        //     __DIR__.'/Publishes/resources/tools' => base_path('resources/tools'),
-        //     __DIR__.'/Publishes/app/Services' => app_path('Services'),
-        //     __DIR__.'/Publishes/public/js' => base_path('public/js'),
-        //     __DIR__.'/Publishes/public/css' => base_path('public/css'),
-        //     __DIR__.'/Publishes/public/img' => base_path('public/img'),
-        //     __DIR__.'/Publishes/config' => base_path('config'),
-        //     __DIR__.'/Publishes/routes' => base_path('routes'),
-        //     __DIR__.'/Publishes/app/Controllers' => app_path('Http/Controllers/Casa'),
-        // ]);
-
-        // $this->publishes([
-        //     __DIR__.'../resources/views' => base_path('resources/views/vendor/Casa'),
-        // ], 'SierraTecnologia Casa');
+        
+        $events->listen(BuildingMenu::class, function (BuildingMenu $event) {
+            $event->menu->add('Casa');
+            $event->menu->add([
+                'text'    => 'Casa',
+                'icon'    => 'cog',
+                'nivel' => \App\Models\Role::$GOOD,
+                'submenu' => \Casa\Services\MenuService::getAdminMenu(),
+            ]);
+        });
+        
+        // Register configs, migrations, etc
+        $this->registerDirectories();
     }
 
     /**
@@ -43,36 +59,98 @@ class CasaProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom($this->getPublishesPath('config/sitec/casa.php'), 'sitec.casa');
+        
+
         $this->setProviders();
 
-        // // View namespace
-        // $this->loadViewsFrom(__DIR__.'/Views', 'Casa');
 
-        // if (is_dir(base_path('resources/Casa'))) {
-        //     $this->app->view->addNamespace('Casa-frontend', base_path('resources/Casa'));
-        // } else {
-        //     $this->app->view->addNamespace('Casa-frontend', __DIR__.'/Publishes/resources/Casa');
-        // }
 
-        $this->loadMigrationsFrom(__DIR__.'/Migrations');
+        // Register Migrations
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
-        // // Configs
-        // $this->app->config->set('Casa.modules.Casa', include(__DIR__.'/config.php'));
+        $loader = AliasLoader::getInstance();
+        $loader->alias('Casa', CasaFacade::class);
+
+        $this->app->singleton('casa', function () {
+            return new Casa();
+        });
 
         /*
         |--------------------------------------------------------------------------
-        | Register the Commands
+        | Register the Utilities
         |--------------------------------------------------------------------------
         */
+        /**
+         * Singleton Casa
+         */
+        $this->app->singleton(CasaService::class, function($app)
+        {
+            Log::info('Singleton Casa');
+            return new CasaService(config('sitec.casa'));
+        });
 
-        $this->commands([]);
+        // Register commands
+        $this->registerCommandFolders([
+            base_path('vendor/sierratecnologia/casa/src/Console/Commands') => '\Casa\Console\Commands',
+        ]);
     }
 
-    private function setProviders()
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
     {
-        (new Collection(self::$providers))->map(function ($provider) {
-            $this->app->register($provider);
-        });
+        return [
+            'casa',
+        ];
+    }
+
+    /**
+     * Register configs, migrations, etc
+     *
+     * @return void
+     */
+    public function registerDirectories()
+    {
+        // Publish config files
+        $this->publishes([
+            // Paths
+            $this->getPublishesPath('config/sitec') => config_path('sitec'),
+        ], ['config',  'sitec', 'sitec-config']);
+
+        // // Publish casa css and js to public directory
+        // $this->publishes([
+        //     $this->getDistPath('casa') => public_path('assets/casa')
+        // ], ['public',  'sitec', 'sitec-public']);
+
+        $this->loadViews();
+        $this->loadTranslations();
+
+    }
+
+    private function loadViews()
+    {
+        // View namespace
+        $viewsPath = $this->getResourcesPath('views');
+        $this->loadViewsFrom($viewsPath, 'casa');
+        $this->publishes([
+            $viewsPath => base_path('resources/views/vendor/casa'),
+        ], ['views',  'sitec', 'sitec-views']);
+
+    }
+    
+    private function loadTranslations()
+    {
+        // Publish lanaguage files
+        $this->publishes([
+            $this->getResourcesPath('lang') => resource_path('lang/vendor/casa')
+        ], ['lang',  'sitec', 'sitec-lang', 'translations']);
+
+        // Load translations
+        $this->loadTranslationsFrom($this->getResourcesPath('lang'), 'casa');
     }
 
 }

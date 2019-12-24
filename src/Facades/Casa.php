@@ -4,7 +4,7 @@ namespace Casa\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Activity extends Facade
+class Casa extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class Activity extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'activity';
+        return 'casa';
     }
 }
