@@ -52,6 +52,28 @@ class CasaProvider extends ServiceProvider
         
         // Register configs, migrations, etc
         $this->registerDirectories();
+
+        $this->app->booted(function () {
+            $this->routes();
+        });
+    }
+
+    /**
+     * Register the tool's routes.
+     *
+     * @return void
+     */
+    protected function routes()
+    {
+        if ($this->app->routesAreCached()) {
+            return;
+        }
+
+        Route::group([
+            'namespace' => '\Casa\Http\Controllers',
+        ], function ($router) {
+            require __DIR__.'/Routes/web.php';
+        });
     }
 
     /**
