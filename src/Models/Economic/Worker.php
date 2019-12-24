@@ -16,6 +16,7 @@ class Worker extends Base
         'name',
         'time', // im segundos
         'init', // im segundos
+        'obs', // im segundos
     ];
 
     protected $mappingProperties = array(

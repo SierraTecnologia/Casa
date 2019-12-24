@@ -30,7 +30,8 @@ class CreateCasaRoutineTables extends Migration
 			$table->increments('id')->unsigned();
 			$table->string('name', 255)->nullable();
 			$table->string('init', 255)->nullable();
-			$table->string('time', 255)->nullable();
+			$table->integer('time');
+			$table->string('obs', 255)->nullable();
 			$table->string('workerable_id')->nullable();
 			$table->string('workerable_type', 255)->nullable();
 			$table->timestamps();
