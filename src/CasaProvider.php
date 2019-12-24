@@ -37,7 +37,7 @@ class CasaProvider extends ServiceProvider
     /**
      * Alias the services in the boot.
      */
-    public function boot()
+    public function boot(Dispatcher $events)
     {
         
         $events->listen(BuildingMenu::class, function (BuildingMenu $event) {
