@@ -10,7 +10,7 @@ class MenuService
         $casa = [];
         $casa[] = [
             'text'        => 'Casa',
-            'url'         => '', //route('casa.analytics'),
+            'route'       => 'casa.home',
             'icon'        => 'dashboard',
             'icon_color'  => 'blue',
             'label_color' => 'success',

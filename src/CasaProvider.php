@@ -55,9 +55,10 @@ class CasaProvider extends ServiceProvider
         // Register configs, migrations, etc
         $this->registerDirectories();
 
-        $this->app->booted(function () {
-            $this->routes();
-        });
+        // // COloquei no register pq nao tava reconhecendo as rotas para o adminlte
+        // $this->app->booted(function () {
+        //     $this->routes();
+        // });
     }
 
     /**
@@ -85,10 +86,8 @@ class CasaProvider extends ServiceProvider
     {
         $this->mergeConfigFrom($this->getPublishesPath('config/sitec/casa.php'), 'sitec.casa');
         
-
         $this->setProviders();
-
-
+        $this->routes();
 
         // Register Migrations
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
