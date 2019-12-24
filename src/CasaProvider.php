@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\View;
 use Log;
 use App;
 use Config;
+use Route;
+use Illuminate\Routing\Router;
 
 use Support\ClassesHelpers\Traits\Models\ConsoleTools;
 
