@@ -10,6 +10,7 @@ use Siravel\Services\Normalizer;
 use Informate\Traits\Translatable;
 use Log;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Informate\Models\System\Archive;
 
 class AcaoHumana extends BaseModel
 {
