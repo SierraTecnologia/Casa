@@ -1,11 +1,11 @@
 <?php
 
-namespace Casa\Models\Economic;
+namespace Casa\Models\Historic;
 
 use Support\Models\Base;
 use Informate\Traits\ComplexRelationamentTrait;
 
-class Gasto extends Base
+class Saldo extends Base
 {
 
     /**
@@ -15,10 +15,9 @@ class Gasto extends Base
      */
     protected $fillable = [
         'description',
-        'obs',
         'value',
-        'payment_type_id',
         'date',
+        'local_id',
     ];
 
     protected $mappingProperties = array(
@@ -30,6 +29,14 @@ class Gasto extends Base
             'type' => 'string',
             "analyzer" => "standard",
         ],
+        'date' => [
+            'type' => 'string',
+            "analyzer" => "standard",
+        ],
+        'local_id' => [
+            'type' => 'string',
+            "analyzer" => "standard",
+        ],
     );
     
     /**
@@ -37,7 +44,7 @@ class Gasto extends Base
      */
     public function persons()
     {
-        return $this->morphedByMany('Population\Models\Identity\Actors\Person', 'gastoable');
+        return $this->morphedByMany('Population\Models\Identity\Actors\Person', 'saldoable');
     }
 
     /**
@@ -45,6 +52,6 @@ class Gasto extends Base
      */
     public function users()
     {
-        return $this->morphedByMany('App\Models\User', 'gastoable');
+        return $this->morphedByMany('App\Models\User', 'saldoable');
     }
 }

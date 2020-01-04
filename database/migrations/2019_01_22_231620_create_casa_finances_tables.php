@@ -39,11 +39,33 @@ class CreateCasaFinancesTables extends Migration
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
 			$table->string('description', 255)->nullable();
+
 			$table->decimal('value');
-			$table->string('init', 30)->nullable();
-			$table->string('end', 30)->nullable();
+			$table->string('date', 30)->nullable();
+
 			$table->string('gastoable_id')->nullable();
 			$table->string('gastoable_type', 255)->nullable();
+
+			$table->string('obs', 255)->nullable();
+			$table->timestamps();
+            $table->softDeletes();
+		});
+
+		/**
+		 * Historic
+		 */
+
+		Schema::create('saldos', function (Blueprint $table) {
+			$table->engine = 'InnoDB';
+			$table->increments('id')->unsigned();
+			$table->string('description', 255)->nullable();
+			$table->decimal('value');
+			$table->string('date', 30)->nullable();
+			$table->string('local_id', 30)->nullable();
+			$table->string('saldoable_id')->nullable();
+			$table->string('saldoable_type', 255)->nullable();
+
+			$table->string('obs', 255)->nullable();
 			$table->timestamps();
             $table->softDeletes();
 		});
