@@ -5,7 +5,7 @@
 
 namespace Casa\Models\Calendar;
 
-use App\Models\CmsModel as BaseModel;
+use Support\Models\Base as BaseModel;
 use Siravel\Services\Normalizer;
 use Informate\Traits\Translatable;
 use Log;
