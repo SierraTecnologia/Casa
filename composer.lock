@@ -11832,7 +11832,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "a730752aa4e353f5576e16545c84cc93c66d3aa2"
+                "reference": "947378a9ba24005e7c72ab699bcae704eb90c22c"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
