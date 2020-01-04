@@ -4,7 +4,7 @@ namespace Casa\Models\Economic;
 
 use Support\Models\Base;
 
-class Worker extends Base
+class Routine extends Base
 {
 
     /**
@@ -39,9 +39,9 @@ class Worker extends Base
     );
 
     /**
-     * Get all of the owning workerable models.
+     * Get all of the owning routineable models.
      */
-    public function workerable()
+    public function routineable()
     {
         return $this->morphTo();
     }
