@@ -22,7 +22,7 @@ class AcaoHumana extends BaseModel
 
     protected $guarded = [];
 
-    public static $rules = [
+    public $rules = [
         'title' => 'required',
     ];
 
