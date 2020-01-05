@@ -44,39 +44,4 @@ class Estimate extends Base
         'stage'
     ];
 
-    public function usingAction(Action $action)
-    {
-        $this->action = $action;
-        return $this;
-    }
-
-    public function usingTarget(Model $target)
-    {
-        $this->target = $target;
-        return $this;
-    }
-
-    public function prepare()
-    {
-        return $this;
-    }
-
-    /**
-     * 
-     */
-    public function execute()
-    {
-        if (!is_null($this->id)){
-            $this->save();
-        }
-        $this->worker = $this->action->getClassWithParams($this->target);
-        $this->worker->execute();
-        return $this;
-    }
-
-    public function run()
-    {
-        return $this->execute();
-    }
-
 }
