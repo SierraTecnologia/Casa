@@ -11958,7 +11958,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "31f7c10b4fba91a4fb8288d713609a58cfd60fe4"
+                "reference": "3ee5b898af1eea1f76a97869bcfe5b8373faa4ee"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12156,7 +12156,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "6b28515980f23b8dbd84239bb8ec5dd0d5d458c9"
+                "reference": "1966c2516f5efb24e31cf27b44c4753a468fd355"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12258,7 +12258,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "5292523d94c91b8547ad7e9af438245ba532558e"
+                "reference": "3aa31d2db3c103725c05c579a1e9231b0080c4c8"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12410,7 +12410,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "4a4997095e996292b64e75dd29175b4629f08e0a"
+                "reference": "7daf72929933195443376fa645370dbfc1a484ed"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -12448,7 +12448,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "62077eb22da260d5fd5fba2d7a82405d6f5a0366"
+                "reference": "a770d1ec25945fbacd305b921f01260c178173d0"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
@@ -12512,16 +12512,16 @@
         },
         {
             "name": "spatie/browsershot",
-            "version": "3.33.1",
+            "version": "3.34.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/browsershot.git",
-                "reference": "583ac1c20b8150a4132b2d94e837ffa9f40df652"
+                "reference": "483f62d03ea8cfc20091b9c2db1ed3f597d659f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/browsershot/zipball/583ac1c20b8150a4132b2d94e837ffa9f40df652",
-                "reference": "583ac1c20b8150a4132b2d94e837ffa9f40df652",
+                "url": "https://api.github.com/repos/spatie/browsershot/zipball/483f62d03ea8cfc20091b9c2db1ed3f597d659f1",
+                "reference": "483f62d03ea8cfc20091b9c2db1ed3f597d659f1",
                 "shasum": ""
             },
             "require": {
@@ -12564,7 +12564,7 @@
                 "screenshot",
                 "webpage"
             ],
-            "time": "2019-11-24T12:33:08+00:00"
+            "time": "2020-01-04T22:37:18+00:00"
         },
         {
             "name": "spatie/crawler",
