@@ -41,6 +41,6 @@ class Renda extends Base
      */
     public function users()
     {
-        return $this->morphedByMany('App\Models\User', 'rendable');
+        return $this->morphedByMany(config('sitec.core.models.user', \App\Models\User::class), 'rendable');
     }
 }

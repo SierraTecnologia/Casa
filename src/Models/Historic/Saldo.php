@@ -52,6 +52,6 @@ class Saldo extends Base
      */
     public function users()
     {
-        return $this->morphedByMany('App\Models\User', 'saldoable');
+        return $this->morphedByMany(config('sitec.core.models.user', \App\Models\User::class), 'saldoable');
     }
 }

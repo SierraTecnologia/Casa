@@ -45,6 +45,6 @@ class Gasto extends Base
      */
     public function users()
     {
-        return $this->morphedByMany('App\Models\User', 'gastoable');
+        return $this->morphedByMany(config('sitec.core.models.user', \App\Models\User::class), 'gastoable');
     }
 }
