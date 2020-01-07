@@ -5,7 +5,7 @@ namespace Casa\Http\Controllers;
 use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
-class HomeController extends Controller
+class DashController extends Controller
 {
     protected $service;
 
@@ -18,6 +18,6 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('casa::dash.home');
+        return view('casa::dash.index');
     }
 }
