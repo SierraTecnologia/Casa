@@ -18,6 +18,11 @@ class DashController extends Controller
 
     public function index()
     {
-        return view('casa::dash.index');
+        $service = $this->service;
+
+        return view(
+            'casa::dash.index',
+            compact('service')
+        );
     }
 }

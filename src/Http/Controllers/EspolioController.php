@@ -18,6 +18,11 @@ class EspolioController extends Controller
 
     public function index()
     {
-        return view('casa::espolio.index');
+        $service = $this->service;
+
+        return view(
+            'casa::espolio.index',
+            compact('service')
+        );
     }
 }

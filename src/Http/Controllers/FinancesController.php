@@ -18,6 +18,11 @@ class FinancesController extends Controller
 
     public function index()
     {
-        return view('casa::finances.index');
+        $service = $this->service;
+
+        return view(
+            'casa::finances.index',
+            compact('service')
+        );
     }
 }
