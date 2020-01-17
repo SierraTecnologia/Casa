@@ -22,7 +22,7 @@ class CasaService
         }
 
         $this->person = \Population\Models\Identity\Actors\Person::first();
-        dd($this->person);
+        // dd($this->person);
     }
 
     public function getModelServicesToArray()
