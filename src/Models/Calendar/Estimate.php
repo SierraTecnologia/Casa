@@ -14,7 +14,7 @@ namespace Casa\Models\Calendar;
 
 use Informate\Traits\ComplexRelationamentTrait;
 use Support\Models\Base;
-use SiInteractions\Actions\Action;
+use Finder\Actions\Action;
 use Log;
 
 class Estimate extends Base
