@@ -17,7 +17,6 @@ use Illuminate\Routing\Router;
 use Support\ClassesHelpers\Traits\Models\ConsoleTools;
 
 use Casa\Facades\Casa as CasaFacade;
-use Illuminate\Contracts\Events\Dispatcher;
 use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 class CasaProvider extends ServiceProvider
@@ -37,20 +36,51 @@ class CasaProvider extends ServiceProvider
     ];
 
     /**
+     * Rotas do Menu
+     */
+    public static $menuItens = [
+        'Profile' => [
+            [
+                'text'        => 'Casa',
+                'icon'        => 'fas fa-fw fa-home',
+                'icon_color'  => 'blue',
+                'label_color' => 'success',
+                // 'access' => \App\Models\Role::$ADMIN
+            ],
+            'Casa' => [
+                [
+                    'text'        => 'Dash House',
+                    'route'       => 'casa.dash.index',
+                    'icon'        => 'fas fa-fw fa-home',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Financeiro',
+                    'route'       => 'casa.finances.index',
+                    'icon'        => 'fas fa-fw fa-dollar',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Espolios',
+                    'route'       => 'casa.espolio.index',
+                    'icon'        => 'fas fa-fw fa-car',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+            ],
+        ],
+    ];
+
+    /**
      * Alias the services in the boot.
      */
-    public function boot(Dispatcher $events)
+    public function boot()
     {
-        
-        $events->listen(BuildingMenu::class, function (BuildingMenu $event) {
-            $event->menu->add('Casa');
-            $event->menu->add([
-                'text'    => 'Casa',
-                'icon'    => 'cog',
-                'nivel' => \App\Models\Role::$GOOD,
-                'submenu' => \Casa\Services\MenuService::getAdminMenu(),
-            ]);
-        });
         
         // Register configs, migrations, etc
         $this->registerDirectories();
