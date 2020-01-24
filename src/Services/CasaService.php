@@ -30,4 +30,9 @@ class CasaService
         
     }
 
+    public function getProfile()
+    {
+        return $this->person;
+    }
+
 }
