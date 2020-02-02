@@ -27,6 +27,7 @@ class CreateBossControlAcaoHumanaTable extends Migration
         // Para Previsões Futuras
         Schema::create('spents', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name')->nullable();
             $table->integer('collaborator_id')->nullable();
             $table->integer('user_id')->nullable();
             $table->timestamp('initwork')->nullable();

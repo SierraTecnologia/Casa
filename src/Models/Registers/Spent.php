@@ -10,12 +10,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Casa\Models\Calendar;
+namespace Casa\Models\Registers;
 
 use Informate\Traits\ComplexRelationamentTrait;
 use Support\Models\Base;
-use Finder\Actions\Action;
 use Log;
+
 class Spent extends Base
 {
     use ComplexRelationamentTrait;
@@ -24,11 +24,6 @@ class Spent extends Base
 
     protected $table = 'spents';
 
-    protected $action = false;
-
-    protected $target = false;
-
-    protected $worker = false;
 
     /**
      * The attributes that are mass assignable.
@@ -36,11 +31,11 @@ class Spent extends Base
      * @var array
      */
     protected $fillable = [
-        'action_code',
-        'target_id',
-        'progress',
-        'task',
-        'stage'
+        'name',
+        'collaborator_id',
+        'user_id',
+        'initwork',
+        'tempo_gasto'
     ];
 
 }
