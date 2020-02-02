@@ -13,6 +13,24 @@ class CreateBossControlAcaoHumanaTable extends Migration
      */
     public function up()
     {
+        /**
+         * Identificador Unico para Estatisticas
+         */
+        Schema::create('acao_humanas', function (Blueprint $table) {
+			$table->engine = 'InnoDB';
+            $table->string('fingerprint')->unique();
+            $table->primary('fingerprint');
+            $table->string('name')->nullable();
+            $table->string('title')->nullable();
+            $table->string('people_slug')->nullable();
+            $table->string('title')->nullable();
+            $table->string('start_init')->nullable();
+            // $table->string('start_init')->nullable();
+            // $table->string('start_init')->nullable();
+            // $table->string('start_init')->nullable();
+            $table->timestamps();
+        });
+
         // Para Previsões Futuras
         Schema::create('estimates', function (Blueprint $table) {
             $table->increments('id');

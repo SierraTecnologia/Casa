@@ -1,6 +1,7 @@
 <?php
 /**
  * Um Evento INdividual
+         * Identificador Unico para Estatisticas
  */
 
 namespace Casa\Models\Calendar;
@@ -14,16 +15,22 @@ use Informate\Models\System\Archive;
 
 class AcaoHumana extends BaseModel
 {
-    use Translatable, SoftDeletes;
 
     public $table = 'acao_humanas';
 
-    public $primaryKey = 'id';
+    public $incrementing = false;
+    protected $casts = [
+        'fingerprint' => 'string',
+    ];
+    protected $primaryKey = 'fingerprint';
+    protected $keyType = 'string'; 
+
+
 
     protected $guarded = [];
 
     public $rules = [
-        'title' => 'required',
+        'fingerprint' => 'required',
     ];
 
     protected $appends = [
@@ -31,6 +38,7 @@ class AcaoHumana extends BaseModel
     ];
 
     protected $fillable = [
+        'name',
         'start_init',
         'people_slug',
         'title',
