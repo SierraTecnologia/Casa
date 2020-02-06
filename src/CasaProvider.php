@@ -115,6 +115,11 @@ class CasaProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom($this->getPublishesPath('config/sitec/casa.php'), 'sitec.casa');
+        // Publish config files
+        $this->publishes([
+            // Paths
+            $this->getPublishesPath('config/follow') => config_path('follow')
+        ], ['config',  'sitec', 'sitec-config']);
         
         $this->setProviders();
         $this->routes();

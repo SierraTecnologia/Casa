@@ -76,7 +76,7 @@ class Casa
         'Post'        => Post::class,
         'Role'        => Role::class,
         'Setting'     => Setting::class,
-        'User'        => config('sitec.core.models.user', \App\Models\User::class),
+        'User'        => \App\Models\User::class,
         'Translation' => Translation::class,
     ];
 
