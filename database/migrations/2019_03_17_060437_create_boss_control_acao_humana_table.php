@@ -23,7 +23,6 @@ class CreateBossControlAcaoHumanaTable extends Migration
             $table->string('name')->nullable();
             $table->string('title')->nullable();
             $table->string('people_slug')->nullable();
-            $table->string('title')->nullable();
             $table->string('start_init')->nullable();
             // $table->string('start_init')->nullable();
             // $table->string('start_init')->nullable();
