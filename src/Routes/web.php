@@ -23,6 +23,32 @@ Route::group(['middleware' => ['web']], function () {
                 });
             });
 
+
+
+
+            Route::namespace('Development')->group(function () {
+                Route::prefix('development')->group(function () {
+                    Route::group(['as' => 'development.'], function () {
+                        Route::get('/', 'ClientsController@index')->name('index');
+                        Route::get('/', 'FinancesController@index')->name('index');
+                    });
+                });    
+            });
+
+
+            Route::namespace('Manager')->group(function () {
+                Route::prefix('manager')->group(function () {
+                    Route::group(['as' => 'manager.'], function () {
+                        Route::get('/', 'ArquiteturaController@index')->name('index');
+                        Route::get('/', 'FinancesController@index')->name('index');
+                    });
+                });    
+            });
+
+
+
+
+
         });
     });
 

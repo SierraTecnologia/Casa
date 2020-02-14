@@ -72,6 +72,38 @@ class CasaProvider extends ServiceProvider
                     'label_color' => 'success',
                     // 'access' => \App\Models\Role::$ADMIN
                 ],
+                [
+                    'text'        => 'Clientes',
+                    'route'       => 'casa.development.clients.index',
+                    'icon'        => 'fas fa-fw fa-dollar',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Projetos',
+                    'route'       => 'casa.development.projects.index',
+                    'icon'        => 'fas fa-fw fa-dollar',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Arquitetura',
+                    'route'       => 'casa.manager.arquitetura.index',
+                    'icon'        => 'fas fa-fw fa-car',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Fields',
+                    'route'       => 'casa.manager.fields.index',
+                    'icon'        => 'fas fa-fw fa-car',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
             ],
         ],
     ];
