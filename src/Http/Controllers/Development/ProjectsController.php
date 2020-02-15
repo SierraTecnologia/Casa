@@ -1,13 +1,13 @@
 <?php
 
-namespace Casa\Http\Controllers\Manager;
+namespace Casa\Http\Controllers\Development;
 
 use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
-use Finder\Models\Digital\Code\Field;
+use Finder\Models\Digital\Code\Project;
 
-class FinancesController extends Controller
+class ProjectsController extends Controller
 {
     protected $service;
 
@@ -20,9 +20,7 @@ class FinancesController extends Controller
 
     public function index()
     {
-        // $service = $this->service;
-
-        $service = new \Facilitador\Services\RepositoryService(new \Facilitador\Services\ModelService(Field::class));
+        $service = new \Facilitador\Services\RepositoryService(new \Facilitador\Services\ModelService(Project::class));
         $registros = $service->getTableData();
         //     $teams = $this->repositoryService->paginated($request->user()->id);
 
@@ -32,6 +30,9 @@ class FinancesController extends Controller
             'facilitador::repositories.index',
             compact('service', 'registros')
         );
+        // $service = $this->service;
+
+        // $fields = Field::all();
 
         // return view(
         //     'casa::finances.index',
