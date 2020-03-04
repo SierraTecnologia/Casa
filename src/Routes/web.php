@@ -61,6 +61,31 @@ Route::group(['middleware' => ['web']], function () {
 
 
             /**
+             * Social
+             */
+            Route::namespace('Social')->group(function () {
+                Route::prefix('social')->group(function () {
+                    Route::group(['as' => 'social.'], function () {
+
+                        Route::prefix('photo')->group(function () {
+                            Route::group(['as' => 'photo.'], function () {
+                                Route::get('/', 'PhotoController@index')->name('index');
+                            });
+                        });
+
+                        Route::prefix('person')->group(function () {
+                            Route::group(['as' => 'person.'], function () {
+                                Route::get('/', 'PersonController@index')->name('index');
+                                Route::get('/', 'PersonController@persons')->name('persons');
+                            });
+                        });
+                        
+                    });
+                });    
+            });
+
+
+            /**
              * Manager
              */
             Route::namespace('Manager')->group(function () {

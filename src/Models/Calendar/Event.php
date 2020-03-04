@@ -16,13 +16,14 @@ use Informate\Traits\ComplexRelationamentTrait;
 use Support\Models\Base;
 use Finder\Actions\Action;
 use Log;
+
 class Event extends Base
 {
     use ComplexRelationamentTrait;
 
     protected $organizationPerspective = true;
 
-    protected $table = 'spents';
+    protected $table = 'events';
 
     protected $action = false;
 

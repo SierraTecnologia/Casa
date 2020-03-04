@@ -47,7 +47,7 @@ class CasaProvider extends ServiceProvider
                 'label_color' => 'success',
                 // 'access' => \App\Models\Role::$ADMIN
             ],
-            'Casa' => [
+            'Dash' => [
                 [
                     'text'        => 'Dash House',
                     'route'       => 'casa.dash.index',
@@ -56,6 +56,8 @@ class CasaProvider extends ServiceProvider
                     'label_color' => 'success',
                     // 'access' => \App\Models\Role::$ADMIN
                 ],
+            ],
+            'House' => [
                 [
                     'text'        => 'Financeiro',
                     'route'       => 'casa.finances.index',
@@ -72,6 +74,18 @@ class CasaProvider extends ServiceProvider
                     'label_color' => 'success',
                     // 'access' => \App\Models\Role::$ADMIN
                 ],
+            ],
+            'Social' => [
+                [
+                    'text'        => 'Dash House',
+                    'route'       => 'casa.dash.index',
+                    'icon'        => 'fas fa-fw fa-home',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+            ],
+            'Business' => [
                 [
                     'text'        => 'Clientes',
                     'route'       => 'casa.development.clients.index',
