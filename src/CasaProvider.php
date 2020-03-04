@@ -77,9 +77,25 @@ class CasaProvider extends ServiceProvider
             ],
             'Social' => [
                 [
-                    'text'        => 'Dash House',
-                    'route'       => 'casa.dash.index',
-                    'icon'        => 'fas fa-fw fa-home',
+                    'text'        => 'Photo',
+                    'route'       => 'casa.social.photo.index',
+                    'icon'        => 'fas fa-fw fa-dollar',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Persons',
+                    'route'       => 'casa.social.person.index',
+                    'icon'        => 'fas fa-fw fa-dollar',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Persons',
+                    'route'       => 'casa.social.person.persons',
+                    'icon'        => 'fas fa-fw fa-dollar',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
                     // 'access' => \App\Models\Role::$ADMIN

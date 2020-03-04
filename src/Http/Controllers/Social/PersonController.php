@@ -21,7 +21,7 @@ class PersonController extends Controller
 
     public function index()
     {
-        return view('casa::social.index');
+        return view('casa::social.index')->with('service', $this->service);
     }
 
     public function persons(PersonRepository $personRepo)

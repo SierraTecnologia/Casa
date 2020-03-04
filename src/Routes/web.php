@@ -73,10 +73,25 @@ Route::group(['middleware' => ['web']], function () {
                             });
                         });
 
+                        // Admin Media
+                        Route::group([
+                            'as'     => 'photo.',
+                            'prefix' => 'photo',
+                        ], function () {
+                            Route::get('/', ['uses' => 'PhotoController@index',              'as' => 'index']);
+                            Route::post('files', ['uses' => 'PhotoController@files',              'as' => 'files']);
+                            Route::post('new_folder', ['uses' => 'PhotoController@new_folder',         'as' => 'new_folder']);
+                            Route::post('delete_file_folder', ['uses' => 'PhotoController@delete', 'as' => 'delete']);
+                            Route::post('move_file', ['uses' => 'PhotoController@move',          'as' => 'move']);
+                            Route::post('rename_file', ['uses' => 'PhotoController@rename',        'as' => 'rename']);
+                            Route::post('upload', ['uses' => 'PhotoController@upload',             'as' => 'upload']);
+                            Route::post('crop', ['uses' => 'PhotoController@crop',             'as' => 'crop']);
+                        });
+
                         Route::prefix('person')->group(function () {
                             Route::group(['as' => 'person.'], function () {
                                 Route::get('/', 'PersonController@index')->name('index');
-                                Route::get('/', 'PersonController@persons')->name('persons');
+                                Route::get('/persons', 'PersonController@persons')->name('persons');
                             });
                         });
                         
