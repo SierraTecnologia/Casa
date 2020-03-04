@@ -78,6 +78,9 @@ Route::group(['middleware' => ['web']], function () {
                             'as'     => 'photo.',
                             'prefix' => 'photo',
                         ], function () {
+                            Route::get('/all', ['uses' => 'PhotoController@all',              'as' => 'all']);
+
+
                             Route::get('/', ['uses' => 'PhotoController@index',              'as' => 'index']);
                             Route::post('files', ['uses' => 'PhotoController@files',              'as' => 'files']);
                             Route::post('new_folder', ['uses' => 'PhotoController@new_folder',         'as' => 'new_folder']);

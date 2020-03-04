@@ -12,6 +12,7 @@ use Intervention\Image\Facades\Image;
 use League\Flysystem\Plugin\ListWith;
 use Facilitador\Events\MediaFileAdded;
 use Facilitador\Facades\Facilitador;
+use Finder\Models\Digital\Midia\Media;
 
 class PhotoController extends Controller
 {
@@ -29,6 +30,17 @@ class PhotoController extends Controller
 
         $this->service = $service;
         $this->filesystem = config('facilitador.storage.disk');
+    }
+
+    public function all()
+    {
+        $results = Media::all();
+
+        dd($results);
+        return view(
+            'casa::social.gallery',
+            compact('results')
+        );
     }
 
     public function index()
