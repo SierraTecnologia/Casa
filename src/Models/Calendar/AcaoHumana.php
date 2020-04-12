@@ -33,9 +33,9 @@ class AcaoHumana extends BaseModel
         'fingerprint' => 'required',
     ];
 
-    protected $appends = [
-        'translations',
-    ];
+    // protected $appends = [
+    //     'translations',
+    // ];
 
     protected $fillable = [
         'name',

@@ -41,7 +41,7 @@ class CasaProvider extends ServiceProvider
     public static $menuItens = [
         'Profile' => [
             [
-                'text'        => 'Casa',
+                'text'        => 'House',
                 'icon'        => 'fas fa-fw fa-home',
                 'icon_color'  => 'blue',
                 'label_color' => 'success',
