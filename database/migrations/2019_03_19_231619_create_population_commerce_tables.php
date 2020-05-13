@@ -13,7 +13,7 @@ class CreatePopulationCommerceTables extends Migration
 	public function up()
 	{
         
-		Schema::create(config('app.db-prefix', '').'propostas', function (Blueprint $table) {
+		Schema::create('propostas', function (Blueprint $table) {
 			$table->engine = 'InnoDB';
 			$table->increments('id')->unsigned();
 			$table->string('name', 255)->nullable();
@@ -24,7 +24,7 @@ class CreatePopulationCommerceTables extends Migration
 			$table->timestamps();
             $table->softDeletes();
 		});
-		Schema::create(config('app.db-prefix', '').'propostables', function (Blueprint $table) {
+		Schema::create('propostables', function (Blueprint $table) {
 			$table->engine = 'InnoDB';
 			$table->integer('proposta_id');
 			$table->string('propostable_id');
