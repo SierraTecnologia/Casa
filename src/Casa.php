@@ -179,8 +179,8 @@ class Casa
 
     public function formFields()
     {
-        $connection = config('database.default');
-        $driver = config("database.connections.{$connection}.driver", 'mysql');
+        $connection = \Illuminate\Support\Facades\Config::get('database.default');
+        $driver = \Illuminate\Support\Facades\Config::get("database.connections.{$connection}.driver", 'mysql');
 
         return collect($this->formFields)->filter(function ($after) use ($driver) {
             return $after->supports($driver);
@@ -210,7 +210,7 @@ class Casa
      */
     public function dimmers()
     {
-        $widgetClasses = config('voyager.dashboard.widgets');
+        $widgetClasses = \Illuminate\Support\Facades\Config::get('voyager.dashboard.widgets');
         $dimmers = Widget::group('voyager::dimmers');
 
         foreach ($widgetClasses as $widgetClass) {
@@ -226,7 +226,7 @@ class Casa
 
     public function setting($key, $default = null)
     {
-        $globalCache = config('voyager.settings.cache', false);
+        $globalCache = \Illuminate\Support\Facades\Config::get('voyager.settings.cache', false);
 
         if ($globalCache && Cache::tags('settings')->has($key)) {
             return Cache::tags('settings')->get($key);
@@ -262,7 +262,7 @@ class Casa
     public function image($file, $default = '')
     {
         if (!empty($file)) {
-            return str_replace('\\', '/', Storage::disk(config('voyager.storage.disk'))->url($file));
+            return str_replace('\\', '/', Storage::disk(\Illuminate\Support\Facades\Config::get('voyager.storage.disk'))->url($file));
         }
 
         return $default;
@@ -318,7 +318,7 @@ class Casa
      */
     public function translatable($model)
     {
-        if (!config('voyager.multilingual.enabled')) {
+        if (!\Illuminate\Support\Facades\Config::get('voyager.multilingual.enabled')) {
             return false;
         }
 

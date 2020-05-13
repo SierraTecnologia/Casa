@@ -19,8 +19,8 @@ class CreateLaravelFollowTables extends Migration
      */
     public function up()
     {
-        Schema::create(config('follow.followable_table', 'followables'), function (Blueprint $table) {
-            $userForeignKey = config('follow.users_table_foreign_key', 'person_code');
+        Schema::create(\Illuminate\Support\Facades\Config::get('follow.followable_table', 'followables'), function (Blueprint $table) {
+            $userForeignKey = \Illuminate\Support\Facades\Config::get('follow.users_table_foreign_key', 'person_code');
 
             // // Laravel 5.8 session user is unsignedBigInteger
             // // https://github.com/laravel/framework/pull/28206/files
@@ -38,8 +38,8 @@ class CreateLaravelFollowTables extends Migration
             $table->timestamps();
 
             // $table->foreign($userForeignKey)
-            //     ->references(config('follow.users_table_primary_key', 'id'))
-            //     ->on(config('follow.users_table_name', 'users'))
+            //     ->references(\Illuminate\Support\Facades\Config::get('follow.users_table_primary_key', 'id'))
+            //     ->on(\Illuminate\Support\Facades\Config::get('follow.users_table_name', 'users'))
             //     ->onUpdate('cascade')
             //     ->onDelete('cascade');
         });
@@ -50,10 +50,10 @@ class CreateLaravelFollowTables extends Migration
      */
     public function down()
     {
-        Schema::table(config('follow.followable_table', 'followables'), function ($table) {
-            $table->dropForeign(config('follow.followable_table', 'followables').'_user_id_foreign');
+        Schema::table(\Illuminate\Support\Facades\Config::get('follow.followable_table', 'followables'), function ($table) {
+            $table->dropForeign(\Illuminate\Support\Facades\Config::get('follow.followable_table', 'followables').'_user_id_foreign');
         });
 
-        Schema::drop(config('follow.followable_table', 'followables'));
+        Schema::drop(\Illuminate\Support\Facades\Config::get('follow.followable_table', 'followables'));
     }
 }

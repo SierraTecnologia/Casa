@@ -29,7 +29,7 @@ class PhotoController extends Controller
         parent::__construct();
 
         $this->service = $service;
-        $this->filesystem = config('facilitador.storage.disk');
+        $this->filesystem = \Illuminate\Support\Facades\Config::get('facilitador.storage.disk');
     }
 
     public function all()
@@ -86,7 +86,7 @@ class PhotoController extends Controller
                     'last_modified' => '',
                 ];
             } else {
-                if (empty(pathinfo($item['path'], PATHINFO_FILENAME)) && !config('facilitador.hidden_files')) {
+                if (empty(pathinfo($item['path'], PATHINFO_FILENAME)) && !\Illuminate\Support\Facades\Config::get('facilitador.hidden_files')) {
                     continue;
                 }
                 // Its a thumbnail and thumbnails should be hidden
@@ -240,7 +240,7 @@ class PhotoController extends Controller
         try {
             $realPath = Storage::disk($this->filesystem)->getDriver()->getAdapter()->getPathPrefix();
 
-            $allowedMimeTypes = config('facilitador.media.allowed_mimetypes', '*');
+            $allowedMimeTypes = \Illuminate\Support\Facades\Config::get('facilitador.media.allowed_mimetypes', '*');
             if ($allowedMimeTypes != '*' && (is_array($allowedMimeTypes) && !in_array($request->file->getMimeType(), $allowedMimeTypes))) {
                 throw new Exception(__('facilitador::generic.mimetype_not_allowed'));
             }

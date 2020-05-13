@@ -26,8 +26,8 @@ class PersonController extends Controller
 
     public function persons(PersonRepository $personRepo)
     {
-        // $orders = $personRepo->getByCustomer(auth()->id())->orderBy('created_at', 'DESC')->paginate(config('cms.pagination'));
-        $persons = $personRepo->all(); //->paginate(config('cms.pagination'));
+        // $orders = $personRepo->getByCustomer(auth()->id())->orderBy('created_at', 'DESC')->paginate(\Illuminate\Support\Facades\Config::get('cms.pagination'));
+        $persons = $personRepo->all(); //->paginate(\Illuminate\Support\Facades\Config::get('cms.pagination'));
 
         return view('casa::social.persons')->with('persons', $persons);
     }

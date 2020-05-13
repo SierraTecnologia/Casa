@@ -207,7 +207,7 @@ class CasaProvider extends ServiceProvider
         $this->app->singleton(CasaService::class, function($app)
         {
             Log::info('Singleton Casa');
-            return new CasaService(config('sitec.casa'));
+            return new CasaService(\Illuminate\Support\Facades\Config::get('sitec.casa'));
         });
 
         // Register commands

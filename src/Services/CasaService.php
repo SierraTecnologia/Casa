@@ -18,7 +18,7 @@ class CasaService
     public function __construct($config = false)
     {
         if (!$this->config = $config) {
-            $this->config = config('sitec.sitec.models');
+            $this->config = \Illuminate\Support\Facades\Config::get('sitec.sitec.models');
         }
 
         $this->person = \Population\Models\Identity\Actors\Person::first();
