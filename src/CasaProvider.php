@@ -164,11 +164,13 @@ class CasaProvider extends ServiceProvider
             return;
         }
 
-        Route::group([
+        Route::group(
+            [
             'namespace' => '\Casa\Http\Controllers',
-        ], function ($router) {
-            require __DIR__.'/Routes/web.php';
-        });
+            ], function ($router) {
+                include __DIR__.'/Routes/web.php';
+            }
+        );
     }
 
     /**
@@ -178,10 +180,12 @@ class CasaProvider extends ServiceProvider
     {
         $this->mergeConfigFrom($this->getPublishesPath('config/sitec/casa.php'), 'sitec.casa');
         // Publish config files
-        $this->publishes([
+        $this->publishes(
+            [
             // Paths
             $this->getPublishesPath('config/follow') => config_path('follow')
-        ], ['config',  'sitec', 'sitec-config']);
+            ], ['config',  'sitec', 'sitec-config']
+        );
         
         $this->setProviders();
         $this->routes();
@@ -192,9 +196,11 @@ class CasaProvider extends ServiceProvider
         $loader = AliasLoader::getInstance();
         $loader->alias('Casa', CasaFacade::class);
 
-        $this->app->singleton('casa', function () {
-            return new Casa();
-        });
+        $this->app->singleton(
+            'casa', function () {
+                return new Casa();
+            }
+        );
 
         /*
         |--------------------------------------------------------------------------
@@ -204,16 +210,19 @@ class CasaProvider extends ServiceProvider
         /**
          * Singleton Casa
          */
-        $this->app->singleton(CasaService::class, function($app)
-        {
-            Log::info('Singleton Casa');
-            return new CasaService(\Illuminate\Support\Facades\Config::get('sitec.casa'));
-        });
+        $this->app->singleton(
+            CasaService::class, function ($app) {
+                Log::info('Singleton Casa');
+                return new CasaService(\Illuminate\Support\Facades\Config::get('sitec.casa'));
+            }
+        );
 
         // Register commands
-        $this->registerCommandFolders([
+        $this->registerCommandFolders(
+            [
             base_path('vendor/sierratecnologia/casa/src/Console/Commands') => '\Casa\Console\Commands',
-        ]);
+            ]
+        );
     }
 
     /**
@@ -236,10 +245,12 @@ class CasaProvider extends ServiceProvider
     public function registerDirectories()
     {
         // Publish config files
-        $this->publishes([
+        $this->publishes(
+            [
             // Paths
             $this->getPublishesPath('config/sitec') => config_path('sitec'),
-        ], ['config',  'sitec', 'sitec-config']);
+            ], ['config',  'sitec', 'sitec-config']
+        );
 
         // // Publish casa css and js to public directory
         // $this->publishes([
@@ -256,18 +267,22 @@ class CasaProvider extends ServiceProvider
         // View namespace
         $viewsPath = $this->getResourcesPath('views');
         $this->loadViewsFrom($viewsPath, 'casa');
-        $this->publishes([
+        $this->publishes(
+            [
             $viewsPath => base_path('resources/views/vendor/casa'),
-        ], ['views',  'sitec', 'sitec-views']);
+            ], ['views',  'sitec', 'sitec-views']
+        );
 
     }
     
     private function loadTranslations()
     {
         // Publish lanaguage files
-        $this->publishes([
+        $this->publishes(
+            [
             $this->getResourcesPath('lang') => resource_path('lang/vendor/casa')
-        ], ['lang',  'sitec', 'sitec-lang', 'translations']);
+            ], ['lang',  'sitec', 'sitec-lang', 'translations']
+        );
 
         // Load translations
         $this->loadTranslationsFrom($this->getResourcesPath('lang'), 'casa');

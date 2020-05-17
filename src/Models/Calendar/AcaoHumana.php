@@ -1,7 +1,7 @@
 <?php
 /**
  * Um Evento INdividual
-         * Identificador Unico para Estatisticas
+ * Identificador Unico para Estatisticas
  */
 
 namespace Casa\Models\Calendar;
