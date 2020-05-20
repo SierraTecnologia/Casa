@@ -1,6 +1,6 @@
 <?php
 
-namespace Casa\Http\Controllers\Manager;
+namespace Casa\Http\Controllers\Adm;
 
 use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;

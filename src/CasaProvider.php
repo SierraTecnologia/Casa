@@ -39,7 +39,7 @@ class CasaProvider extends ServiceProvider
      * Rotas do Menu
      */
     public static $menuItens = [
-        'Profile' => [
+        'Central Command' => [
             [
                 'text'        => 'House',
                 'icon'        => 'fas fa-fw fa-home',

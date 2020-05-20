@@ -6,9 +6,15 @@ use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
 use Finder\Models\Digital\Code\Project;
+use Facilitador\Facades\Facilitador;
+use Exception;
+
+use Facilitador\Traits\Controllers\RepositoryTrait;
 
 class ProjectsController extends Controller
 {
+    use RepositoryTrait;
+
     protected $service;
 
     public function __construct(CasaService $service)
@@ -21,22 +27,18 @@ class ProjectsController extends Controller
     public function index()
     {
         $service = new \Facilitador\Services\RepositoryService(new \Facilitador\Services\ModelService(Project::class));
-        $registros = $service->getTableData();
-        //     $teams = $this->repositoryService->paginated($request->user()->id);
-
         
+        // GET THE SLUG, ex. 'posts', 'pages', etc.
+        $slug = $service->getSlug();
 
-        return view(
-            'facilitador::repositories.index',
-            compact('service', 'registros')
-        );
-        // $service = $this->service;
+        // GET THE DataType based on the slug
+        if (!is_object($dataType = Facilitador::model('DataType')->where('slug', '=', $slug)->first())) {
+            throw new Exception;
+        }
 
-        // $fields = Field::all();
+        // // Check permission
+        // $this->authorize('browse', app($dataType->model_name));
 
-        // return view(
-        //     'casa::finances.index',
-        //     compact('service')
-        // );
+        return $this->repositoryIndex($dataType);
     }
 }
