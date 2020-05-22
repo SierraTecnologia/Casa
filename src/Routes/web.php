@@ -8,6 +8,11 @@ Route::group(
                     ['as' => 'casa.'], function () {
 
                         /**
+                         * 
+                         */
+                        Route::get('assets', ['uses' => 'BaseController@assets', 'as' => 'assets']);
+
+                        /**
                          * dash
                          */
                         Route::prefix('dash')->group(

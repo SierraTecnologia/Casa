@@ -39,7 +39,7 @@ class CasaProvider extends ServiceProvider
      * Rotas do Menu
      */
     public static $menuItens = [
-        'Central Command' => [
+        'Central Command|50' => [
             [
                 'text'        => 'House',
                 'icon'        => 'fas fa-fw fa-home',
@@ -223,6 +223,18 @@ class CasaProvider extends ServiceProvider
             base_path('vendor/sierratecnologia/casa/src/Console/Commands') => '\Casa\Console\Commands',
             ]
         );
+
+
+        // /**
+        //  * Helpers
+        //  */
+        // Aqui noa funciona
+        // if (!function_exists('casa_asset')) {
+        //     function casa_asset($path, $secure = null)
+        //     {
+        //         return route('casa.assets').'?path='.urlencode($path);
+        //     }
+        // }
     }
 
     /**

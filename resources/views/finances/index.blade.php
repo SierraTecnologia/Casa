@@ -14,6 +14,8 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+            @include('facilitador::components.repositories.table', ['registros' => $service->getProfile()->gastos()->get(), 'service' => new \Facilitador\Services\ModelService(\Casa\Models\Economic\Gasto::class)] )
+            
               <table class="table table-bordered">
                 <tbody><tr>
                   <th style="width: 10px">#</th>
