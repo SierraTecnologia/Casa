@@ -1,6 +1,6 @@
 <?php
 
-namespace Population\Traits;
+namespace Casa\Traits;
 
 use Log;
 
@@ -12,7 +12,7 @@ trait MakeEconomicActions
      */
     public function banks()
     {
-        return $this->morphToMany('Population\Models\Market\Actors\Bank', 'bankable');
+        return $this->morphToMany('Casa\Models\Finance\Bank', 'bankable');
     }
     public function rendas()
     {

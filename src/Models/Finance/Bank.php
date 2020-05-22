@@ -1,6 +1,6 @@
 <?php
 
-namespace Population\Models\Market\Actors;
+namespace Casa\Models\Finance;
 
 use Support\Models\Base;
 use Informate\Traits\ComplexRelationamentTrait;

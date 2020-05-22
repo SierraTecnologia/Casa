@@ -1,6 +1,6 @@
 <?php
 
-namespace Population\Traits;
+namespace Casa\Traits;
 
 use InvalidArgumentException;
 use Illuminate\Database\Eloquent\Model;
