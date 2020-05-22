@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
-use App\Models\Routine;
+use Casa\Models\Calendar\Task;
 
 trait HasTask
 {
@@ -244,15 +244,15 @@ trait HasTask
         );
     }
 
-    protected static function convertToRoutineOfAnyType($values, $locale = null)
+    protected static function convertToTaskOfAnyType($values, $locale = null)
     {
         return collect($values)->map(
             function ($value) use ($locale) {
-                if ($value instanceof Routine) {
+                if ($value instanceof Task) {
                     return $value;
                 }
 
-                $className = static::getRoutineClassName();
+                $className = static::getTaskClassName();
 
                 return $className::findFromStringOfAnyType($value, $locale);
             }
@@ -266,7 +266,7 @@ trait HasTask
      * @param string|null $type
      * @param bool        $detaching
      */
-    protected function syncRoutineIds($ids, string $type = null, $detaching = true)
+    protected function syncTaskIds($ids, string $type = null, $detaching = true)
     {
         $isUpdated = false;
 
