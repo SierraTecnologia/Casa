@@ -14,28 +14,8 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-            @include('facilitador::components.repositories.table', ['registros' => $service->getProfile()->gastos()->get(), 'service' => new \Facilitador\Services\ModelService(\Casa\Models\Economic\Gasto::class)] )
+            @include('facilitador::components.repositories.table', ['registros' => $service->getProfile()->gastos()->get()] )
             
-              <table class="table table-bordered">
-                <tbody><tr>
-                  <th style="width: 10px">#</th>
-                  <th>Task</th>
-                  <th>Progress</th>
-                  <th style="width: 40px">Label</th>
-                </tr>
-                @foreach ($service->getProfile()->gastos()->get() as $gasto)
-                    <tr>
-                    <td> {{ $gasto->id }}</td>
-                    <td>Update software</td>
-                    <td>
-                        <div class="progress progress-xs">
-                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                        </div>
-                    </td>
-                    <td><span class="badge bg-red">55%</span></td>
-                    </tr>
-                @endforeach
-              </tbody></table>
             </div>
           </div>
           <!-- /.box -->
