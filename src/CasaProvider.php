@@ -39,100 +39,117 @@ class CasaProvider extends ServiceProvider
      * Rotas do Menu
      */
     public static $menuItens = [
-        'Central Command|50' => [
+        'Painel' => [
             [
-                'text'        => 'House',
+                'text'        => 'Casa',
                 'icon'        => 'fas fa-fw fa-home',
                 'icon_color'  => 'blue',
                 'label_color' => 'success',
                 // 'access' => \App\Models\Role::$ADMIN
             ],
-            'Dash' => [
+            'Casa' => [
                 [
-                    'text'        => 'Dash House',
-                    'route'       => 'casa.dash.index',
+                    'text'        => 'House',
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
                     // 'access' => \App\Models\Role::$ADMIN
                 ],
-            ],
-            'House' => [
-                [
-                    'text'        => 'Financeiro',
-                    'route'       => 'casa.finances.index',
-                    'icon'        => 'fas fa-fw fa-dollar',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
+                'Dash' => [
+                    [
+                        'text'        => 'Dash House',
+                        'route'       => 'casa.dash.index',
+                        'icon'        => 'fas fa-fw fa-home',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
                 ],
-                [
-                    'text'        => 'Espolios',
-                    'route'       => 'casa.espolio.index',
-                    'icon'        => 'fas fa-fw fa-car',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
+                'House' => [
+                    [
+                        'text'        => 'Calendário',
+                        'route'       => 'casa.finances.index',
+                        'icon'        => 'fas fa fa-calendar',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Financeiro',
+                        'route'       => 'casa.finances.index',
+                        'icon'        => 'fas fa-fw fa-dollar',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Espolios',
+                        'route'       => 'casa.espolio.index',
+                        'icon'        => 'fas fa-fw fa-car',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
                 ],
-            ],
-            'Social' => [
-                [
-                    'text'        => 'Photo',
-                    'route'       => 'casa.social.photo.index',
-                    'icon'        => 'fas fa-fw fa-dollar',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
+                'Social' => [
+                    [
+                        'text'        => 'Photo',
+                        'route'       => 'casa.social.photo.index',
+                        'icon'        => 'fas fa-fw fa-dollar',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Persons',
+                        'route'       => 'casa.social.person.index',
+                        'icon'        => 'fas fa-fw fa-dollar',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Persons',
+                        'route'       => 'casa.social.person.persons',
+                        'icon'        => 'fas fa-fw fa-dollar',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
                 ],
-                [
-                    'text'        => 'Persons',
-                    'route'       => 'casa.social.person.index',
-                    'icon'        => 'fas fa-fw fa-dollar',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
-                ],
-                [
-                    'text'        => 'Persons',
-                    'route'       => 'casa.social.person.persons',
-                    'icon'        => 'fas fa-fw fa-dollar',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
-                ],
-            ],
-            'Business' => [
-                [
-                    'text'        => 'Clientes',
-                    'route'       => 'casa.development.clients.index',
-                    'icon'        => 'fas fa-fw fa-dollar',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
-                ],
-                [
-                    'text'        => 'Projetos',
-                    'route'       => 'casa.development.projects.index',
-                    'icon'        => 'fas fa-fw fa-dollar',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
-                ],
-                [
-                    'text'        => 'Arquitetura',
-                    'route'       => 'casa.manager.arquitetura.index',
-                    'icon'        => 'fas fa-fw fa-car',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
-                ],
-                [
-                    'text'        => 'Fields',
-                    'route'       => 'casa.manager.fields.index',
-                    'icon'        => 'fas fa-fw fa-car',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
+                'Business' => [
+                    [
+                        'text'        => 'Clientes',
+                        'route'       => 'casa.development.clients.index',
+                        'icon'        => 'fas fa-fw fa-dollar',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Projetos',
+                        'route'       => 'casa.development.projects.index',
+                        'icon'        => 'fas fa-fw fa-dollar',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Arquitetura',
+                        'route'       => 'casa.manager.arquitetura.index',
+                        'icon'        => 'fas fa-fw fa-car',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Fields',
+                        'route'       => 'casa.manager.fields.index',
+                        'icon'        => 'fas fa-fw fa-car',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        // 'access' => \App\Models\Role::$ADMIN
+                    ],
                 ],
             ],
         ],
