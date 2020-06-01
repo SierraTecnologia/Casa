@@ -8,12 +8,10 @@ use Illuminate\Support\Facades\Schema;
 use Finder\Models\Digital\Code\Project;
 use Facilitador\Facades\Facilitador;
 use Exception;
-
-use Facilitador\Traits\Controllers\RepositoryTrait;
+use Illuminate\Http\Request;
 
 class ProjectsController extends Controller
 {
-    use RepositoryTrait;
 
     protected $service;
 
@@ -24,7 +22,7 @@ class ProjectsController extends Controller
         $this->service = $service;
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $service = new \Facilitador\Services\RepositoryService(new \Facilitador\Services\ModelService(Project::class));
         
@@ -39,6 +37,6 @@ class ProjectsController extends Controller
         // // Check permission
         // $this->authorize('browse', app($dataType->model_name));
 
-        return $this->repositoryIndex($dataType);
+        return $service->repositoryIndex($dataType, $request);
     }
 }
