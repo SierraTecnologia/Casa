@@ -4,7 +4,7 @@ namespace Casa\Http\Requests;
 
 use Auth;
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Notification;
+use Facilitador\Models\Notification;
 
 class NotificationUpdateRequest extends FormRequest
 {
