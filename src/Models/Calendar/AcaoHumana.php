@@ -7,7 +7,7 @@
 namespace Casa\Models\Calendar;
 
 use Support\Models\Base as BaseModel;
-use Siravel\Services\Normalizer;
+use Facilitador\Services\Normalizer;
 use Informate\Traits\Translatable;
 use Log;
 use Illuminate\Database\Eloquent\SoftDeletes;
