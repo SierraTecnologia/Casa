@@ -11576,7 +11576,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Crypto",
-                "reference": "56bec353d40fded9d65d3491d0bbf956ca8e6cd4"
+                "reference": "42ae36a8de33d104c6b6e82e5fab79bfd6882944"
             },
             "require": {
                 "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
@@ -11635,7 +11635,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "1d7299a322938b216b4c1740fc673b7a70945008"
+                "reference": "f098c2cb853bbdbebbc95245f874101f791ba51d"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
