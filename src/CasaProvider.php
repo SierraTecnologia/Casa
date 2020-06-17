@@ -120,7 +120,7 @@ class CasaProvider extends ServiceProvider
                 'Business' => [
                     [
                         'text'        => 'Clientes',
-                        'route'       => 'casa.development.clients.index',
+                        'route'       => 'casa.comercial.clients.index',
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -128,7 +128,7 @@ class CasaProvider extends ServiceProvider
                     ],
                     [
                         'text'        => 'Projetos',
-                        'route'       => 'casa.development.projects.index',
+                        'route'       => 'casa.comercial.projects.index',
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',

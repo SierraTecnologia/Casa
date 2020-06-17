@@ -3,7 +3,7 @@
 namespace SiObjects\Http\Middleware;
 
 use Closure;
-use Casa\Services\System\AnalyticsService;
+use Tracking\Services\AnalyticsService;
 
 class Analytics
 {

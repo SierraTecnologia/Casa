@@ -54,14 +54,14 @@ Route::group(
 
 
                         /**
-                         * Development
+                         * Comercial
                          */
-                        Route::namespace('Development')->group(
+                        Route::namespace('Comercial')->group(
                             function () {
-                                Route::prefix('development')->group(
+                                Route::prefix('comercial')->group(
                                     function () {
                                         Route::group(
-                                            ['as' => 'development.'], function () {
+                                            ['as' => 'comercial.'], function () {
 
                                                 Route::prefix('clients')->group(
                                                     function () {

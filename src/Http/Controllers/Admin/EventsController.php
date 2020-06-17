@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Http\Controllers\Features\Calendar;
+namespace Casa\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Services\EventService;

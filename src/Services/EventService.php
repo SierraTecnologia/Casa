@@ -1,6 +1,6 @@
 <?php
 
-namespace Siravel\Services;
+namespace Casa\Services;
 
 use Lang;
 use Carbon\Carbon;
@@ -70,7 +70,7 @@ class EventService
 
     public function asHtml($config)
     {
-        Carbon::setLocale(\Siravel\Services\System\LanguageService::getSingleton()->getActualLanguage());
+        Carbon::setLocale(\RicardoSierra\Translation\Services\LanguageService::getSingleton()->getActualLanguage());
 
         $class = $config['class'];
         $dates = $config['dates'];
