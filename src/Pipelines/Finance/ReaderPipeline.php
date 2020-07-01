@@ -1,6 +1,6 @@
 <?php
 
-namespace Casa\Pipelines\Application;
+namespace Casa\Pipelines\Finance;
 
 use League\Pipeline\Pipeline;
 use League\Pipeline\StageInterface;
