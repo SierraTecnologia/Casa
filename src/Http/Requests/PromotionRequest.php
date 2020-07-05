@@ -4,7 +4,7 @@ namespace Casa\Http\Requests;
 
 use Auth;
 use Gate;
-use App\Models\Negocios\Promotion;
+use Siravel\Models\Negocios\Promotion;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PromotionRequest extends FormRequest

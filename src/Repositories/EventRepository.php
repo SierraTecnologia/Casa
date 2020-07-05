@@ -3,7 +3,7 @@
 namespace Casa\Repositories;
 
 use Carbon\Carbon;
-use Informate\Models\Event;
+use Casa\Models\Calendar\Event;
 use Siravel\Repositories\CmsRepository;
 use Siravel\Repositories\TranslationRepository;
 
@@ -63,7 +63,7 @@ class EventRepository extends CmsRepository
     {
         $payload['title'] = htmlentities($payload['title']);
         if (!empty($payload['lang']) && $payload['lang'] !== \Illuminate\Support\Facades\Config::get('cms.default-language', 'en')) {
-            return $this->translationRepo->createOrUpdate($event->id, 'Informate\Models\Event', $payload['lang'], $payload);
+            return $this->translationRepo->createOrUpdate($event->id, 'Casa\Models\Calendar\Event', $payload['lang'], $payload);
         } else {
             $payload['is_published'] = (isset($payload['is_published'])) ? (bool) $payload['is_published'] : 0;
             $payload['published_at'] = (isset($payload['published_at']) && !empty($payload['published_at'])) ? Carbon::parse($payload['published_at'])->format('Y-m-d H:i:s') : Carbon::now(\Illuminate\Support\Facades\Config::get('app.timezone'))->format('Y-m-d H:i:s');

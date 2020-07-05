@@ -2,7 +2,7 @@
 
 namespace Casa\Http\Requests\Commerce;
 
-use App\Models\Commerce\Transaction;
+use Siravel\Models\Commerce\Transaction;
 
 class TransactionsRequest extends CommerceRequest
 {

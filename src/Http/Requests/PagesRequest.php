@@ -4,7 +4,7 @@ namespace Casa\Http\Requests;
 
 use Auth;
 use Gate;
-use Siravel\Models\Page;
+use Siravel\Models\Negocios\Page;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PagesRequest extends FormRequest
