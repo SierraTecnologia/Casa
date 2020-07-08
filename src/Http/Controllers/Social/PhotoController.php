@@ -12,7 +12,7 @@ use Intervention\Image\Facades\Image;
 use League\Flysystem\Plugin\ListWith;
 use Facilitador\Events\MediaFileAdded;
 use Facilitador\Facades\Facilitador;
-use Artista\Models\Media;
+use Stalker\Models\Media;
 
 class PhotoController extends Controller
 {
