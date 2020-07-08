@@ -44,4 +44,12 @@ class Estimate extends Base
         'stage'
     ];
 
+
+    /**
+     * Get the owning estimatable model.
+     */
+    public function estimatable()
+    {
+        return $this->morphTo();
+    }
 }

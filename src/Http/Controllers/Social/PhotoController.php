@@ -12,7 +12,7 @@ use Intervention\Image\Facades\Image;
 use League\Flysystem\Plugin\ListWith;
 use Facilitador\Events\MediaFileAdded;
 use Facilitador\Facades\Facilitador;
-use Finder\Models\Digital\Midia\Media;
+use Artista\Models\Media;
 
 class PhotoController extends Controller
 {

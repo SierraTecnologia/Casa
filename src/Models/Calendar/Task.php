@@ -37,21 +37,34 @@ class Task extends Base
         'date_estimated',
         'done'
     ];
-    
-    /**
-     * Get all of the girls that are assigned this tag.
-     */
-    public function girls()
-    {
-        return $this->morphedByMany('Population\Models\Market\Actors\Girl', 'taskable');
-    }
 
     /**
-     * Get all of the users that are assigned this tag.
+     * Get the owning taskable model.
      */
-    public function users()
+    public function taskable()
     {
-        return $this->morphedByMany(\Illuminate\Support\Facades\Config::get('sitec.core.models.user', \App\Models\User::class), 'taskable');
+        return $this->morphTo();
     }
+    
+    /**
+     * Eh um pra mts e nao mts pra mts
+     *
+     * @return void
+     */
+    // /**
+    //  * Get all of the girls that are assigned this tag.
+    //  */
+    // public function girls()
+    // {
+    //     return $this->morphedByMany('Population\Models\Market\Actors\Girl', 'taskable');
+    // }
+
+    // /**
+    //  * Get all of the users that are assigned this tag.
+    //  */
+    // public function users()
+    // {
+    //     return $this->morphedByMany(\Illuminate\Support\Facades\Config::get('sitec.core.models.user', \App\Models\User::class), 'taskable');
+    // }
 
 }

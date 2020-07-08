@@ -20,12 +20,10 @@ class CreateCasaRoutineTables extends Migration
             'routines', function (Blueprint $table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id')->unsigned();
-                $table->string('content', 255)->nullable();
-                $table->string('init', 255)->nullable(); // @todo Date
-                $table->string('time')->nullable(); // @todo integer('time');
-                $table->string('obs', 255)->nullable();
-                $table->string('routinable_id')->nullable();
-                $table->string('routinable_type', 255)->nullable();
+                $table->string('name', 255)->nullable();
+                $table->string('description', 255)->nullable();
+                $table->string('routineable_id')->nullable();
+                $table->string('routineable_type', 255)->nullable();
                 $table->timestamps();
                 $table->softDeletes();
             }

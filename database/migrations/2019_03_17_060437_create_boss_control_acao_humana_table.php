@@ -39,7 +39,7 @@ class CreateBossControlAcaoHumanaTable extends Migration
                 $table->integer('originalEstimateSeconds')->nullable();
                 $table->integer('remainingEstimateSeconds')->nullable();
                 $table->integer('timeSpentSeconds')->nullable();
-                $table->integer('estimatable_id');
+                $table->string('estimatable_id');
                 $table->string('estimatable_type'); 
                 $table->timestamps();
             }

@@ -184,6 +184,9 @@ class CasaProvider extends ServiceProvider
         Route::group(
             [
             'namespace' => '\Casa\Http\Controllers',
+            'prefix' => \Illuminate\Support\Facades\Config::get('application.routes.main'),
+            'as' => 'rica.',
+            // 'middleware' => 'rica',
             ], function ($router) {
                 include __DIR__.'/Routes/web.php';
             }
