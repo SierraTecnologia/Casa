@@ -31,8 +31,6 @@ class CasaProvider extends ServiceProvider
         // \Casa\Providers\CasaEventServiceProvider::class,
         // \Casa\Providers\CasaServiceProvider::class,
         // \Casa\Providers\CasaRouteProvider::class,
-
-        \Finder\FinderProvider::class,
     ];
 
     /**
