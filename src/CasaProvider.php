@@ -58,7 +58,7 @@ class CasaProvider extends ServiceProvider
                 'Dash' => [
                     [
                         'text'        => 'Dash House',
-                        'route'       => 'casa.dash.index',
+                        'route'       => 'rica.casa.dash.index',
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -69,7 +69,7 @@ class CasaProvider extends ServiceProvider
                 'House' => [
                     [
                         'text'        => 'Calendário',
-                        'route'       => 'casa.finances.index',
+                        'route'       => 'rica.casa.finances.index',
                         'icon'        => 'fas fa fa-calendar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -78,7 +78,7 @@ class CasaProvider extends ServiceProvider
                     ],
                     [
                         'text'        => 'Financeiro',
-                        'route'       => 'casa.finances.index',
+                        'route'       => 'rica.casa.finances.index',
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -87,7 +87,7 @@ class CasaProvider extends ServiceProvider
                     ],
                     [
                         'text'        => 'Espolios',
-                        'route'       => 'casa.espolio.index',
+                        'route'       => 'rica.casa.espolio.index',
                         'icon'        => 'fas fa-fw fa-car',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -98,7 +98,7 @@ class CasaProvider extends ServiceProvider
                 'Social' => [
                     [
                         'text'        => 'Photo',
-                        'route'       => 'casa.social.photo.index',
+                        'route'       => 'rica.casa.social.photo.index',
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -107,7 +107,7 @@ class CasaProvider extends ServiceProvider
                     ],
                     [
                         'text'        => 'Persons',
-                        'route'       => 'casa.social.person.index',
+                        'route'       => 'rica.casa.social.person.index',
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -116,7 +116,7 @@ class CasaProvider extends ServiceProvider
                     ],
                     [
                         'text'        => 'Persons',
-                        'route'       => 'casa.social.person.persons',
+                        'route'       => 'rica.casa.social.person.persons',
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -127,7 +127,7 @@ class CasaProvider extends ServiceProvider
                 'Business' => [
                     [
                         'text'        => 'Clientes',
-                        'route'       => 'casa.comercial.clients.index',
+                        'route'       => 'rica.casa.comercial.clients.index',
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -136,7 +136,7 @@ class CasaProvider extends ServiceProvider
                     ],
                     [
                         'text'        => 'Projetos',
-                        'route'       => 'casa.comercial.projects.index',
+                        'route'       => 'rica.casa.comercial.projects.index',
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -145,7 +145,7 @@ class CasaProvider extends ServiceProvider
                     ],
                     [
                         'text'        => 'Arquitetura',
-                        'route'       => 'casa.manager.arquitetura.index',
+                        'route'       => 'rica.casa.manager.arquitetura.index',
                         'icon'        => 'fas fa-fw fa-car',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
@@ -154,7 +154,7 @@ class CasaProvider extends ServiceProvider
                     ],
                     [
                         'text'        => 'Fields',
-                        'route'       => 'casa.manager.fields.index',
+                        'route'       => 'rica.casa.manager.fields.index',
                         'icon'        => 'fas fa-fw fa-car',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
