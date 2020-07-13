@@ -43,6 +43,7 @@ class CasaProvider extends ServiceProvider
                 'icon'        => 'fas fa-fw fa-home',
                 'icon_color'  => 'blue',
                 'label_color' => 'success',
+                'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                 // 'access' => \App\Models\Role::$ADMIN
             ],
             'Casa' => [
@@ -51,6 +52,7 @@ class CasaProvider extends ServiceProvider
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
+                    'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                     // 'access' => \App\Models\Role::$ADMIN
                 ],
                 'Dash' => [
@@ -60,6 +62,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                 ],
@@ -70,6 +73,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa fa-calendar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                     [
@@ -78,6 +82,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                     [
@@ -86,6 +91,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-car',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                 ],
@@ -96,6 +102,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                     [
@@ -104,6 +111,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                     [
@@ -112,6 +120,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                 ],
@@ -122,6 +131,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                     [
@@ -130,6 +140,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                     [
@@ -138,6 +149,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-car',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                     [
@@ -146,6 +158,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-car',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
                 ],
