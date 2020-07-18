@@ -3,7 +3,7 @@
 namespace Casa\Models\Finance;
 
 use Support\Models\Base;
-use Informate\Traits\ComplexRelationamentTrait;
+use Support\Traits\Models\ComplexRelationamentTrait;
 
 class Bank extends Base
 {

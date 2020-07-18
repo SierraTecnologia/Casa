@@ -12,7 +12,7 @@
 
 namespace Casa\Models\Calendar;
 
-use Informate\Traits\ComplexRelationamentTrait;
+use Support\Traits\Models\ComplexRelationamentTrait;
 use Support\Models\Base;
 
 use Log;
