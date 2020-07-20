@@ -20,7 +20,7 @@ use Population\Models\Features\Qa\Analyser;
 
 
 use Population\Models\Identity\Digital\Account;
-use Population\Models\Components\Integrations\Token;
+use Integrations\Models\Token;
 
 
 
