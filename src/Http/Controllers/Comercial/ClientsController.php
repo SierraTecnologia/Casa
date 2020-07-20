@@ -5,7 +5,7 @@ namespace Casa\Http\Controllers\Comercial;
 use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
-use Finder\Models\Digital\Code\Project;
+use Fabrica\Models\Code\Project;
 
 class ClientsController extends Controller
 {

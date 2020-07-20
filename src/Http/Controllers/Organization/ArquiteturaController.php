@@ -5,17 +5,17 @@ namespace Casa\Http\Controllers\Organization;
 use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
-use Finder\Models\Digital\Code\Field;
-use Finder\Models\Digital\Infra\Domain;
-use Finder\Models\Digital\Infra\Container;
+use Fabrica\Models\Code\Field;
+use Fabrica\Models\Infra\Domain;
+use Fabrica\Models\Infra\Container;
 
 
 use Population\Models\Identity\Actors\Business;
 use Population\Models\Identity\Actors\Person;
 
 
-use Finder\Models\Digital\Code\Project;
-use Finder\Models\Digital\Code\Wiki;
+use Fabrica\Models\Code\Project;
+use Fabrica\Models\Code\Wiki;
 use Population\Models\Features\Qa\Analyser;
 
 
