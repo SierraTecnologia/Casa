@@ -1,8 +1,25 @@
 {
     "name": "sierratecnologia/casa",
     "description": "casa",
+    "type": "library",
+    "keywords": [
+        "sierratecnologia",
+        "casa"
+    ],
     "license": "MIT",
+    "homepage": "https://sierratecnologia.com/packages/casa/",
+    "support": {
+        "email": "help@sierratecnologia.com.br",
+        "issues": "https://github.com/sierratecnologia/casa/issues",
+        "source": "https://github.com/sierratecnologia/casa",
+        "docs": "https://github.com/sierratecnologia/casa/blob/master/README.md"
+    },
     "authors": [
+        {
+            "name": "SierraTecnologia",
+            "homepage": "https://sierratecnologia.com.br",
+            "email": "help@sierratecnologia.com.br"
+        },
         {
             "name": "Ricardo Rebello Sierra",
             "email": "contato@ricardosierra.com.br"
