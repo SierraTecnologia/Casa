@@ -28,7 +28,7 @@ class CasaProvider extends ServiceProvider
     ];
 
     public static $providers = [
-        // \Casa\Providers\CasaEventServiceProvider::class,
+        \Transmissor\TransmissorProvider::class,
         // \Casa\Providers\CasaServiceProvider::class,
         // \Casa\Providers\CasaRouteProvider::class,
     ];

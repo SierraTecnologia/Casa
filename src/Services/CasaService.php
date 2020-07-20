@@ -21,8 +21,8 @@ class CasaService
             $this->config = \Illuminate\Support\Facades\Config::get('sitec.sitec.models');
         }
 
-        // $this->person = \Population\Models\Identity\Actors\Person::first();
-        $this->person = \Population\Models\Identity\Actors\Person::find('ricardo.sierra');
+        // $this->person = \Telefonica\Models\Actors\Person::first();
+        $this->person = \Telefonica\Models\Actors\Person::find('ricardo.sierra');
         // dd($this->person->gastos());
     }
 

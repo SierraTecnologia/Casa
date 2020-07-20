@@ -10,8 +10,8 @@ use Fabrica\Models\Infra\Domain;
 use Fabrica\Models\Infra\Container;
 
 
-use Population\Models\Identity\Actors\Business;
-use Population\Models\Identity\Actors\Person;
+use Telefonica\Models\Actors\Business;
+use Telefonica\Models\Actors\Person;
 
 
 use Fabrica\Models\Code\Project;
@@ -19,7 +19,7 @@ use Fabrica\Models\Code\Wiki;
 use Population\Models\Features\Qa\Analyser;
 
 
-use Population\Models\Identity\Digital\Account;
+use Telefonica\Models\Digital\Account;
 use Integrations\Models\Token;
 
 
