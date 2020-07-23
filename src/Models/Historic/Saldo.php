@@ -3,7 +3,7 @@
 namespace Casa\Models\Historic;
 
 use Support\Models\Base;
-use Support\Traits\Models\ComplexRelationamentTrait;
+use Muleta\Traits\Models\ComplexRelationamentTrait;
 
 class Saldo extends Base
 {

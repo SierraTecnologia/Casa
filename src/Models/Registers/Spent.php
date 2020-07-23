@@ -12,7 +12,7 @@
 
 namespace Casa\Models\Registers;
 
-use Support\Traits\Models\ComplexRelationamentTrait;
+use Muleta\Traits\Models\ComplexRelationamentTrait;
 use Support\Models\Base;
 use Log;
 
