@@ -41,7 +41,7 @@ class ArquiteturaController extends Controller
     {
         // $service = $this->service;
 
-        $service = new \Facilitador\Services\RepositoryService(new \Facilitador\Services\ModelService(Field::class));
+        $service = new \Support\Services\RepositoryService(new \Support\Services\ModelService(Field::class));
         $registros = $service->getTableData();
         //     $teams = $this->repositoryService->paginated($request->user()->id);
 
@@ -49,7 +49,7 @@ class ArquiteturaController extends Controller
         
 
         return view(
-            'facilitador::repositories.index',
+            'facilitador::components.repositories.index',
             compact('service', 'registros')
         );
 

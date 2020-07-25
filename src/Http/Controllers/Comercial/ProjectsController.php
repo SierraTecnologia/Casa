@@ -24,7 +24,7 @@ class ProjectsController extends Controller
 
     public function index(Request $request)
     {
-        $service = new \Facilitador\Services\RepositoryService(new \Facilitador\Services\ModelService(Project::class));
+        $service = new \Support\Services\RepositoryService(new \Support\Services\ModelService(Project::class));
         
         // GET THE SLUG, ex. 'posts', 'pages', etc.
         $slug = $service->getSlug();

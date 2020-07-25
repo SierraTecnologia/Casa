@@ -20,14 +20,14 @@ class ClientsController extends Controller
 
     public function index()
     {
-        $service = new \Facilitador\Services\RepositoryService(new \Facilitador\Services\ModelService(Project::class));
+        $service = new \Support\Services\RepositoryService(new \Support\Services\ModelService(Project::class));
         $registros = $service->getTableData();
         //     $teams = $this->repositoryService->paginated($request->user()->id);
 
         
 
         return view(
-            'facilitador::repositories.index',
+            'facilitador::components.repositories.index',
             compact('service', 'registros')
         );
         // $service = $this->service;

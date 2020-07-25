@@ -28,6 +28,7 @@
     "require": {
         "php": ">=7.0",
         "sierratecnologia/integrations": "dev-master",
+        "sierratecnologia/telefonica": "dev-master",
         "sierratecnologia/stalker": "dev-master",
         "sierratecnologia/transmissor": "dev-master",
         "sierratecnologia/payment-laravel": "dev-master"
