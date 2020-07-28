@@ -3,7 +3,7 @@
  * Armazena casas de cambios que aceitam trocar moedas
  */
 
-namespace Casa\Models\Money;
+namespace Casa\Models\Finance\Money;
 
 use Illuminate\Support\Facades\Hash;
 use Muleta\Traits\Models\EloquentGetTableNameTrait;

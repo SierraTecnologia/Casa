@@ -4,7 +4,7 @@
  * Armazena Preços de Cambio de Moeda em diversas fontes.
  */
 
-namespace Casa\Models\Money;
+namespace Casa\Models\Finance\Money;
 
 use Illuminate\Support\Facades\Hash;
 use Muleta\Traits\Models\EloquentGetTableNameTrait;

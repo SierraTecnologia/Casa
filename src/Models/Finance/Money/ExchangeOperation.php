@@ -3,7 +3,7 @@
  * Armazena os tipos de pagamentos que fazem com cada moeda e suas taxas
  */
 
-namespace Casa\Models\Money;
+namespace Casa\Models\Finance\Money;
 
 use Illuminate\Support\Facades\Hash;
 use Muleta\Traits\Models\EloquentGetTableNameTrait;
