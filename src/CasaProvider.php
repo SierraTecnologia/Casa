@@ -143,24 +143,6 @@ class CasaProvider extends ServiceProvider
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
-                    [
-                        'text'        => 'Arquitetura',
-                        'route'       => 'rica.casa.manager.arquitetura.index',
-                        'icon'        => 'fas fa-fw fa-car',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
-                    ],
-                    [
-                        'text'        => 'Fields',
-                        'route'       => 'rica.casa.manager.fields.index',
-                        'icon'        => 'fas fa-fw fa-car',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
-                    ],
                 ],
             ],
         ],
