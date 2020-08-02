@@ -32,7 +32,7 @@ class CreateCasaRoutineTables extends Migration
             'workers', function (Blueprint $table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id')->unsigned();
-                $table->string('content', 255)->nullable();
+                $table->string('text', 255)->nullable();
                 $table->string('init', 255)->nullable(); // @todo Date
                 $table->string('time')->nullable(); // @todo integer('time');
                 $table->string('obs', 255)->nullable();

@@ -6,7 +6,7 @@ use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
 use Fabrica\Models\Code\Field;
-use Population\Repositories\PersonRepository;
+use Telefonica\Repositories\PersonRepository;
 
 class PersonController extends Controller
 {
