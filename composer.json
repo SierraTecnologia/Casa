@@ -32,7 +32,8 @@
         "sierratecnologia/bancario": "dev-master",
         "sierratecnologia/stalker": "dev-master",
         "sierratecnologia/transmissor": "dev-master",
-        "sierratecnologia/payment-laravel": "dev-master"
+        "sierratecnologia/payment-laravel": "dev-master",
+        "spatie/laravel-google-calendar": "*"
     },
     "autoload": {
         "psr-4": {
