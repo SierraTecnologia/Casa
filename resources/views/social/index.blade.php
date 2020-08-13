@@ -8,12 +8,12 @@
 <h2 class="page-header">Social Widgets</h2>
 <div class="row">
         <div class="col-md-6">
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Financeiro (Gastos e Rendas)</h3>
+          <div class="box card">
+            <div class="box-header card-header with-border">
+              <h3 class="box-title card-title">Financeiro (Gastos e Rendas)</h3>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body">
+            <!-- /.box-header card-header -->
+            <div class="box-body card-body">
               <table class="table table-bordered">
                 <tbody><tr>
                   <th style="width: 10px">#</th>
@@ -38,12 +38,12 @@
           </div>
           <!-- /.box -->
 
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Timing</h3>
+          <div class="box card">
+            <div class="box-header card-header">
+              <h3 class="box-title card-title">Timing</h3>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
+            <!-- /.box-header card-header -->
+            <div class="box-body card-body no-padding">
               <table class="table table-condensed">
                 <tbody><tr>
                   <th style="width: 10px">#</th>
@@ -65,7 +65,7 @@
                 @endforeach
               </tbody></table>
             </div>
-            <!-- /.box-body -->
+            <!-- /.box-body card-body -->
           </div>
           <!-- /.box -->
         </div>
@@ -82,7 +82,7 @@
 <div class="row">
         <div class="col-md-4">
           <!-- Widget: user widget style 1 -->
-          <div class="box box-widget widget-user-2">
+          <div class="box card box-widget card-widget widget-user-2">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-yellow">
               <div class="widget-user-image">
@@ -92,7 +92,7 @@
               <h3 class="widget-user-username">Tarefas</h3>
               <h5 class="widget-user-desc">Lead Developer</h5>
             </div>
-            <div class="box-footer no-padding">
+            <div class="box-footer card-footer no-padding">
               <ul class="nav nav-stacked">
                 <li><a href="#">Projects <span class="pull-right badge bg-blue">31</span></a></li>
                 <li><a href="#">Tasks <span class="pull-right badge bg-aqua">5</span></a></li>
@@ -106,7 +106,7 @@
         <!-- /.col -->
         <div class="col-md-4">
           <!-- Widget: user widget style 1 -->
-          <div class="box box-widget widget-user">
+          <div class="box card box-widget card-widget widget-user">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-aqua-active">
               <h3 class="widget-user-username">Alexander Pierce</h3>
@@ -115,7 +115,7 @@
             <div class="widget-user-image">
               <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
             </div>
-            <div class="box-footer">
+            <div class="box-footer card-footer">
               <div class="row">
                 <div class="col-sm-4 border-right">
                   <div class="description-block">
@@ -150,7 +150,7 @@
         <!-- /.col -->
         <div class="col-md-4">
           <!-- Widget: user widget style 1 -->
-          <div class="box box-widget widget-user">
+          <div class="box card box-widget card-widget widget-user">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-black" style="background: url('../dist/img/photo1.png') center center;">
               <h3 class="widget-user-username">Elizabeth Pierce</h3>
@@ -159,7 +159,7 @@
             <div class="widget-user-image">
               <img class="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar">
             </div>
-            <div class="box-footer">
+            <div class="box-footer card-footer">
               <div class="row">
                 <div class="col-sm-4 border-right">
                   <div class="description-block">

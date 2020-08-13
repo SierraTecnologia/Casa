@@ -67,11 +67,11 @@
 
       <div class="row">
         <div class="col-md-12">
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Monthly Recap Report</h3>
+          <div class="box card">
+            <div class="box-header card-header with-border">
+              <h3 class="box-title card-title">Monthly Recap Report</h3>
 
-              <div class="box-tools pull-right">
+              <div class="box-tools card-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <div class="btn-group">
@@ -88,8 +88,8 @@
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body">
+            <!-- /.box-header card-header -->
+            <div class="box-body card-body">
               <div class="row">
                 <div class="col-md-8">
                   <p class="text-center">
@@ -149,8 +149,8 @@
               </div>
               <!-- /.row -->
             </div>
-            <!-- ./box-body -->
-            <div class="box-footer">
+            <!-- ./box-body card-body -->
+            <div class="box-footer card-footer">
               <div class="row">
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
@@ -190,7 +190,7 @@
               </div>
               <!-- /.row -->
             </div>
-            <!-- /.box-footer -->
+            <!-- /.box-footer card-footer -->
           </div>
           <!-- /.box -->
         </div>
@@ -203,18 +203,18 @@
         <!-- Left col -->
         <div class="col-md-8">
           <!-- MAP & BOX PANE -->
-          <div class="box box-success">
-            <div class="box-header with-border">
-              <h3 class="box-title">Visitors Report</h3>
+          <div class="box card box-success">
+            <div class="box-header card-header with-border">
+              <h3 class="box-title card-title">Visitors Report</h3>
 
-              <div class="box-tools pull-right">
+              <div class="box-tools card-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
+            <!-- /.box-header card-header -->
+            <div class="box-body card-body no-padding">
               <div class="row">
                 <div class="col-md-9 col-sm-8">
                   <div class="pad">
@@ -249,17 +249,17 @@
               </div>
               <!-- /.row -->
             </div>
-            <!-- /.box-body -->
+            <!-- /.box-body card-body -->
           </div>
           <!-- /.box -->
           <div class="row">
             <div class="col-md-6">
               <!-- DIRECT CHAT -->
-              <div class="box box-warning direct-chat direct-chat-warning">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Direct Chat</h3>
+              <div class="box card box-warning card-warning direct-chat direct-chat-warning">
+                <div class="box-header card-header with-border">
+                  <h3 class="box-title card-title">Direct Chat</h3>
 
-                  <div class="box-tools pull-right">
+                  <div class="box-tools card-tools pull-right">
                     <span data-toggle="tooltip" title="" class="badge bg-yellow" data-original-title="3 New Messages">3</span>
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                     </button>
@@ -269,8 +269,8 @@
                     </button>
                   </div>
                 </div>
-                <!-- /.box-header -->
-                <div class="box-body">
+                <!-- /.box-header card-header -->
+                <div class="box-body card-body">
                   <!-- Conversations are loaded here -->
                   <div class="direct-chat-messages">
                     <!-- Message. Default to the left -->
@@ -438,8 +438,8 @@
                   </div>
                   <!-- /.direct-chat-pane -->
                 </div>
-                <!-- /.box-body -->
-                <div class="box-footer">
+                <!-- /.box-body card-body -->
+                <div class="box-footer card-footer">
                   <form action="#" method="post">
                     <div class="input-group">
                       <input type="text" name="message" placeholder="Type Message ..." class="form-control">
@@ -449,7 +449,7 @@
                     </div>
                   </form>
                 </div>
-                <!-- /.box-footer-->
+                <!-- /.box-footer card-footer-->
               </div>
               <!--/.direct-chat -->
             </div>
@@ -457,11 +457,11 @@
 
             <div class="col-md-6">
               <!-- USERS LIST -->
-              <div class="box box-danger">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Latest Members</h3>
+              <div class="box card box-danger card-danger">
+                <div class="box-header card-header with-border">
+                  <h3 class="box-title card-title">Latest Members</h3>
 
-                  <div class="box-tools pull-right">
+                  <div class="box-tools card-tools pull-right">
                     <span class="label label-danger">8 New Members</span>
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                     </button>
@@ -469,8 +469,8 @@
                     </button>
                   </div>
                 </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
+                <!-- /.box-header card-header -->
+                <div class="box-body card-body no-padding">
                   <ul class="users-list clearfix">
                     <li>
                       <img src="dist/img/user1-128x128.jpg" alt="User Image">
@@ -515,11 +515,11 @@
                   </ul>
                   <!-- /.users-list -->
                 </div>
-                <!-- /.box-body -->
-                <div class="box-footer text-center">
+                <!-- /.box-body card-body -->
+                <div class="box-footer card-footer text-center">
                   <a href="javascript:void(0)" class="uppercase">View All Users</a>
                 </div>
-                <!-- /.box-footer -->
+                <!-- /.box-footer card-footer -->
               </div>
               <!--/.box -->
             </div>
@@ -528,18 +528,18 @@
           <!-- /.row -->
 
           <!-- TABLE: LATEST ORDERS -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Latest Orders</h3>
+          <div class="box card box-info card-info card card-info card card-info">
+            <div class="box-header card-header with-border">
+              <h3 class="box-title card-title">Latest Orders</h3>
 
-              <div class="box-tools pull-right">
+              <div class="box-tools card-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body">
+            <!-- /.box-header card-header -->
+            <div class="box-body card-body">
               <div class="table-responsive">
                 <table class="table no-margin">
                   <thead>
@@ -612,12 +612,12 @@
               </div>
               <!-- /.table-responsive -->
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer clearfix">
+            <!-- /.box-body card-body -->
+            <div class="box-footer card-footer clearfix">
               <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
               <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
             </div>
-            <!-- /.box-footer -->
+            <!-- /.box-footer card-footer -->
           </div>
           <!-- /.box -->
         </div>
@@ -694,18 +694,18 @@
           </div>
           <!-- /.info-box -->
 
-          <div class="box box-default">
-            <div class="box-header with-border">
-              <h3 class="box-title">Browser Usage</h3>
+          <div class="box card box-default">
+            <div class="box-header card-header with-border">
+              <h3 class="box-title card-title">Browser Usage</h3>
 
-              <div class="box-tools pull-right">
+              <div class="box-tools card-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body">
+            <!-- /.box-header card-header -->
+            <div class="box-body card-body">
               <div class="row">
                 <div class="col-md-8">
                   <div class="chart-responsive">
@@ -728,8 +728,8 @@
               </div>
               <!-- /.row -->
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer no-padding">
+            <!-- /.box-body card-body -->
+            <div class="box-footer card-footer no-padding">
               <ul class="nav nav-pills nav-stacked">
                 <li><a href="#">United States of America
                   <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
@@ -744,18 +744,18 @@
           <!-- /.box -->
 
           <!-- PRODUCT LIST -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Recently Added Products</h3>
+          <div class="box card box-primary">
+            <div class="box-header card-header with-border">
+              <h3 class="box-title card-title">Recently Added Products</h3>
 
-              <div class="box-tools pull-right">
+              <div class="box-tools card-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body">
+            <!-- /.box-header card-header -->
+            <div class="box-body card-body">
               <ul class="products-list product-list-in-box">
                 <li class="item">
                   <div class="product-img">
@@ -810,11 +810,11 @@
                 <!-- /.item -->
               </ul>
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer text-center">
+            <!-- /.box-body card-body -->
+            <div class="box-footer card-footer text-center">
               <a href="javascript:void(0)" class="uppercase">View All Products</a>
             </div>
-            <!-- /.box-footer -->
+            <!-- /.box-footer card-footer -->
           </div>
           <!-- /.box -->
         </div>
