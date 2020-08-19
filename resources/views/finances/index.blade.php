@@ -14,7 +14,7 @@
             </div>
             <!-- /.box-header card-header -->
             <div class="box-body card-body">
-            @include('facilitador::components.repositories.table', ['registros' => $service->getProfile()->gastos()->get()] )
+            @include('support::components.repositories.table', ['registros' => $service->getProfile()->gastos()->get()] )
             
             </div>
           </div>

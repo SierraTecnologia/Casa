@@ -27,7 +27,7 @@ class ClientsController extends Controller
         
 
         return view(
-            'facilitador::components.repositories.index',
+            'support::components.repositories.index',
             compact('service', 'registros')
         );
         // $service = $this->service;
