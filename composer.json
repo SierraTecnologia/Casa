@@ -26,7 +26,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": "^7.4",
         "sierratecnologia/integrations": "dev-master",
         "sierratecnologia/telefonica": "dev-master",
         "sierratecnologia/bancario": "dev-master",
