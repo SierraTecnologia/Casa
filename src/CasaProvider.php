@@ -2,26 +2,29 @@
 
 namespace Casa;
 
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider;
+use App;
+use Casa\Facades\Casa as CasaFacade;
 use Casa\Services\CasaService;
+use Config;
+use Illuminate\Foundation\AliasLoader;
+
+use Illuminate\Routing\Router;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\ServiceProvider;
+use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 use Log;
-use App;
-use Config;
-use Route;
-use Illuminate\Routing\Router;
 
 use Muleta\Traits\Providers\ConsoleTools;
-
-use Casa\Facades\Casa as CasaFacade;
-use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
+use Route;
 
 class CasaProvider extends ServiceProvider
 {
     use ConsoleTools;
+
+    public $packageName = 'casa';
+    const pathVendor = 'sierratecnologia/casa';
 
     public static $aliasProviders = [
         'Casa' => \Casa\Facades\Casa::class,
@@ -43,6 +46,7 @@ class CasaProvider extends ServiceProvider
                 'icon'        => 'fas fa-fw fa-home',
                 'icon_color'  => 'blue',
                 'label_color' => 'success',
+                'section'       => 'painel',
                 'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                 // 'access' => \App\Models\Role::$ADMIN
             ],
@@ -52,6 +56,7 @@ class CasaProvider extends ServiceProvider
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
+                    'section'       => 'painel',
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                     // 'access' => \App\Models\Role::$ADMIN
                 ],
@@ -62,6 +67,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -73,6 +79,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa fa-calendar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -82,6 +89,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -91,6 +99,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-car',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -102,6 +111,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -111,6 +121,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -120,6 +131,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -131,6 +143,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -140,6 +153,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-dollar',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \App\Models\Role::$ADMIN
                     ],
@@ -174,16 +188,10 @@ class CasaProvider extends ServiceProvider
             return;
         }
 
-        Route::group(
-            [
-            'namespace' => '\Casa\Http\Controllers',
-            'prefix' => \Illuminate\Support\Facades\Config::get('application.routes.main'),
-            'as' => 'rica.',
-            // 'middleware' => 'rica',
-            ], function ($router) {
-                include __DIR__.'/Routes/web.php';
-            }
-        );
+        /**
+         * Transmissor; Routes
+         */
+        $this->loadRoutesForRiCa(__DIR__.'/../routes');
     }
 
     /**
@@ -284,7 +292,6 @@ class CasaProvider extends ServiceProvider
 
         $this->loadViews();
         $this->loadTranslations();
-
     }
 
     private function loadViews()
@@ -297,7 +304,6 @@ class CasaProvider extends ServiceProvider
             $viewsPath => base_path('resources/views/vendor/casa'),
             ], ['views',  'sitec', 'sitec-views']
         );
-
     }
     
     private function loadTranslations()
@@ -312,5 +318,4 @@ class CasaProvider extends ServiceProvider
         // Load translations
         $this->loadTranslationsFrom($this->getResourcesPath('lang'), 'casa');
     }
-
 }
