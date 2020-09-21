@@ -2,7 +2,7 @@
 
 namespace Casa\Models\Historic;
 
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 use Muleta\Traits\Models\ComplexRelationamentTrait;
 
 class Saldo extends Base

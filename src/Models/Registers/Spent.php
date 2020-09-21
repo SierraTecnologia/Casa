@@ -13,7 +13,7 @@
 namespace Casa\Models\Registers;
 
 use Muleta\Traits\Models\ComplexRelationamentTrait;
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 use Log;
 
 class Spent extends Base

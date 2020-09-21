@@ -2,7 +2,7 @@
 
 namespace Casa\Models\Vendas;
 
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 
 class Proposta extends Base
 {

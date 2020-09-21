@@ -13,7 +13,7 @@
 namespace Casa\Models\Calendar;
 
 use Muleta\Traits\Models\ComplexRelationamentTrait;
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 use Finder\Actions\Action;
 use Log;
 

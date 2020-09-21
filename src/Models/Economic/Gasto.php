@@ -2,7 +2,7 @@
 
 namespace Casa\Models\Economic;
 
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 use Muleta\Traits\Models\ComplexRelationamentTrait;
 
 class Gasto extends Base

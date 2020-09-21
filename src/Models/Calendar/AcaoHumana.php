@@ -6,7 +6,7 @@
 
 namespace Casa\Models\Calendar;
 
-use Support\Models\Base as BaseModel;
+use Pedreiro\Models\Base as BaseModel;
 use Facilitador\Services\Normalizer;
 use Log;
 use Illuminate\Database\Eloquent\SoftDeletes;
