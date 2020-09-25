@@ -67,11 +67,11 @@
 
       <div class="row">
         <div class="col-md-12">
-          <div class="box card">
-            <div class="box-header card-header with-border">
-              <h3 class="box-title card-title">Monthly Recap Report</h3>
+          <div class="box panel car">
+            <div class="box-header panel-header card-header with-border">
+              <h3 class="box-title panel-title card-title">Monthly Recap Report</h3>
 
-              <div class="box-tools card-tools pull-right">
+              <div class="box-tools panel-tools card-tools float-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <div class="btn-group">
@@ -88,8 +88,8 @@
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header card-header -->
-            <div class="box-body card-body">
+            <!-- /.box-header panel-header card-header -->
+            <div class="box-body panel-body card-body">
               <div class="row">
                 <div class="col-md-8">
                   <p class="text-center">
@@ -149,7 +149,7 @@
               </div>
               <!-- /.row -->
             </div>
-            <!-- ./box-body card-body -->
+            <!-- ./box-body panel-body card-body -->
             <div class="box-footer card-footer">
               <div class="row">
                 <div class="col-sm-3 col-xs-6">
@@ -203,18 +203,18 @@
         <!-- Left col -->
         <div class="col-md-8">
           <!-- MAP & BOX PANE -->
-          <div class="box card box-success">
-            <div class="box-header card-header with-border">
-              <h3 class="box-title card-title">Visitors Report</h3>
+          <div class="box panel card box-success panel-success card-success">
+            <div class="box-header panel-header card-header with-border">
+              <h3 class="box-title panel-title card-title">Visitors Report</h3>
 
-              <div class="box-tools card-tools pull-right">
+              <div class="box-tools panel-tools card-tools float-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header card-header -->
-            <div class="box-body card-body no-padding">
+            <!-- /.box-header panel-header card-header -->
+            <div class="box-body panel-body card-body no-padding">
               <div class="row">
                 <div class="col-md-9 col-sm-8">
                   <div class="pad">
@@ -249,17 +249,17 @@
               </div>
               <!-- /.row -->
             </div>
-            <!-- /.box-body card-body -->
+            <!-- /.box-body panel-body card-body -->
           </div>
           <!-- /.box -->
           <div class="row">
             <div class="col-md-6">
               <!-- DIRECT CHAT -->
-              <div class="box card box-warning card-warning direct-chat direct-chat-warning">
-                <div class="box-header card-header with-border">
-                  <h3 class="box-title card-title">Direct Chat</h3>
+              <div class="box panel card box-warning panel-warning card-warning direct-chat direct-chat-warning">
+                <div class="box-header panel-header card-header with-border">
+                  <h3 class="box-title panel-title card-title">Direct Chat</h3>
 
-                  <div class="box-tools card-tools pull-right">
+                  <div class="box-tools panel-tools card-tools float-right">
                     <span data-toggle="tooltip" title="" class="badge bg-yellow" data-original-title="3 New Messages">3</span>
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                     </button>
@@ -269,15 +269,15 @@
                     </button>
                   </div>
                 </div>
-                <!-- /.box-header card-header -->
-                <div class="box-body card-body">
+                <!-- /.box-header panel-header card-header -->
+                <div class="box-body panel-body card-body">
                   <!-- Conversations are loaded here -->
                   <div class="direct-chat-messages">
                     <!-- Message. Default to the left -->
                     <div class="direct-chat-msg">
                       <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                        <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                        <span class="direct-chat-name float-left">Alexander Pierce</span>
+                        <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
                       <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
@@ -292,8 +292,8 @@
                     <!-- Message to the right -->
                     <div class="direct-chat-msg right">
                       <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                        <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+                        <span class="direct-chat-name float-right">Sarah Bullock</span>
+                        <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
                       <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
@@ -308,8 +308,8 @@
                     <!-- Message. Default to the left -->
                     <div class="direct-chat-msg">
                       <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                        <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
+                        <span class="direct-chat-name float-left">Alexander Pierce</span>
+                        <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
                       <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
@@ -324,8 +324,8 @@
                     <!-- Message to the right -->
                     <div class="direct-chat-msg right">
                       <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                        <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
+                        <span class="direct-chat-name float-right">Sarah Bullock</span>
+                        <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
                       <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
@@ -350,7 +350,7 @@
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
                                   Count Dracula
-                                  <small class="contacts-list-date pull-right">2/28/2015</small>
+                                  <small class="contacts-list-date float-right">2/28/2015</small>
                                 </span>
                             <span class="contacts-list-msg">How have you been? I was...</span>
                           </div>
@@ -365,7 +365,7 @@
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
                                   Sarah Doe
-                                  <small class="contacts-list-date pull-right">2/23/2015</small>
+                                  <small class="contacts-list-date float-right">2/23/2015</small>
                                 </span>
                             <span class="contacts-list-msg">I will be waiting for...</span>
                           </div>
@@ -380,7 +380,7 @@
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
                                   Nadia Jolie
-                                  <small class="contacts-list-date pull-right">2/20/2015</small>
+                                  <small class="contacts-list-date float-right">2/20/2015</small>
                                 </span>
                             <span class="contacts-list-msg">I'll call you back at...</span>
                           </div>
@@ -395,7 +395,7 @@
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
                                   Nora S. Vans
-                                  <small class="contacts-list-date pull-right">2/10/2015</small>
+                                  <small class="contacts-list-date float-right">2/10/2015</small>
                                 </span>
                             <span class="contacts-list-msg">Where is your new...</span>
                           </div>
@@ -410,7 +410,7 @@
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
                                   John K.
-                                  <small class="contacts-list-date pull-right">1/27/2015</small>
+                                  <small class="contacts-list-date float-right">1/27/2015</small>
                                 </span>
                             <span class="contacts-list-msg">Can I take a look at...</span>
                           </div>
@@ -425,7 +425,7 @@
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
                                   Kenneth M.
-                                  <small class="contacts-list-date pull-right">1/4/2015</small>
+                                  <small class="contacts-list-date float-right">1/4/2015</small>
                                 </span>
                             <span class="contacts-list-msg">Never mind I found...</span>
                           </div>
@@ -438,7 +438,7 @@
                   </div>
                   <!-- /.direct-chat-pane -->
                 </div>
-                <!-- /.box-body card-body -->
+                <!-- /.box-body panel-body card-body -->
                 <div class="box-footer card-footer">
                   <form action="#" method="post">
                     <div class="input-group">
@@ -457,11 +457,11 @@
 
             <div class="col-md-6">
               <!-- USERS LIST -->
-              <div class="box card box-danger card-danger">
-                <div class="box-header card-header with-border">
-                  <h3 class="box-title card-title">Latest Members</h3>
+              <div class="box panel card box-danger panel-danger card-danger card-danger">
+                <div class="box-header panel-header card-header with-border">
+                  <h3 class="box-title panel-title card-title">Latest Members</h3>
 
-                  <div class="box-tools card-tools pull-right">
+                  <div class="box-tools panel-tools card-tools float-right">
                     <span class="label label-danger">8 New Members</span>
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                     </button>
@@ -469,8 +469,8 @@
                     </button>
                   </div>
                 </div>
-                <!-- /.box-header card-header -->
-                <div class="box-body card-body no-padding">
+                <!-- /.box-header panel-header card-header -->
+                <div class="box-body panel-body card-body no-padding">
                   <ul class="users-list clearfix">
                     <li>
                       <img src="dist/img/user1-128x128.jpg" alt="User Image">
@@ -515,7 +515,7 @@
                   </ul>
                   <!-- /.users-list -->
                 </div>
-                <!-- /.box-body card-body -->
+                <!-- /.box-body panel-body card-body -->
                 <div class="box-footer card-footer text-center">
                   <a href="javascript:void(0)" class="uppercase">View All Users</a>
                 </div>
@@ -528,18 +528,18 @@
           <!-- /.row -->
 
           <!-- TABLE: LATEST ORDERS -->
-          <div class="box card box-info card-info card card-info card card-info">
-            <div class="box-header card-header with-border">
-              <h3 class="box-title card-title">Latest Orders</h3>
+          <div class="box panel card box-info panel-info card-info card-info card card-info card card-info">
+            <div class="box-header panel-header card-header with-border">
+              <h3 class="box-title panel-title card-title">Latest Orders</h3>
 
-              <div class="box-tools card-tools pull-right">
+              <div class="box-tools panel-tools card-tools float-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header card-header -->
-            <div class="box-body card-body">
+            <!-- /.box-header panel-header card-header -->
+            <div class="box-body panel-body card-body">
               <div class="table-responsive">
                 <table class="table no-margin">
                   <thead>
@@ -612,10 +612,10 @@
               </div>
               <!-- /.table-responsive -->
             </div>
-            <!-- /.box-body card-body -->
+            <!-- /.box-body panel-body card-body -->
             <div class="box-footer card-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-              <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat float-left">Place New Order</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-secondary btn-flat float-right">View All Orders</a>
             </div>
             <!-- /.box-footer card-footer -->
           </div>
@@ -694,18 +694,18 @@
           </div>
           <!-- /.info-box -->
 
-          <div class="box card box-default">
-            <div class="box-header card-header with-border">
-              <h3 class="box-title card-title">Browser Usage</h3>
+          <div class="box panel card box-default">
+            <div class="box-header panel-header card-header with-border">
+              <h3 class="box-title panel-title card-title">Browser Usage</h3>
 
-              <div class="box-tools card-tools pull-right">
+              <div class="box-tools panel-tools card-tools float-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header card-header -->
-            <div class="box-body card-body">
+            <!-- /.box-header panel-header card-header -->
+            <div class="box-body panel-body card-body">
               <div class="row">
                 <div class="col-md-8">
                   <div class="chart-responsive">
@@ -728,15 +728,15 @@
               </div>
               <!-- /.row -->
             </div>
-            <!-- /.box-body card-body -->
+            <!-- /.box-body panel-body card-body -->
             <div class="box-footer card-footer no-padding">
               <ul class="nav nav-pills nav-stacked">
                 <li><a href="#">United States of America
-                  <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
-                <li><a href="#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
+                  <span class="float-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
+                <li><a href="#">India <span class="float-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
                 </li>
                 <li><a href="#">China
-                  <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
+                  <span class="float-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
               </ul>
             </div>
             <!-- /.footer -->
@@ -744,18 +744,18 @@
           <!-- /.box -->
 
           <!-- PRODUCT LIST -->
-          <div class="box card box-primary">
-            <div class="box-header card-header with-border">
-              <h3 class="box-title card-title">Recently Added Products</h3>
+          <div class="box panel card box-primary panel-primary card-primary">
+            <div class="box-header panel-header card-header with-border">
+              <h3 class="box-title panel-title card-title">Recently Added Products</h3>
 
-              <div class="box-tools card-tools pull-right">
+              <div class="box-tools panel-tools card-tools float-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.box-header card-header -->
-            <div class="box-body card-body">
+            <!-- /.box-header panel-header card-header -->
+            <div class="box-body panel-body card-body">
               <ul class="products-list product-list-in-box">
                 <li class="item">
                   <div class="product-img">
@@ -763,7 +763,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">Samsung TV
-                      <span class="label label-warning pull-right">$1800</span></a>
+                      <span class="label label-warning float-right">$1800</span></a>
                     <span class="product-description">
                           Samsung 32" 1080p 60Hz LED Smart HDTV.
                         </span>
@@ -776,7 +776,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">Bicycle
-                      <span class="label label-info pull-right">$700</span></a>
+                      <span class="label label-info float-right">$700</span></a>
                     <span class="product-description">
                           26" Mongoose Dolomite Men's 7-speed, Navy Blue.
                         </span>
@@ -788,7 +788,7 @@
                     <img src="dist/img/default-50x50.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
+                    <a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger float-right">$350</span></a>
                     <span class="product-description">
                           Xbox One Console Bundle with Halo Master Chief Collection.
                         </span>
@@ -801,7 +801,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">PlayStation 4
-                      <span class="label label-success pull-right">$399</span></a>
+                      <span class="label label-success float-right">$399</span></a>
                     <span class="product-description">
                           PlayStation 4 500GB Console (PS4)
                         </span>
@@ -810,7 +810,7 @@
                 <!-- /.item -->
               </ul>
             </div>
-            <!-- /.box-body card-body -->
+            <!-- /.box-body panel-body card-body -->
             <div class="box-footer card-footer text-center">
               <a href="javascript:void(0)" class="uppercase">View All Products</a>
             </div>

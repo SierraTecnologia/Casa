@@ -8,12 +8,12 @@
 <h2 class="page-header">Social Widgets</h2>
 <div class="row">
         <div class="col-md-6">
-          <div class="box card">
-            <div class="box-header card-header with-border">
-              <h3 class="box-title card-title">Financeiro (Gastos e Rendas)</h3>
+          <div class="box panel car">
+            <div class="box-header panel-header card-header with-border">
+              <h3 class="box-title panel-title card-title">Financeiro (Gastos e Rendas)</h3>
             </div>
-            <!-- /.box-header card-header -->
-            <div class="box-body card-body">
+            <!-- /.box-header panel-header card-header -->
+            <div class="box-body panel-body card-body">
               <table class="table table-bordered">
                 <tbody><tr>
                   <th style="width: 10px">#</th>
@@ -38,13 +38,13 @@
           </div>
           <!-- /.box -->
 
-          <div class="box card">
-            <div class="box-header card-header">
-              <h3 class="box-title card-title">Timing</h3>
+          <div class="box panel car">
+            <div class="box-header panel-header card-header">
+              <h3 class="box-title panel-title card-title">Timing</h3>
             </div>
-            <!-- /.box-header card-header -->
-            <div class="box-body card-body no-padding">
-              <table class="table table-condensed">
+            <!-- /.box-header panel-header card-header -->
+            <div class="box-body panel-body card-body no-padding">
+              <table class="table table-sm">
                 <tbody><tr>
                   <th style="width: 10px">#</th>
                   <th>Task</th>
@@ -65,7 +65,7 @@
                 @endforeach
               </tbody></table>
             </div>
-            <!-- /.box-body card-body -->
+            <!-- /.box-body panel-body card-body -->
           </div>
           <!-- /.box -->
         </div>
@@ -82,11 +82,11 @@
 <div class="row">
         <div class="col-md-4">
           <!-- Widget: user widget style 1 -->
-          <div class="box card box-widget card-widget widget-user-2">
+          <div class="box panel card box-widget card-widget widget-user-2">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-yellow">
               <div class="widget-user-image">
-                <img class="img-circle" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                <img class="rounded-circle" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
               </div>
               <!-- /.widget-user-image -->
               <h3 class="widget-user-username">Tarefas</h3>
@@ -94,10 +94,10 @@
             </div>
             <div class="box-footer card-footer no-padding">
               <ul class="nav nav-stacked">
-                <li><a href="#">Projects <span class="pull-right badge bg-blue">31</span></a></li>
-                <li><a href="#">Tasks <span class="pull-right badge bg-aqua">5</span></a></li>
-                <li><a href="#">Completed Projects <span class="pull-right badge bg-green">12</span></a></li>
-                <li><a href="#">Followers <span class="pull-right badge bg-red">842</span></a></li>
+                <li><a href="#">Projects <span class="float-right badge bg-blue">31</span></a></li>
+                <li><a href="#">Tasks <span class="float-right badge bg-aqua">5</span></a></li>
+                <li><a href="#">Completed Projects <span class="float-right badge bg-green">12</span></a></li>
+                <li><a href="#">Followers <span class="float-right badge bg-red">842</span></a></li>
               </ul>
             </div>
           </div>
@@ -106,14 +106,14 @@
         <!-- /.col -->
         <div class="col-md-4">
           <!-- Widget: user widget style 1 -->
-          <div class="box card box-widget card-widget widget-user">
+          <div class="box panel card box-widget card-widget widget-user">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-aqua-active">
               <h3 class="widget-user-username">Alexander Pierce</h3>
               <h5 class="widget-user-desc">Founder &amp; CEO</h5>
             </div>
             <div class="widget-user-image">
-              <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+              <img class="rounded-circle" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
             </div>
             <div class="box-footer card-footer">
               <div class="row">
@@ -150,14 +150,14 @@
         <!-- /.col -->
         <div class="col-md-4">
           <!-- Widget: user widget style 1 -->
-          <div class="box card box-widget card-widget widget-user">
+          <div class="box panel card box-widget card-widget widget-user">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-black" style="background: url('../dist/img/photo1.png') center center;">
               <h3 class="widget-user-username">Elizabeth Pierce</h3>
               <h5 class="widget-user-desc">Web Designer</h5>
             </div>
             <div class="widget-user-image">
-              <img class="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar">
+              <img class="rounded-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar">
             </div>
             <div class="box-footer card-footer">
               <div class="row">

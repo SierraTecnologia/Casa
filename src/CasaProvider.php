@@ -171,10 +171,10 @@ class CasaProvider extends ServiceProvider
         // Register configs, migrations, etc
         $this->registerDirectories();
 
-        // // COloquei no register pq nao tava reconhecendo as rotas para o adminlte
-        // $this->app->booted(function () {
-        //     $this->routes();
-        // });
+        // COloquei no register pq nao tava reconhecendo as rotas para o adminlte
+        $this->app->booted(function () {
+            $this->routes();
+        });
     }
 
     /**
@@ -205,11 +205,11 @@ class CasaProvider extends ServiceProvider
             [
             // Paths
             $this->getPublishesPath('config/follow') => config_path('follow')
-            ], ['config',  'sitec', 'sitec-config']
+            ],
+            ['config',  'sitec', 'sitec-config']
         );
         
         $this->setProviders();
-        $this->routes();
 
         // Register Migrations
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
@@ -218,7 +218,8 @@ class CasaProvider extends ServiceProvider
         $loader->alias('Casa', CasaFacade::class);
 
         $this->app->singleton(
-            'casa', function () {
+            'casa',
+            function () {
                 return new Casa();
             }
         );
@@ -232,7 +233,8 @@ class CasaProvider extends ServiceProvider
          * Singleton Casa
          */
         $this->app->singleton(
-            CasaService::class, function ($app) {
+            CasaService::class,
+            function ($app) {
                 Log::info('Singleton Casa');
                 return new CasaService(\Illuminate\Support\Facades\Config::get('sitec.casa'));
             }
@@ -282,7 +284,8 @@ class CasaProvider extends ServiceProvider
             [
             // Paths
             $this->getPublishesPath('config/sitec') => config_path('sitec'),
-            ], ['config',  'sitec', 'sitec-config']
+            ],
+            ['config',  'sitec', 'sitec-config']
         );
 
         // // Publish casa css and js to public directory
@@ -302,7 +305,8 @@ class CasaProvider extends ServiceProvider
         $this->publishes(
             [
             $viewsPath => base_path('resources/views/vendor/casa'),
-            ], ['views',  'sitec', 'sitec-views']
+            ],
+            ['views',  'sitec', 'sitec-views']
         );
     }
     
@@ -312,7 +316,8 @@ class CasaProvider extends ServiceProvider
         $this->publishes(
             [
             $this->getResourcesPath('lang') => resource_path('lang/vendor/casa')
-            ], ['lang',  'sitec', 'sitec-lang', 'translations']
+            ],
+            ['lang',  'sitec', 'sitec-lang', 'translations']
         );
 
         // Load translations
