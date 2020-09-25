@@ -18,7 +18,7 @@ class ClientsController extends Controller
         $this->service = $service;
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $service = new \Support\Services\RepositoryService(new \Support\Services\ModelService(Project::class));
         $registros = $service->getTableData();
