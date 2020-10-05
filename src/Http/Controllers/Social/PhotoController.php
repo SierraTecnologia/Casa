@@ -134,11 +134,11 @@ class PhotoController extends Controller
         $error = '';
 
         if (Storage::disk($this->filesystem)->exists($new_folder)) {
-            $error = __('facilitador::media.folder_exists_already');
+            $error = __('pedreiro::media.folder_exists_already');
         } elseif (Storage::disk($this->filesystem)->makeDirectory($new_folder)) {
             $success = true;
         } else {
-            $error = __('facilitador::media.error_creating_dir');
+            $error = __('pedreiro::media.error_creating_dir');
         }
 
         return compact('success', 'error');
@@ -157,11 +157,11 @@ class PhotoController extends Controller
             $file_path = $path.$file['name'];
             if ($file['type'] == 'folder') {
                 if (!Storage::disk($this->filesystem)->deleteDirectory($file_path)) {
-                    $error = __('facilitador::media.error_deleting_folder');
+                    $error = __('pedreiro::media.error_deleting_folder');
                     $success = false;
                 }
             } elseif (!Storage::disk($this->filesystem)->delete($file_path)) {
-                $error = __('facilitador::media.error_deleting_file');
+                $error = __('pedreiro::media.error_deleting_file');
                 $success = false;
             }
         }
@@ -222,10 +222,10 @@ class PhotoController extends Controller
             if (Storage::disk($this->filesystem)->move("{$location}/{$filename}", "{$location}/{$newFilename}")) {
                 $success = true;
             } else {
-                $error = __('facilitador::media.error_moving');
+                $error = __('pedreiro::media.error_moving');
             }
         } else {
-            $error = __('facilitador::media.error_may_exist');
+            $error = __('pedreiro::media.error_may_exist');
         }
 
         return compact('success', 'error');
@@ -246,7 +246,7 @@ class PhotoController extends Controller
 
             $allowedMimeTypes = \Illuminate\Support\Facades\Config::get('facilitador.media.allowed_mimetypes', '*');
             if ($allowedMimeTypes != '*' && (is_array($allowedMimeTypes) && !in_array($request->file->getMimeType(), $allowedMimeTypes))) {
-                throw new Exception(__('facilitador::generic.mimetype_not_allowed'));
+                throw new Exception(__('pedreiro::generic.mimetype_not_allowed'));
             }
 
             if (!$request->has('filename') || $request->get('filename') == 'null') {
@@ -338,7 +338,7 @@ class PhotoController extends Controller
             }
 
             $success = true;
-            $message = __('facilitador::media.success_uploaded_file');
+            $message = __('pedreiro::media.success_uploaded_file');
             $path = preg_replace('/^public\//', '', $file);
 
             event(new MediaFileAdded($path));
@@ -380,7 +380,7 @@ class PhotoController extends Controller
             Image::make($originImagePath)->crop($width, $height, $x, $y)->save($destImagePath);
 
             $success = true;
-            $message = __('facilitador::media.success_crop_image');
+            $message = __('pedreiro::media.success_crop_image');
         } catch (Exception $e) {
             $success = false;
             $message = $e->getMessage();
