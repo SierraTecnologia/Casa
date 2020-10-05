@@ -27,12 +27,12 @@
     ],
     "require": {
         "php": "^7.4",
-        "sierratecnologia/integrations": "dev-master",
-        "sierratecnologia/telefonica": "dev-master",
-        "sierratecnologia/bancario": "dev-master",
-        "sierratecnologia/stalker": "dev-master",
-        "sierratecnologia/transmissor": "dev-master",
-        "sierratecnologia/payment-laravel": "dev-master",
+        "sierratecnologia/integrations": "^0.4.0",
+        "sierratecnologia/telefonica": "^0.4.0",
+        "sierratecnologia/bancario": "^0.4.0",
+        "sierratecnologia/stalker": "^0.4.0",
+        "sierratecnologia/transmissor": "^0.4.0",
+        "sierratecnologia/payment-laravel": "^0.4.0",
         "spatie/laravel-google-calendar": "*"
     },
     "autoload": {
@@ -46,7 +46,6 @@
         "post-update-cmd": [],
         "post-create-project-cmd": []
     },
-    "repositories": [{"type": "path","url":"../**","options":{"symlink": true}}],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
