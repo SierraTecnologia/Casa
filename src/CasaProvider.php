@@ -199,7 +199,7 @@ class CasaProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom($this->getPublishesPath('config/sitec/casa.php'), 'sitec.casa');
+        $this->mergeConfigFrom($this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'sitec'.DIRECTORY_SEPARATOR.'casa.php'), 'sitec.casa');
         // Publish config files
         $this->publishes(
             [
@@ -212,7 +212,7 @@ class CasaProvider extends ServiceProvider
         $this->setProviders();
 
         // Register Migrations
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'database'.DIRECTORY_SEPARATOR.'migrations');
 
         $loader = AliasLoader::getInstance();
         $loader->alias('Casa', CasaFacade::class);
