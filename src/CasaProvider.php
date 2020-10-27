@@ -191,7 +191,7 @@ class CasaProvider extends ServiceProvider
         /**
          * Transmissor; Routes
          */
-        $this->loadRoutesForRiCa(__DIR__.'/../routes');
+        $this->loadRoutesForRiCa(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'routes');
     }
 
     /**
@@ -199,7 +199,7 @@ class CasaProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom($this->getPublishesPath('config/sitec/casa.php'), 'sitec.casa');
+        $this->mergeConfigFrom($this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'sitec'.DIRECTORY_SEPARATOR.'casa.php'), 'sitec.casa');
         // Publish config files
         $this->publishes(
             [
@@ -212,7 +212,7 @@ class CasaProvider extends ServiceProvider
         $this->setProviders();
 
         // Register Migrations
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'database'.DIRECTORY_SEPARATOR.'migrations');
 
         $loader = AliasLoader::getInstance();
         $loader->alias('Casa', CasaFacade::class);
@@ -283,7 +283,7 @@ class CasaProvider extends ServiceProvider
         $this->publishes(
             [
             // Paths
-            $this->getPublishesPath('config/sitec') => config_path('sitec'),
+            $this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'sitec') => config_path('sitec'),
             ],
             ['config',  'sitec', 'sitec-config']
         );
@@ -304,7 +304,7 @@ class CasaProvider extends ServiceProvider
         $this->loadViewsFrom($viewsPath, 'casa');
         $this->publishes(
             [
-            $viewsPath => base_path('resources/views/vendor/casa'),
+            $viewsPath => base_path('resources'.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'casa'),
             ],
             ['views',  'sitec', 'sitec-views']
         );
@@ -315,7 +315,7 @@ class CasaProvider extends ServiceProvider
         // Publish lanaguage files
         $this->publishes(
             [
-            $this->getResourcesPath('lang') => resource_path('lang/vendor/casa')
+            $this->getResourcesPath('lang') => resource_path('lang'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'casa')
             ],
             ['lang',  'sitec', 'sitec-lang', 'translations']
         );
