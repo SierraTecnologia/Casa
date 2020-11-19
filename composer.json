@@ -27,13 +27,15 @@
     ],
     "require": {
         "php": "^7.4",
-        "sierratecnologia/integrations": "^0.4.0",
-        "sierratecnologia/telefonica": "^0.4.0",
-        "sierratecnologia/bancario": "^0.4.0",
-        "sierratecnologia/stalker": "^0.4.0",
-        "sierratecnologia/transmissor": "^0.4.0",
-        "sierratecnologia/payment-laravel": "^0.4.0",
+        "sierratecnologia/integrations": "^0.4.3",
+        "sierratecnologia/telefonica": "^0.4.3",
+        "sierratecnologia/bancario": "^0.4.3",
+        "sierratecnologia/transmissor": "^0.4.3",
+        "sierratecnologia/payment-laravel": "^0.3.0 | ^0.4.0",
         "spatie/laravel-google-calendar": "*"
+    },
+    "suggest": {
+        "sierratecnologia/stalker": "^0.4.3"
     },
     "autoload": {
         "psr-4": {

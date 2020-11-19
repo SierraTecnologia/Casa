@@ -48,7 +48,7 @@ class CasaProvider extends ServiceProvider
                 'label_color' => 'success',
                 'section'       => 'painel',
                 'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                // 'access' => \App\Models\Role::$ADMIN
+                // 'access' => \Porteiro\Models\Role::$ADMIN
             ],
             'Casa' => [
                 [
@@ -58,7 +58,7 @@ class CasaProvider extends ServiceProvider
                     'label_color' => 'success',
                     'section'       => 'painel',
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                    // 'access' => \App\Models\Role::$ADMIN
+                    // 'access' => \Porteiro\Models\Role::$ADMIN
                 ],
                 'Dash' => [
                     [
@@ -69,7 +69,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                 ],
                 'House' => [
@@ -81,7 +81,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                     [
                         'text'        => 'Financeiro',
@@ -91,7 +91,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                     [
                         'text'        => 'Espolios',
@@ -101,7 +101,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                 ],
                 'Social' => [
@@ -113,7 +113,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                     [
                         'text'        => 'Persons',
@@ -123,7 +123,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                     [
                         'text'        => 'Persons',
@@ -133,7 +133,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                 ],
                 'Business' => [
@@ -145,7 +145,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                     [
                         'text'        => 'Projetos',
@@ -155,7 +155,7 @@ class CasaProvider extends ServiceProvider
                         'label_color' => 'success',
                         'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \App\Models\Role::$ADMIN
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                 ],
             ],
