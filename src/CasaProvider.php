@@ -40,7 +40,7 @@ class CasaProvider extends ServiceProvider
      * Rotas do Menu
      */
     public static $menuItens = [
-        'Painel' => [
+        // 'Painel' => [
             [
                 'text'        => 'Casa',
                 'icon'        => 'fas fa-fw fa-home',
@@ -159,7 +159,7 @@ class CasaProvider extends ServiceProvider
                     ],
                 ],
             ],
-        ],
+        // ],
     ];
 
     /**
