@@ -7,18 +7,25 @@ use Muleta\Traits\Models\ComplexRelationamentTrait;
 
 class Renda extends Base
 {
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
     protected $fillable = [
-        'description',
+        'target',
+        'time', // im segundos
+        'init', // date
+        'end', // date
         'value',
+        'obs', // im segundos
     ];
 
     protected $mappingProperties = array(
-        'description' => [
+        'target' => [
+            'type' => 'string',
+            "analyzer" => "standard",
+        ],
+        'time' => [
+            'type' => 'integer',
+            "analyzer" => "standard",
+        ],
+        'init' => [
             'type' => 'string',
             "analyzer" => "standard",
         ],
@@ -26,7 +33,53 @@ class Renda extends Base
             'type' => 'string',
             "analyzer" => "standard",
         ],
+        'obs' => [
+            'type' => 'string',
+            "analyzer" => "standard",
+        ],
     );
+    
+    public $formFields = [
+        [
+            'name' => 'target',
+            'label' => 'target',
+            'type' => 'text'
+        ],
+        [
+            'name' => 'description',
+            'label' => 'description',
+            'type' => 'text'
+        ],
+        [
+            'name' => 'value',
+            'label' => 'value',
+            'type' => 'text'
+        ],
+        ['name' => 'init', 'label' => 'Inicio', 'type' => 'date'],
+        ['name' => 'end', 'label' => 'End', 'type' => 'date'],
+        // [
+        //     'name' => 'status',
+        //     'label' => 'Status',
+        //     'type' => 'checkbox'
+        // ],
+        [
+            'name' => 'obs',
+            'label' => 'Observations',
+            'type' => 'textarea'
+        ],
+        // ['name' => 'payment_type_id', 'label' => 'Payment Type', 'type' => 'select', 'relationship' => 'category'],
+        // ['name' => 'tags', 'label' => 'Tags', 'type' => 'select_multiple', 'relationship' => 'tags'],
+    ];
+
+    public $indexFields = [
+        'target',
+        'description',
+        'value',
+        'init',
+        'end',
+        'obs',
+    ];
+
     
     /**
      * Get all of the slaves that are assigned this tag.

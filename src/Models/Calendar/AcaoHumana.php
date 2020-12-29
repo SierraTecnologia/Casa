@@ -49,6 +49,14 @@ class AcaoHumana extends BaseModel
         'template',
         'published_at',
     ];
+    public $formFields = [
+        ['name' => 'name', 'label' => 'Name', 'type' => 'text'],
+        ['name' => 'description', 'label' => 'Description', 'type' => 'textarea'],
+    ];
+    public $indexFields = [
+        'name',
+        'description',
+    ];
 
     protected $dates = [
         'published_at' => 'Y-m-d H:i'
