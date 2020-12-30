@@ -2,7 +2,7 @@
 
 namespace Casa\Http\Controllers\RiCa;
 
-use Casa\Models\Calendar\Gasto;
+use Casa\Models\Economic\Gasto;
 use Illuminate\Support\Facades\Schema;
 use Pedreiro\CrudController;
 
