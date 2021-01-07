@@ -59,6 +59,7 @@ class Gasto extends Base
     public $indexFields = [
         'name',
         'description',
+        'date',
         'value',
     ];
 

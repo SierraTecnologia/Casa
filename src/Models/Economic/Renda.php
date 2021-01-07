@@ -12,6 +12,7 @@ class Renda extends Base
         'time', // im segundos
         'init', // date
         'end', // date
+        'date',
         'value',
         'obs', // im segundos
     ];
@@ -57,6 +58,7 @@ class Renda extends Base
         ],
         ['name' => 'init', 'label' => 'Inicio', 'type' => 'date'],
         ['name' => 'end', 'label' => 'End', 'type' => 'date'],
+        ['name' => 'date', 'label' => 'Publish Date', 'type' => 'date'],
         // [
         //     'name' => 'status',
         //     'label' => 'Status',
@@ -75,6 +77,7 @@ class Renda extends Base
         'target',
         'description',
         'value',
+        'date',
         'init',
         'end',
         'obs',
