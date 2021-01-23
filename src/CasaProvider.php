@@ -47,8 +47,47 @@ class CasaProvider extends ServiceProvider
                 'icon_color'  => 'blue',
                 'label_color' => 'success',
                 // 'section'       => 'painel',
+                'feature' => 'casa',
+                'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                 'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                 // 'access' => \Porteiro\Models\Role::$ADMIN
+            ],
+            [
+                'text'        => 'Historico',
+                'icon'        => 'fas fa-fw fa-home',
+                'icon_color'  => 'blue',
+                'label_color' => 'success',
+                'section'       => 'painel',
+                'feature' => 'casa',
+                'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                // 'access' => \Porteiro\Models\Role::$ADMIN
+            ],
+            'Historico' => [
+                [
+                    'text'        => 'Timeline',
+                    'route'       => 'painel.casa.timelines.index',
+                    'icon'        => 'fas fa-fw fa-gavel',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    'section' => "painel",
+                    'feature' => 'casa',
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                    'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                    // 'access' => \Porteiro\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Histórico de Local',
+                    'route'       => 'painel.casa.localizations.index',
+                    'icon'        => 'fas fa-fw fa-gavel',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    'section' => "painel",
+                    'feature' => 'casa',
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                    'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                    // 'access' => \Porteiro\Models\Role::$ADMIN
+                ]
             ],
             'Casa' => [
                 // [
@@ -66,7 +105,9 @@ class CasaProvider extends ServiceProvider
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
+                    'feature' => 'casa',
                     // 'section'       => 'painel',
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                     // 'access' => \Porteiro\Models\Role::$ADMIN
                 ],
@@ -76,6 +117,8 @@ class CasaProvider extends ServiceProvider
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
+                    'feature' => 'casa',
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     // 'section'       => 'painel',
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                     // 'access' => \Porteiro\Models\Role::$ADMIN
@@ -86,6 +129,8 @@ class CasaProvider extends ServiceProvider
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
+                    'feature' => 'casa',
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     // 'section'       => 'painel',
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                     // 'access' => \Porteiro\Models\Role::$ADMIN
@@ -98,6 +143,8 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'feature' => 'casa',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         // 'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
@@ -108,7 +155,9 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'feature' => 'casa',
                         // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
@@ -118,7 +167,9 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'feature' => 'casa',
                         // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
@@ -128,7 +179,9 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'feature' => 'casa',
                         // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
@@ -140,7 +193,9 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'feature' => 'casa',
                         // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
@@ -150,7 +205,9 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'feature' => 'casa',
                         // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
@@ -160,6 +217,8 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'feature' => 'casa',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         // 'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
@@ -170,6 +229,8 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
+                        'feature' => 'casa',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         // 'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
