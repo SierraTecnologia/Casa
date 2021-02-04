@@ -26,8 +26,9 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^7.2|^8.0",
         "sierratecnologia/integrations": "dev-master",
+        "sierratecnologia/population": "dev-master",
         "sierratecnologia/telefonica": "dev-master",
         "sierratecnologia/bancario": "dev-master",
         "sierratecnologia/transmissor": "dev-master",

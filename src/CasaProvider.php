@@ -32,6 +32,9 @@ class CasaProvider extends ServiceProvider
 
     public static $providers = [
         \Transmissor\TransmissorProvider::class,
+        \Population\PopulationProvider::class,
+        \Telefonica\TelefonicaProvider::class,
+        \Bancario\BancarioProvider::class,
         // \Casa\Providers\CasaServiceProvider::class,
         // \Casa\Providers\CasaRouteProvider::class,
     ];
