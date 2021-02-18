@@ -50,7 +50,7 @@ class CasaProvider extends ServiceProvider
                 'icon_color'  => 'blue',
                 'label_color' => 'success',
                 // 'section'       => 'painel',
-                'feature' => 'casa',
+                'feature' => 'gamification',
                 'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                 'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                 // 'access' => \Porteiro\Models\Role::$ADMIN
@@ -61,7 +61,7 @@ class CasaProvider extends ServiceProvider
                 'icon_color'  => 'blue',
                 'label_color' => 'success',
                 'section'       => 'painel',
-                'feature' => 'casa',
+                'feature' => 'gamification',
                 'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                 'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                 // 'access' => \Porteiro\Models\Role::$ADMIN
@@ -74,7 +74,7 @@ class CasaProvider extends ServiceProvider
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
                     'section' => "painel",
-                    'feature' => 'casa',
+                    'feature' => 'gamification',
                     'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                     // 'access' => \Porteiro\Models\Role::$ADMIN
@@ -86,7 +86,7 @@ class CasaProvider extends ServiceProvider
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
                     'section' => "painel",
-                    'feature' => 'casa',
+                    'feature' => 'gamification',
                     'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                     // 'access' => \Porteiro\Models\Role::$ADMIN
@@ -108,7 +108,7 @@ class CasaProvider extends ServiceProvider
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
-                    'feature' => 'casa',
+                    'feature' => 'gamification',
                     // 'section'       => 'painel',
                     'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -120,7 +120,7 @@ class CasaProvider extends ServiceProvider
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
-                    'feature' => 'casa',
+                    'feature' => 'gamification',
                     'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     // 'section'       => 'painel',
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -132,7 +132,7 @@ class CasaProvider extends ServiceProvider
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
-                    'feature' => 'casa',
+                    'feature' => 'gamification',
                     'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     // 'section'       => 'painel',
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -146,7 +146,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'feature' => 'casa',
+                        'feature' => 'gamification',
                         'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         // 'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -158,7 +158,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'feature' => 'casa',
+                        'feature' => 'gamification',
                         // 'section'       => 'painel',
                         'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -170,7 +170,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'feature' => 'casa',
+                        'feature' => 'gamification',
                         // 'section'       => 'painel',
                         'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -182,7 +182,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'feature' => 'casa',
+                        'feature' => 'gamification',
                         // 'section'       => 'painel',
                         'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -196,7 +196,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'feature' => 'casa',
+                        'feature' => 'gamification',
                         // 'section'       => 'painel',
                         'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -208,7 +208,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'feature' => 'casa',
+                        'feature' => 'gamification',
                         // 'section'       => 'painel',
                         'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -220,7 +220,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'feature' => 'casa',
+                        'feature' => 'gamification',
                         'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         // 'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
@@ -232,7 +232,7 @@ class CasaProvider extends ServiceProvider
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'feature' => 'casa',
+                        'feature' => 'gamification',
                         'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         // 'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
