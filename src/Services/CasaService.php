@@ -23,7 +23,7 @@ class CasaService
 
         // $this->person = \Telefonica\Models\Actors\Person::first();
         $this->person = \Telefonica\Models\Actors\Person::find('ricardo.sierra');
-        // dd($this->person->gastos());
+        // dd('CasaService', $this->person->gastos());
     }
 
     public function getModelServicesToArray()
