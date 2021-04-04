@@ -14,7 +14,7 @@ namespace Casa\Models\Calendar;
 
 use Muleta\Traits\Models\ComplexRelationamentTrait;
 use Pedreiro\Models\Base;
-use Finder\Actions\Action;
+use Operador\Actions\Action;
 use Log;
 
 class Event extends Base

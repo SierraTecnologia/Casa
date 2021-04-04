@@ -14,7 +14,7 @@ namespace Casa\Models\Governanca;
 
 use Muleta\Traits\Models\ComplexRelationamentTrait;
 use Pedreiro\Models\Base;
-use Finder\Actions\Action;
+use Operador\Actions\Action;
 use Log;
 
 class WikiCategory extends Base
