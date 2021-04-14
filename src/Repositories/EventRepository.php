@@ -19,7 +19,7 @@ class EventRepository extends CmsRepository
     {
         $this->model = $model;
         $this->translationRepo = $translationRepo;
-        $this->table = \Illuminate\Support\Facades\Config::get('cms.db-prefix').'events';
+        $this->table = \Illuminate\Support\Facades\Config::get('siravel.db-prefix').'events';
     }
 
     /**
@@ -62,7 +62,7 @@ class EventRepository extends CmsRepository
     public function update($event, $payload)
     {
         $payload['title'] = htmlentities($payload['title']);
-        if (!empty($payload['lang']) && $payload['lang'] !== \Illuminate\Support\Facades\Config::get('cms.default-language', 'en')) {
+        if (!empty($payload['lang']) && $payload['lang'] !== \Illuminate\Support\Facades\Config::get('siravel.default-language', 'en')) {
             return $this->translationRepo->createOrUpdate($event->id, 'Casa\Models\Calendar\Event', $payload['lang'], $payload);
         } else {
             $payload['is_published'] = (isset($payload['is_published'])) ? (bool) $payload['is_published'] : 0;
