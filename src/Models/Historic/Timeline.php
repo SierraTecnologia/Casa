@@ -23,18 +23,18 @@ class Timeline extends Base
     ];
 
     protected $mappingProperties = array(
-        'year' => [
-            'type' => 'string',
-            "analyzer" => "standard",
-        ],
-        'month' => [
-            'type' => 'string',
-            "analyzer" => "standard",
-        ],
-        'day' => [
-            'type' => 'string',
-            "analyzer" => "standard",
-        ],
+        // 'year' => [
+        //     'type' => 'string',
+        //     "analyzer" => "standard",
+        // ],
+        // 'month' => [
+        //     'type' => 'string',
+        //     "analyzer" => "standard",
+        // ],
+        // 'day' => [
+        //     'type' => 'string',
+        //     "analyzer" => "standard",
+        // ],
         'timestamp' => [
             'type' => 'string',
             "analyzer" => "standard",
@@ -94,6 +94,15 @@ class Timeline extends Base
     //     return $this->morphedByMany(\Illuminate\Support\Facades\Config::get('sitec.core.models.user', \App\Models\User::class), 'saldoable');
     // }
 
+    
+    /**
+     * Local aonde está a mensagem
+     */
+    public function timelineable()
+    {
+        return $this->morphTo();
+    }
+    
     /**
      * Get all of the post's localizations.
      */
@@ -101,6 +110,8 @@ class Timeline extends Base
     {
         return $this->morphMany(Localization::class, 'localizationable');
     }
+
+    
 
     /**
      * Register events
@@ -114,9 +125,6 @@ class Timeline extends Base
         static::creating(
             function ($model) {
 
-                $model->year = Carbon::createFromTimestamp($model->timestamp)->year;
-                $model->month = Carbon::createFromTimestamp($model->timestamp)->month;
-                $model->day = Carbon::createFromTimestamp($model->timestamp)->day;
             }
         );
     }

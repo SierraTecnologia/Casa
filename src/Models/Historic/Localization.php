@@ -131,7 +131,7 @@ class Localization extends Base
     /**
      * 
      */
-    public function timeline()
+    public function timelineable()
     {
         return $this->belongTo(Timeline::class);
     }

@@ -16,15 +16,16 @@ class CreateCasaTimelinesTables extends Migration
             'timelines', function (Blueprint $table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id')->unsigned();
-                $table->year('year');
-                $table->unsignedTinyInteger('month');
-                $table->unsignedTinyInteger('day');
+                // $table->year('year');
+                // $table->unsignedTinyInteger('month');
+                // $table->unsignedTinyInteger('day');
                 
-                if ((float) app()->version() >= 5.8) {
-                    $table->unsignedBigInteger('timestamp');
-                } else {
-                    $table->unsignedInteger('timestamp');
-                }
+                $table->timestampTz('timestamp', $precision = 0);
+                // if ((float) app()->version() >= 5.8) {
+                //     $table->unsignedBigInteger('timestamp');
+                // } else {
+                //     $table->unsignedInteger('timestamp');
+                // }
                 
                 $table->string('timelineable_id')->nullable();
                 $table->string('timelineable_type', 255)->nullable();
@@ -34,11 +35,14 @@ class CreateCasaTimelinesTables extends Migration
             }
         );
 
+
+        
+
         Schema::create(
             'history_localizations', function (Blueprint $table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id')->unsigned();
-                $table->string('timestamp', 255)->nullable();
+                $table->timestampTz('timestamp', $precision = 0);
                 $table->string('latitude', 255)->nullable();
                 $table->string('longitude', 255)->nullable();
                 $table->string('accuracy', 255)->nullable();
