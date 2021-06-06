@@ -32,6 +32,9 @@ class CasaProvider extends ServiceProvider
 
     public static $providers = [
         \Transmissor\TransmissorProvider::class,
+        \Population\PopulationProvider::class,
+        \Telefonica\TelefonicaProvider::class,
+        \Bancario\BancarioProvider::class,
         // \Casa\Providers\CasaServiceProvider::class,
         // \Casa\Providers\CasaRouteProvider::class,
     ];
@@ -40,126 +43,294 @@ class CasaProvider extends ServiceProvider
      * Rotas do Menu
      */
     public static $menuItens = [
-        'Painel' => [
+        // 'Painel' => [
             [
                 'text'        => 'Casa',
                 'icon'        => 'fas fa-fw fa-home',
                 'icon_color'  => 'blue',
                 'label_color' => 'success',
-                'section'       => 'painel',
-                'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                // 'section'       => 'painel',
+                'feature' => 'casa',
+                'order' => 550,
+                'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                'level'       => 2, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                 // 'access' => \Porteiro\Models\Role::$ADMIN
             ],
-            'Casa' => [
+            [
+                'text'        => 'Historico',
+                'icon'        => 'fas fa-fw fa-home',
+                'icon_color'  => 'blue',
+                'label_color' => 'success',
+                'section'       => 'painel',
+                'feature' => 'casa',
+                'order' => 560,
+                'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                // 'access' => \Porteiro\Models\Role::$ADMIN
+            ],
+            'Historico' => [
                 [
-                    'text'        => 'House',
+                    'text'        => 'Timeline',
+                    'route'       => 'painel.casa.timelines.index',
+                    'icon'        => 'fas fa-fw fa-gavel',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    'section' => "painel",
+                    'feature' => 'casa',
+                    'order' => 562,
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                    'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                    // 'access' => \Porteiro\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Histórico de Local',
+                    'route'       => 'painel.casa.localizations.index',
+                    'icon'        => 'fas fa-fw fa-gavel',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    'section' => "painel",
+                    'feature' => 'casa',
+                    'order' => 568,
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                    'level'       => 1, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                    // 'access' => \Porteiro\Models\Role::$ADMIN
+                ]
+            ],
+            'Casa' => [
+                // [
+                //     'text'        => 'House',
+                //     'icon'        => 'fas fa-fw fa-home',
+                //     'icon_color'  => 'blue',
+                //     'label_color' => 'success',
+                //     'section'       => 'painel',
+                //     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //     // 'access' => \Porteiro\Models\Role::$ADMIN
+                // ],
+                [
+                    'text'        => 'Saldos',
+                    'route'       => 'rica.casa.saldos.index',
                     'icon'        => 'fas fa-fw fa-home',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
-                    'section'       => 'painel',
+                    'feature' => 'casa',
+                    // 'section'       => 'painel',
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                     'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                     // 'access' => \Porteiro\Models\Role::$ADMIN
                 ],
-                'Dash' => [
+                [
+                    'text'        => 'Spents',
+                    'route'       => 'rica.casa.spents.index',
+                    'icon'        => 'fas fa-fw fa-home',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    'feature' => 'casa',
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                    // 'section'       => 'painel',
+                    'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                    // 'access' => \Porteiro\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Propostas',
+                    'route'       => 'rica.casa.propostas.index',
+                    'icon'        => 'fas fa-fw fa-home',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    'feature' => 'casa',
+                    'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                    // 'section'       => 'painel',
+                    'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                    // 'access' => \Porteiro\Models\Role::$ADMIN
+                ],
+                'Calendar' => 
+                [
                     [
-                        'text'        => 'Dash House',
-                        'route'       => 'rica.casa.dash.index',
+                        'text'        => 'Calendar acaoHumanas',
+                        'route'       => 'rica.casa.acaoHumanas.index',
                         'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'section'       => 'painel',
+                        'feature' => 'casa',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                        // 'section'       => 'painel',
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Calendar estimates',
+                        'route'       => 'rica.casa.estimates.index',
+                        'icon'        => 'fas fa-fw fa-home',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        'feature' => 'casa',
+                        // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Calendar events',
+                        'route'       => 'rica.casa.events.index',
+                        'icon'        => 'fas fa-fw fa-home',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        'feature' => 'casa',
+                        // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                        // 'access' => \Porteiro\Models\Role::$ADMIN
+                    ],
+                    [
+                        'text'        => 'Calendar Tasks',
+                        'route'       => 'rica.casa.tasks.index',
+                        'icon'        => 'fas fa-fw fa-home',
+                        'icon_color'  => 'blue',
+                        'label_color' => 'success',
+                        'feature' => 'casa',
+                        // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                 ],
-                'House' => [
+                'Economia' => [
                     [
-                        'text'        => 'Calendário',
-                        'route'       => 'rica.casa.finances.index',
-                        'icon'        => 'fas fa fa-calendar',
+                        'text'        => 'Economic Workers',
+                        'route'       => 'rica.casa.workers.index',
+                        'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'section'       => 'painel',
+                        'feature' => 'casa',
+                        // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                     [
-                        'text'        => 'Financeiro',
-                        'route'       => 'rica.casa.finances.index',
-                        'icon'        => 'fas fa-fw fa-dollar',
+                        'text'        => 'Economic rendas',
+                        'route'       => 'rica.casa.rendas.index',
+                        'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'section'       => 'painel',
+                        'feature' => 'casa',
+                        // 'section'       => 'painel',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                     [
-                        'text'        => 'Espolios',
-                        'route'       => 'rica.casa.espolio.index',
-                        'icon'        => 'fas fa-fw fa-car',
+                        'text'        => 'Economic gastos',
+                        'route'       => 'rica.casa.gastos.index',
+                        'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'section'       => 'painel',
-                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \Porteiro\Models\Role::$ADMIN
-                    ],
-                ],
-                'Social' => [
-                    [
-                        'text'        => 'Photo',
-                        'route'       => 'rica.casa.social.photo.index',
-                        'icon'        => 'fas fa-fw fa-dollar',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        'section'       => 'painel',
+                        'feature' => 'casa',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                        // 'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                     [
-                        'text'        => 'Persons',
-                        'route'       => 'rica.casa.social.person.index',
-                        'icon'        => 'fas fa-fw fa-dollar',
+                        'text'        => 'Economic routines',
+                        'route'       => 'rica.casa.routines.index',
+                        'icon'        => 'fas fa-fw fa-home',
                         'icon_color'  => 'blue',
                         'label_color' => 'success',
-                        'section'       => 'painel',
-                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \Porteiro\Models\Role::$ADMIN
-                    ],
-                    [
-                        'text'        => 'Persons',
-                        'route'       => 'rica.casa.social.person.persons',
-                        'icon'        => 'fas fa-fw fa-dollar',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        'section'       => 'painel',
+                        'feature' => 'casa',
+                        'dev_status'  => 2, // 0 (Desabilitado), 1 (Ativo), 2 (Em Dev)
+                        // 'section'       => 'painel',
                         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
                         // 'access' => \Porteiro\Models\Role::$ADMIN
                     ],
                 ],
-                'Business' => [
-                    [
-                        'text'        => 'Clientes',
-                        'route'       => 'rica.casa.comercial.clients.index',
-                        'icon'        => 'fas fa-fw fa-dollar',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        'section'       => 'painel',
-                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \Porteiro\Models\Role::$ADMIN
-                    ],
-                    [
-                        'text'        => 'Projetos',
-                        'route'       => 'rica.casa.comercial.projects.index',
-                        'icon'        => 'fas fa-fw fa-dollar',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        'section'       => 'painel',
-                        'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
-                        // 'access' => \Porteiro\Models\Role::$ADMIN
-                    ],
-                ],
+                // 'House' => [
+                //     [
+                //         'text'        => 'Calendário',
+                //         'route'       => 'rica.casa.finances.index',
+                //         'icon'        => 'fas fa fa-calendar',
+                //         'icon_color'  => 'blue',
+                //         'label_color' => 'success',
+                //         'section'       => 'painel',
+                //         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //         // 'access' => \Porteiro\Models\Role::$ADMIN
+                //     ],
+                //     [
+                //         'text'        => 'Financeiro',
+                //         'route'       => 'rica.casa.finances.index',
+                //         'icon'        => 'fas fa-fw fa-dollar',
+                //         'icon_color'  => 'blue',
+                //         'label_color' => 'success',
+                //         'section'       => 'painel',
+                //         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //         // 'access' => \Porteiro\Models\Role::$ADMIN
+                //     ],
+                //     [
+                //         'text'        => 'Espolios',
+                //         'route'       => 'rica.casa.espolio.index',
+                //         'icon'        => 'fas fa-fw fa-car',
+                //         'icon_color'  => 'blue',
+                //         'label_color' => 'success',
+                //         'section'       => 'painel',
+                //         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //         // 'access' => \Porteiro\Models\Role::$ADMIN
+                //     ],
+                // ],
+                // 'Social' => [
+                //     [
+                //         'text'        => 'Photo',
+                //         'route'       => 'rica.casa.social.photo.index',
+                //         'icon'        => 'fas fa-fw fa-dollar',
+                //         'icon_color'  => 'blue',
+                //         'label_color' => 'success',
+                //         'section'       => 'painel',
+                //         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //         // 'access' => \Porteiro\Models\Role::$ADMIN
+                //     ],
+                //     [
+                //         'text'        => 'Persons',
+                //         'route'       => 'rica.casa.social.person.index',
+                //         'icon'        => 'fas fa-fw fa-dollar',
+                //         'icon_color'  => 'blue',
+                //         'label_color' => 'success',
+                //         'section'       => 'painel',
+                //         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //         // 'access' => \Porteiro\Models\Role::$ADMIN
+                //     ],
+                //     [
+                //         'text'        => 'Persons',
+                //         'route'       => 'rica.casa.social.person.persons',
+                //         'icon'        => 'fas fa-fw fa-dollar',
+                //         'icon_color'  => 'blue',
+                //         'label_color' => 'success',
+                //         'section'       => 'painel',
+                //         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //         // 'access' => \Porteiro\Models\Role::$ADMIN
+                //     ],
+                // ],
+                // 'Business' => [
+                //     [
+                //         'text'        => 'Clientes',
+                //         'route'       => 'rica.casa.comercial.clients.index',
+                //         'icon'        => 'fas fa-fw fa-dollar',
+                //         'icon_color'  => 'blue',
+                //         'label_color' => 'success',
+                //         'section'       => 'painel',
+                //         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //         // 'access' => \Porteiro\Models\Role::$ADMIN
+                //     ],
+                //     [
+                //         'text'        => 'Projetos',
+                //         'route'       => 'rica.casa.comercial.projects.index',
+                //         'icon'        => 'fas fa-fw fa-dollar',
+                //         'icon_color'  => 'blue',
+                //         'label_color' => 'success',
+                //         'section'       => 'painel',
+                //         'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+                //         // 'access' => \Porteiro\Models\Role::$ADMIN
+                //     ],
+                // ],
             ],
-        ],
+        // ],
     ];
 
     /**

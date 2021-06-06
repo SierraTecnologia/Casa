@@ -14,7 +14,7 @@ namespace Casa\Models\Calendar;
 
 use Muleta\Traits\Models\ComplexRelationamentTrait;
 use Pedreiro\Models\Base;
-use Finder\Actions\Action;
+use Operador\Actions\Action;
 use Log;
 
 class Estimate extends Base
@@ -42,6 +42,14 @@ class Estimate extends Base
         'progress',
         'task',
         'stage'
+    ];
+    public $formFields = [
+        ['name' => 'name', 'label' => 'Name', 'type' => 'text'],
+        ['name' => 'description', 'label' => 'Description', 'type' => 'textarea'],
+    ];
+    public $indexFields = [
+        'name',
+        'description',
     ];
 
 

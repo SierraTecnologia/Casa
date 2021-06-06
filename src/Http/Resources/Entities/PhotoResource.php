@@ -1,6 +1,9 @@
 <?php
+/**
+ * @todo MediaManager
+ */
 
-namespace Casa\Http\Resources\Entitys;
+namespace Casa\Http\Resources\Entities;
 
 use function SiUtils\Helper\html_purify;
 use function SiUtils\Helper\to_object;
@@ -9,7 +12,7 @@ use function SiUtils\Helper\to_string;
 /**
  * Class PhotoResource.
  *
- * @package Casa\Http\Resources\Entitys
+ * @package Casa\Http\Resources\Entities
  */
 class PhotoResource extends PhotoPlainResource
 {

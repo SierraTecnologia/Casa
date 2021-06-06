@@ -18,6 +18,7 @@ class Saldo extends Base
         'value',
         'date',
         'local_id',
+        'obs',
     ];
 
     protected $mappingProperties = array(
@@ -38,6 +39,29 @@ class Saldo extends Base
             "analyzer" => "standard",
         ],
     );
+    public $formFields = [
+        ['name' => 'description', 'label' => 'Description', 'type' => 'textarea'],
+        [
+            'name' => 'value',
+            'label' => 'value',
+            'type' => 'text'
+        ],
+        ['name' => 'date', 'label' => 'Data', 'type' => 'date'],
+        ['name' => 'local_id', 'label' => 'local_id', 'type' => 'text'],
+        [
+            'name' => 'obs',
+            'label' => 'Observations',
+            'type' => 'textarea'
+        ],
+    ];
+    public $indexFields = [
+        'description',
+        'value',
+        'date',
+        'local_id',
+        'obs',
+    ];
+
     
     /**
      * Get all of the slaves that are assigned this tag.

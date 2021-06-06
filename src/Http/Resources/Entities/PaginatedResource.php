@@ -1,13 +1,13 @@
 <?php
 
-namespace Casa\Http\Resources\Entitys;
+namespace Casa\Http\Resources\Entities;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
 /**
  * Class PaginatedResource.
  *
- * @package Casa\Http\Resources\Entitys
+ * @package Casa\Http\Resources\Entities
  */
 class PaginatedResource extends ResourceCollection
 {

@@ -37,6 +37,18 @@ class Task extends Base
         'date_estimated',
         'done'
     ];
+    public $formFields = [
+        ['name' => 'name', 'label' => 'Name', 'type' => 'text'],
+        ['name' => 'description', 'label' => 'Description', 'type' => 'textarea'],
+        ['name' => 'date_estimated', 'label' => 'Data Estimada', 'type' => 'date'],
+        ['name' => 'done', 'label' => 'done', 'type' => 'text'],
+    ];
+    public $indexFields = [
+        'name',
+        'description',
+        'date_estimated',
+        'done',
+    ];
 
     /**
      * Get the owning taskable model.

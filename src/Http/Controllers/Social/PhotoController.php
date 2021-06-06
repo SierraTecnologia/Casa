@@ -40,7 +40,7 @@ class PhotoController extends Controller
     {
         $results = Media::all();
 
-        dd($results);
+        dd('Photos Results Casa', $results);
         return view(
             'casa::social.gallery',
             compact('results')

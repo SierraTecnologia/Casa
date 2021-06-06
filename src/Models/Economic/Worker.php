@@ -37,6 +37,36 @@ class Worker extends Base
             "analyzer" => "standard",
         ],
     );
+    
+    public $formFields = [
+        [
+            'name' => 'text',
+            'label' => 'text',
+            'type' => 'text'
+        ],
+        ['name' => 'init', 'label' => 'Inicio', 'type' => 'date'],
+        ['name' => 'time', 'label' => 'Tempo', 'type' => 'text'],
+        // [
+        //     'name' => 'status',
+        //     'label' => 'Status',
+        //     'type' => 'checkbox'
+        // ],
+        [
+            'name' => 'obs',
+            'label' => 'Observations',
+            'type' => 'textarea'
+        ],
+        // ['name' => 'payment_type_id', 'label' => 'Payment Type', 'type' => 'select', 'relationship' => 'category'],
+        // ['name' => 'tags', 'label' => 'Tags', 'type' => 'select_multiple', 'relationship' => 'tags'],
+    ];
+
+    public $indexFields = [
+        'text',
+        'init',
+        'time',
+        'obs',
+    ];
+
 
     /**
      * Get all of the owning workerable models.

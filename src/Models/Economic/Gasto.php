@@ -14,11 +14,53 @@ class Gasto extends Base
      * @var array
      */
     protected $fillable = [
+        'target',
         'description',
-        'obs',
         'value',
-        'payment_type_id',
+        'init',
+        'end',
         'date',
+        'payment_type_id',
+        'obs',
+    ];
+
+    
+    public $formFields = [
+        [
+            'name' => 'name',
+            'label' => 'name',
+            'type' => 'text'
+        ],
+        [
+            'name' => 'description',
+            'label' => 'description',
+            'type' => 'text'
+        ],
+        [
+            'name' => 'value',
+            'label' => 'value',
+            'type' => 'text'
+        ],
+        // [
+        //     'name' => 'status',
+        //     'label' => 'Status',
+        //     'type' => 'checkbox'
+        // ],
+        // [
+        //     'name' => 'status',
+        //     'label' => 'Enter your content here',
+        //     'type' => 'textarea'
+        // ],
+        ['name' => 'date', 'label' => 'Publish Date', 'type' => 'date'],
+        // ['name' => 'payment_type_id', 'label' => 'Payment Type', 'type' => 'select', 'relationship' => 'category'],
+        // ['name' => 'tags', 'label' => 'Tags', 'type' => 'select_multiple', 'relationship' => 'tags'],
+    ];
+
+    public $indexFields = [
+        'name',
+        'description',
+        'date',
+        'value',
     ];
 
     protected $mappingProperties = array(
