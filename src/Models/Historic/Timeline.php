@@ -15,11 +15,19 @@ class Timeline extends Base
      * @var array
      */
     protected $fillable = [
-        'year',
-        'month',
-        'day',
+        // 'year',
+        // 'month',
+        // 'day',
         'timestamp',
         'obs',
+    ];
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'timestamp' => 'datetime',
     ];
 
     protected $mappingProperties = array(
@@ -45,17 +53,17 @@ class Timeline extends Base
         ],
     );
     public $formFields = [
-        ['name' => 'year', 'label' => 'year', 'type' => 'text'],
-        [
-            'name' => 'month',
-            'label' => 'month',
-            'type' => 'text'
-        ],
-        [
-            'name' => 'day',
-            'label' => 'day',
-            'type' => 'text'
-        ],
+        // ['name' => 'year', 'label' => 'year', 'type' => 'text'],
+        // [
+        //     'name' => 'month',
+        //     'label' => 'month',
+        //     'type' => 'text'
+        // ],
+        // [
+        //     'name' => 'day',
+        //     'label' => 'day',
+        //     'type' => 'text'
+        // ],
         [
             'name' => 'timestamp',
             'label' => 'timestamp',
@@ -70,9 +78,9 @@ class Timeline extends Base
         ],
     ];
     public $indexFields = [
-        'year',
-        'month',
-        'day',
+        // 'year',
+        // 'month',
+        // 'day',
         'timestamp',
         'obs',
     ];

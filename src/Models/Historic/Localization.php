@@ -24,6 +24,16 @@ class Localization extends Base
         'vertical_accuracy',
         'obs',
     ];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'timestamp' => 'datetime',
+    ];
+    
     // "activity" : [ {
     //   "timestampMs" : "1551036343674",
     //   "activity" : [ {
