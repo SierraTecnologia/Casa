@@ -7,7 +7,7 @@ use League\Pipeline\StageInterface;
 
 class ImportNewTransaction
 {
-    public function run($eloquentClasses)
+    public function run($eloquentClasses): void
     {
         
 
@@ -25,7 +25,7 @@ class ImportNewTransaction
 
 
     }
-    public function runTwo($eloquentClasses)
+    public function runTwo($eloquentClasses): void
     {
         
 

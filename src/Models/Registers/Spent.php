@@ -134,8 +134,10 @@ class Spent extends Base
       
     /**
      * @todo diferenciar worklog de timespent
+     *
+     * @return true
      */
-    public static function registerSpentForIssue($spent, $projectUrl = false)
+    public static function registerSpentForIssue($spent, $projectUrl = false): bool
     {
         return true;
         // $field =  self::firstOrCreate([

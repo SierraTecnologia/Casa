@@ -105,16 +105,20 @@ class Timeline extends Base
     
     /**
      * Local aonde está a mensagem
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function timelineable()
+    public function timelineable(): \Illuminate\Database\Eloquent\Relations\MorphTo
     {
         return $this->morphTo();
     }
     
     /**
      * Get all of the post's localizations.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
-    public function localizations()
+    public function localizations(): \Illuminate\Database\Eloquent\Relations\MorphMany
     {
         return $this->morphMany(Localization::class, 'localizationable');
     }

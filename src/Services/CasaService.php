@@ -26,7 +26,7 @@ class CasaService
         // dd('CasaService', $this->person->gastos());
     }
 
-    public function getModelServicesToArray()
+    public function getModelServicesToArray(): void
     {
         
     }

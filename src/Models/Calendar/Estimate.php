@@ -55,8 +55,10 @@ class Estimate extends Base
 
     /**
      * Get the owning estimatable model.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function estimatable()
+    public function estimatable(): \Illuminate\Database\Eloquent\Relations\MorphTo
     {
         return $this->morphTo();
     }

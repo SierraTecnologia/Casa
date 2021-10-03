@@ -36,6 +36,9 @@ class PhotoController extends Controller
         $this->filesystem = \Illuminate\Support\Facades\Config::get('facilitador.storage.disk');
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function all()
     {
         $results = Media::all();
@@ -124,7 +127,12 @@ class PhotoController extends Controller
         return response()->json($files);
     }
 
-    public function new_folder(Request $request)
+    /**
+     * @return (array|bool|null|string)[]
+     *
+     * @psalm-return array{success: bool, error: array|null|string}
+     */
+    public function new_folder(Request $request): array
     {
         // Check permission
         $this->authorize('browse_media');
@@ -144,7 +152,12 @@ class PhotoController extends Controller
         return compact('success', 'error');
     }
 
-    public function delete(Request $request)
+    /**
+     * @return (array|bool|null|string)[]
+     *
+     * @psalm-return array{success: bool, error: array|null|string}
+     */
+    public function delete(Request $request): array
     {
         // Check permission
         $this->authorize('browse_media');
@@ -169,7 +182,12 @@ class PhotoController extends Controller
         return compact('success', 'error');
     }
 
-    public function move(Request $request)
+    /**
+     * @return (bool|string)[]
+     *
+     * @psalm-return array{success: bool, error: string}
+     */
+    public function move(Request $request): array
     {
         // Check permission
         $this->authorize('browse_media');
@@ -201,7 +219,12 @@ class PhotoController extends Controller
         return compact('success', 'error');
     }
 
-    public function rename(Request $request)
+    /**
+     * @return (array|bool|null|string)[]
+     *
+     * @psalm-return array{success: bool, error: array|false|null|string}
+     */
+    public function rename(Request $request): array
     {
         // Check permission
         $this->authorize('browse_media');
@@ -389,7 +412,7 @@ class PhotoController extends Controller
         return response()->json(compact('success', 'message'));
     }
 
-    private function addWatermarkToImage($image, $options)
+    private function addWatermarkToImage(\Intervention\Image\Image $image, $options): \Intervention\Image\Image
     {
         $watermark = Image::make(Storage::disk($this->filesystem)->path($options->source));
         // Resize watermark

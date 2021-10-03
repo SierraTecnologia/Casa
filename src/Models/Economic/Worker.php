@@ -70,8 +70,10 @@ class Worker extends Base
 
     /**
      * Get all of the owning workerable models.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function workerable()
+    public function workerable(): \Illuminate\Database\Eloquent\Relations\MorphTo
     {
         return $this->morphTo();
     }

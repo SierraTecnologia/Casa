@@ -40,8 +40,10 @@ class Routine extends Base
 
     /**
      * Get all of the owning routineable models.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function routineable()
+    public function routineable(): \Illuminate\Database\Eloquent\Relations\MorphTo
     {
         return $this->morphTo();
     }

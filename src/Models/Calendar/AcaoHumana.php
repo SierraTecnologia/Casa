@@ -69,17 +69,17 @@ class AcaoHumana extends BaseModel
         parent::__construct($attributes);
     }
     
-    public function addInfo($slug, $info)
+    public function addInfo($slug, $info): void
     {
         Log::info("$slug, $info");
     }
     
-    public function addStat($slug, $count)
+    public function addStat($slug, $count): void
     {
         Log::info("$slug, $count");
     }
 
-    public function getDetailsAttribute($value)
+    public function getDetailsAttribute($value): Normalizer
     {
         return new Normalizer($value);
     }

@@ -18,6 +18,9 @@ class ClientsController extends Controller
         $this->service = $service;
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function index(Request $request)
     {
         $service = new \Support\Services\RepositoryService(new \Support\Services\ModelService(Project::class));

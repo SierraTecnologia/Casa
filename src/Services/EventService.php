@@ -17,7 +17,10 @@ class EventService
         $this->date = null;
     }
 
-    public function generate($date = null)
+    /**
+     * @return static
+     */
+    public function generate($date = null): self
     {
         $this->date = $date;
 
@@ -44,7 +47,12 @@ class EventService
         return $this;
     }
 
-    public function calendar($date)
+    /**
+     * @return array[]
+     *
+     * @psalm-return array<string, non-empty-list<mixed>>
+     */
+    public function calendar($date): array
     {
         $events = $this->eventRepository->all();
         $dateArray = explode('-', $date);
@@ -68,7 +76,7 @@ class EventService
         return $eventsByDate;
     }
 
-    public function asHtml($config)
+    public function asHtml($config): string
     {
         Carbon::setLocale(app(\Translation\Services\LanguageService::class)->getActualLanguage());
 
@@ -127,7 +135,7 @@ class EventService
         return $output;
     }
 
-    public function links($class = null)
+    public function links($class = null): string
     {
         if (is_null($class)) {
             $class = '';
@@ -144,7 +152,12 @@ class EventService
         return $links;
     }
 
-    public function getTemplatesAsOptions()
+    /**
+     * @return string[]
+     *
+     * @psalm-return array{0: string}
+     */
+    public function getTemplatesAsOptions(): array
     {
         $availableTemplates = ['show'];
         $templates = glob(base_path('resources/themes/'.Config::get('siravel.frontend-theme').'/events/*'));

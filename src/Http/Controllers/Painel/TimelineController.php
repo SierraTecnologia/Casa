@@ -20,6 +20,9 @@ class TimelineController extends Controller
     }
 
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function render(Request $request)
     {
 

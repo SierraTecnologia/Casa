@@ -147,8 +147,10 @@ class Localization extends Base
     }
     /**
      * Get all of the owning localizationable models.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function localizationable()
+    public function localizationable(): \Illuminate\Database\Eloquent\Relations\MorphTo
     {
         return $this->morphTo();
     }

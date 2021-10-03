@@ -52,8 +52,10 @@ class Task extends Base
 
     /**
      * Get the owning taskable model.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function taskable()
+    public function taskable(): \Illuminate\Database\Eloquent\Relations\MorphTo
     {
         return $this->morphTo();
     }

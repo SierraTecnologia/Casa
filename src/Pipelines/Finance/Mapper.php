@@ -7,7 +7,7 @@ use League\Pipeline\StageInterface;
 
 class Mapper
 {
-    public static function run($eloquentClasses)
+    public static function run($eloquentClasses): void
     {
         $fileds = [
             'data',
