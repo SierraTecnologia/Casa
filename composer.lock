@@ -6687,7 +6687,7 @@
         },
         {
             "name": "overtrue/laravel-follow",
-            "version": "dev-dev",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../Follow",
@@ -7799,7 +7799,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tramite",
-                "reference": "bc98c08a4fa0f612e0fa1e18dc5b0b6fd41e1e48"
+                "reference": "526c93c5b98fa0e642db30be3db681eb4bd5e4eb"
             },
             "require": {
                 "php": "^7.2|^8.0"
@@ -9151,7 +9151,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Atlassian",
-                "reference": "a1d729f50e02a08a45c84ffebd8199ea8f8ea456"
+                "reference": "45182757aaf8bb28b5078400f35c900ce8a1bc0c"
             },
             "require": {
                 "ext-curl": "*",
@@ -9481,7 +9481,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Bancario",
-                "reference": "de11191e910f0e4ab66353837de0ee9ef6d914f6"
+                "reference": "3877c7368bb1194ca31c32d2c7c3cf6cd618e622"
             },
             "require": {
                 "php": "^7.2|^8.0",
@@ -9850,7 +9850,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "8244152b92e3d54b2d51ddd1eb606ff1d244e2ed"
+                "reference": "dd20d9133353425b49301bdf7b7a31eb0788999c"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -9897,7 +9897,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Integrations",
-                "reference": "6b3750b75a04db2a24b2829cd38f6c0151e9b8fe"
+                "reference": "9b510423c7b30c6444cc09aca8345f71139ce9e7"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.0",
@@ -9975,7 +9975,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Locaravel",
-                "reference": "d66464b534eacb007988179ac97abff96704b5ba"
+                "reference": "b578a83003acb7d54ba06827b19e131bbb491707"
             },
             "require": {
                 "doctrine/dbal": "^2.0",
@@ -10075,7 +10075,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Muleta",
-                "reference": "8c91cceb0dc09bb4917ce2d6d30ec6494c771964"
+                "reference": "7f45fa28b5e9dc6cc18ae37ceaf41ea580d2ec9e"
             },
             "require": {
                 "laravel/helpers": "^1.1",
@@ -10179,7 +10179,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Operador",
-                "reference": "e23c857ed2af7d91cdda0d9da63390f3b94f351b"
+                "reference": "fae570adb55fced5f3875b4a77dd87ec3b1c1984"
             },
             "require": {
                 "lorisleiva/laravel-actions": "^1.1",
@@ -10486,7 +10486,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "935f01610b1f1e23ed6d6b0ca09d0ec241f78e39"
+                "reference": "64a4bb2cc9a512540b708a52f9f51b35b745e918"
             },
             "require": {
                 "overtrue/laravel-follow": "*",
@@ -10545,7 +10545,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Porteiro",
-                "reference": "8412b96b435475552b9168e4a2fdb699f35298a8"
+                "reference": "240b41b3b7a379ee688b6e6934eb50ed904603b3"
             },
             "require": {
                 "creativeorange/gravatar": "^1.0",
@@ -10642,7 +10642,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Telefonica",
-                "reference": "1b08f76524b52d2c4e949222ca6aceeea8bb7ee0"
+                "reference": "f879ab9c26f1b6c6da2fff3a68f2dab79d9d38ab"
             },
             "require": {
                 "laravel/helpers": "^1.1",
@@ -10723,7 +10723,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Transmissor",
-                "reference": "71e985a92d782089d5df05faa54e07b8395a01c8"
+                "reference": "b117aa449090f65341f4db53759370eb3439f59d"
             },
             "require": {
                 "cmgmyr/messenger": "dev-master",
