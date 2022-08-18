@@ -14,6 +14,7 @@ use Informate\Models\System\Archive;
 
 class AcaoHumana extends BaseModel
 {
+    use \Telefonica\Traits\HasMetrics;
 
     public $table = 'acao_humanas';
 
@@ -69,16 +70,6 @@ class AcaoHumana extends BaseModel
         parent::__construct($attributes);
     }
     
-    public function addInfo($slug, $info)
-    {
-        Log::info("$slug, $info");
-    }
-    
-    public function addStat($slug, $count)
-    {
-        Log::info("$slug, $count");
-    }
-
     public function getDetailsAttribute($value)
     {
         return new Normalizer($value);
