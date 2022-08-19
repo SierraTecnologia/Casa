@@ -5,7 +5,7 @@ namespace Casa\Http\Controllers;
 use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
-use Fabrica\Models\Code\Field;
+use Finder\Models\Code\Field;
 
 class FinancesController extends Controller
 {

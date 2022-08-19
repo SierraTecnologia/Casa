@@ -5,7 +5,7 @@ namespace Casa\Http\Controllers\Social;
 use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
-use Fabrica\Models\Code\Field;
+use Finder\Models\Code\Field;
 use Telefonica\Repositories\PersonRepository;
 
 class PersonController extends Controller

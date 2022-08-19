@@ -5,7 +5,7 @@ namespace Casa\Http\Controllers\Comercial;
 use Casa\Services\CasaService;
 use Illuminate\Support\Facades\Schema;
 
-use Fabrica\Models\Code\Project;
+use Finder\Models\Code\Project;
 use Facilitador\Facades\Facilitador;
 use Exception;
 use Illuminate\Http\Request;
