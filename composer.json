@@ -72,5 +72,11 @@
     },
     "require-dev": {
         "phpro/grumphp": "^1.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpro/grumphp": true,
+            "php-http/discovery": true
+        }
     }
 }
